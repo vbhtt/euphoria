@@ -5,6 +5,55 @@
     <title>Our Awesome Sponsors</title>
     <link rel="stylesheet" type="text/css" href="semantic-ui/semantic.css">
 </head>
+<style>
+    body {
+        background: #222222;
+    }
+
+    .ui.menu .ui.button {
+        margin-left: 0.5em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+        display: none;
+    }
+
+    .ui.text h1.ui.header {
+        margin-top: 1em;
+        margin-bottom: 0em;
+        font-size: 4em;
+        font-weight: normal;
+    }
+
+    .ui.text h2 {
+        font-size: 1.7em;
+        font-weight: normal;
+    }
+
+    .ui.text {
+        margin-bottom: 1em;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .secondary.pointing.menu .item,
+        .secondary.pointing.menu .menu {
+            display: none;
+        }
+        .secondary.pointing.menu .toc.item {
+            display: block;
+        }
+    }
+</style>
+<script src="jquery.min.js"></script>
+<script src="semantic-ui/semantic.min.js"></script>
+<script>
+    $(function(){
+        $('.special.cards .image').dimmer({
+            on: 'hover'
+        })
+    });
+</script>
+
 <body>
 
 <div class="ui container">
@@ -12,8 +61,8 @@
         <a class="toc item">
             <i class="sidebar icon"></i>
         </a>
-        <a class="active item">Home</a>
-        <a class="item" href="sponsors.html">Sponsors</a>
+        <a class="item">Home</a>
+        <a class="active item" href="sponsors.html">Sponsors</a>
         <a class="item">Company</a>
         <a class="item">Careers</a>
         <div class="right item">
@@ -23,23 +72,24 @@
     </div>
 </div>
 
-<div class="ui cards">
+<div class="ui text container">
+    <h1 class="ui centered inverted header">
+        Sponsors
+    </h1>
+    <h2 class="ui centered inverted header">The people that made this possible.</h2>
+</div>
+
+<div class="ui centered special cards">
     <div class="ui card">
-        <div class="ui slide masked reveal image">
-            <img src="images/flipkart.jpg" class="visible content">
-            <img src="images/bill.jpg" class="hidden content">
-        </div>
-        <div class="content">
-            <a class="header">Team Fu &amp; Hess</a>
-            <div class="meta">
-                <span class="date">Create in Sep 2014</span>
+        <div class="blurring dimmable image">
+            <div class="ui dimmer">
+                <div class="content">
+                    <div class="center">
+                        <div class="ui inverted button">Check them out!</div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="extra content">
-            <a>
-                <i class="users icon"></i>
-                2 Members
-            </a>
+        <img src="images/flipkart.jpg" class="visible content">
         </div>
     </div>
 </div>
