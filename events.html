@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <link rel="stylesheet" type="text/css" href="semantic-ui/semantic.css">
+
+    <style>
+        body {
+            background: #222222;
+        }
+
+        .secondary.menu {
+            margin-top: 1em;
+        }
+
+        .ui.menu .ui.button {
+            margin-left: 0.5em;
+        }
+
+        .secondary.pointing.menu .toc.item {
+            display: none;
+        }
+
+        .ui.text h1.ui.header {
+            margin-top: 1em;
+            margin-bottom: 0em;
+            font-size: 4em;
+            font-weight: normal;
+        }
+
+        .ui.text h2 {
+            font-size: 1.7em;
+            font-weight: normal;
+        }
+
+        .ui.text {
+            margin-bottom: 1em;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .secondary.pointing.menu .item,
+            .secondary.pointing.menu .menu {
+                display: none;
+            }
+
+            .secondary.pointing.menu .toc.item {
+                display: block;
+            }
+        }
+    </style>
+    <script src="jquery.min.js"></script>
+    <script src="semantic-ui/semantic.min.js"></script>
+    <script>
+        $(function () {
+            $('.dimmable.image').dimmer({
+                on: 'hover'
+            })
+        });
+    </script>
+</head>
+<body>
+<div class="ui container">
+    <div class="ui large fluid four item secondary inverted pointing menu">
+        <a class="toc item">
+            <i class="sidebar icon"></i>
+        </a>
+        <a class="item" href="index.html">Home</a>
+        <a class="active item" href="sponsors.html">Sponsors</a>
+        <a class="item">Events</a>
+        <a class="item" href="aboutus.html">About Us</a>
+    </div>
+</div>
+
+<div class="ui text container">
+    <h1 class="ui centered inverted header">
+        Events
+    </h1>
+
+    <h2 class="ui centered inverted header">It's all fun and games.</h2>
+</div>
+
+<div class="ui large fluid green four item secondary inverted pointing menu">
+    <div class="ui active item">Technical</div>
+    <div class="ui item">Non Technical</div>
+</div>
+<div class="sponsor">
+    <div class="blurring dimmable image">
+        <div class="ui dimmer">
+            <div class="content">
+                <div class="center">
+                    <div class="ui inverted header">Event Description!</div>
+                </div>
+            </div>
+        </div>
+        <img src="images/bill.jpg" class="visible content">
+    </div>
+</div>
+</body>
+</html>
