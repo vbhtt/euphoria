@@ -53,8 +53,24 @@
     <script src="semantic-ui/semantic.min.js"></script>
     <script>
         $(function () {
+            $('.nontech').hide();
+
             $('.dimmable.image').dimmer({
                 on: 'hover'
+            })
+
+            $('#tech').click(function () {
+                $('.tech').show();
+                $('.nontech').hide();
+                $(this).addClass('active');
+                $('#nontech').removeClass('active');
+            })
+
+            $('#nontech').click(function () {
+                $('.tech').hide();
+                $('.nontech').show();
+                $(this).addClass('active');
+                $('#tech').removeClass('active');
             })
         });
     </script>
@@ -81,22 +97,13 @@
 </div>
 
 <div class="ui large fluid green four item secondary inverted pointing menu">
-    <div class="ui active item">Technical</div>
-    <div class="ui item">Non Technical</div>
-</div>
-<div class="sponsor">
-    <div class="blurring dimmable image">
-    <div class="ui dimmer">
-        <div class="content">
-            <div class="center">
-                <div class="ui inverted header">Event Description!</div>
-            </div>
-        </div>
-    </div>
-    <img src="images/bill.jpg" class="visible content">
+    <div id="tech" class="ui active item">Technical</div>
+    <div id="nontech" class="ui item">Non Technical</div>
 </div>
 
-    <div class="blurring dimmable image">
+<div class="ui container tech">
+    <div class="ui inverted segment">
+        <div class="ui blurring dimmable centered image">
         <div class="ui dimmer">
             <div class="content">
                 <div class="center">
@@ -106,16 +113,21 @@
         </div>
         <img src="images/bill.jpg" class="visible content">
     </div>
+    </div>
+</div>
 
-    <div class="blurring dimmable image">
-        <div class="ui dimmer">
-            <div class="content">
-                <div class="center">
-                    <div class="ui inverted header">Event Description!</div>
+<div class="ui container nontech">
+    <div class="ui inverted segment">
+        <div class="ui blurring dimmable centered image">
+            <div class="ui dimmer">
+                <div class="content">
+                    <div class="center">
+                        <div class="ui inverted header">Event Description!</div>
+                    </div>
                 </div>
             </div>
+            <img src="images/flipkart.jpg" class="visible content">
         </div>
-        <img src="images/bill.jpg" class="visible content">
     </div>
 </div>
 </body>
