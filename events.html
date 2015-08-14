@@ -53,6 +53,8 @@
     <script src="semantic-ui/semantic.min.js"></script>
     <script>
         $(function () {
+            $('.nontech').hide();
+
             $('.dimmable.image').dimmer({
                 on: 'hover'
             })
@@ -61,12 +63,14 @@
                 $('.tech').show();
                 $('.nontech').hide();
                 $(this).addClass('active');
+                $('#nontech').removeClass('active');
             })
 
             $('#nontech').click(function () {
                 $('.tech').hide();
                 $('.nontech').show();
                 $(this).addClass('active');
+                $('#tech').removeClass('active');
             })
         });
     </script>
