@@ -153,6 +153,21 @@
                         });
                     });
 
+                    var $body = $('html, body'),
+                            content = $('#main').smoothState({
+                                prefetch: true,
+                                pageCacheSize: 4,
+                                onStart: {
+                                    duration: 250,
+                                    render: function (url, $container) {
+                                        content.addClass('is-exiting');
+                                        $body.animate({
+                                            scrollTop: 0
+                                        });
+                                    }
+                                }
+                            }).data('smoothState');
+
                     // fix menu when passed
                     $('.masthead')
                             .visibility({
@@ -170,21 +185,6 @@
                     $('.ui.sidebar')
                             .sidebar('attach events', '.toc.item')
                     ;
-
-                    var $body = $('html, body'),
-                            content = $('#main').smoothState({
-                                prefetch: true,
-                                pageCacheSize: 4,
-                                onStart: {
-                                    duration: 250,
-                                    render: function (url, $container) {
-                                        content.addClass('is-exiting');
-                                        $body.animate({
-                                            scrollTop: 0
-                                        });
-                                    }
-                                }
-                            }).data('smoothState');
                 })
         ;
     </script>
