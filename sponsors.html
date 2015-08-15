@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Our Awesome Sponsors</title>
     <link rel="stylesheet" type="text/css" href="semantic-ui/semantic.css">
+    <link rel="stylesheet" href="animate.css">
 
     <style>
         body {
@@ -38,6 +39,25 @@
             margin-bottom: 1em;
         }
 
+        .m-scene .scene_element {
+            animation-duration: 0.25s;
+            transition-timing-function: ease-in;
+            animation-fill-mode: both;
+        }
+
+        .m-scene.is-exiting .scene_element {
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
         @media only screen and (max-width: 700px) {
             .secondary.pointing.menu .item,
             .secondary.pointing.menu .menu {
@@ -51,11 +71,27 @@
     </style>
     <script src="jquery.min.js"></script>
     <script src="semantic-ui/semantic.min.js"></script>
+    <script src="smoothState.js"></script>
     <script>
         $(function () {
             $('.special.cards .image').dimmer({
                 on: 'hover'
             })
+
+            var $body = $('html, body'),
+                    content = $('#main').smoothState({
+                        prefetch: true,
+                        pageCacheSize: 4,
+                        onStart: {
+                            duration: 250,
+                            render: function (url, $container) {
+                                content.addClass('is-exiting');
+                                $body.animate({
+                                    scrollTop: 0
+                                });
+                            }
+                        }
+                    }).data('smoothState');
         });
     </script>
 </head>

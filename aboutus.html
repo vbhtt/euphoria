@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="semantic-ui/semantic.css">
     <script src="jquery.min.js"></script>
     <script src="semantic-ui/semantic.min.js"></script>
+    <link rel="stylesheet" href="animate.css">
+
     <style>
         body {
             background: #222222;
@@ -35,6 +37,25 @@
             margin-bottom: 1em;
         }
 
+        .m-scene .scene_element {
+            animation-duration: 0.25s;
+            transition-timing-function: ease-in;
+            animation-fill-mode: both;
+        }
+
+        .m-scene.is-exiting .scene_element {
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
         @media only screen and (max-width: 700px) {
             .secondary.pointing.menu .item,
             .secondary.pointing.menu .menu {
@@ -46,6 +67,25 @@
             }
         }
     </style>
+    <script src="smoothState.js"></script>
+    <script>
+        $(function () {
+            var $body = $('html, body'),
+                    content = $('#main').smoothState({
+                        prefetch: true,
+                        pageCacheSize: 4,
+                        onStart: {
+                            duration: 250,
+                            render: function (url, $container) {
+                                content.addClass('is-exiting');
+                                $body.animate({
+                                    scrollTop: 0
+                                });
+                            }
+                        }
+                    }).data('smoothState');
+        });
+    </script>
 </head>
 <body>
 
@@ -72,18 +112,22 @@
 <div class="ui container">
     <div class="ui inverted horizontal divider"><h3 style="color: #005f81">Students' Council</h3></div>
 
-    <div class="ui horizontal segments">
-        <div class="ui segment">
+    <div class="ui centered stackable grid container">
+        <div class="four wide column">
+            <div class="ui compact center aligned inverted segment">
             <img class="ui small circular image" src="images/maanav_sc.jpg">
 
             <div class="content">
-                <a class="header"><H3>Maanav Doshi</h3></a>
+                <a class="header"><h3>Maanav Doshi</h3></a>
 
                 <div class="description">Technical Head</div>
                 <a class="description" href="tel:7666392946">Contact: 7666392946</a>
             </div>
+            </div>
         </div>
-        <div class="ui segment">
+
+        <div class="four wide column">
+            <div class="ui compact center aligned inverted segment">
             <img class="ui small circular image" src="images/SHANTY.PNG">
 
             <div class="content">
@@ -92,9 +136,8 @@
                 <div class="description">General Secretary</div>
                 <a class="description" href="tel:9619007440">Contact: 9619007440</a>
             </div>
+            </div>
         </div>
-
-
     </div>
 
     <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">WEBSITE TEAM</h3></div>
@@ -332,8 +375,6 @@
         </div>
 
     </div>
-
-
 </div>
 </body>
 </html>

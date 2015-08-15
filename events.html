@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Events</title>
     <link rel="stylesheet" type="text/css" href="semantic-ui/semantic.css">
+    <link rel="stylesheet" href="animate.css">
 
     <style>
         body {
@@ -38,6 +39,29 @@
             margin-bottom: 1em;
         }
 
+        .details {
+            float: right;
+        }
+
+        .m-scene .scene_element {
+            animation-duration: 0.25s;
+            transition-timing-function: ease-in;
+            animation-fill-mode: both;
+        }
+
+        .m-scene.is-exiting .scene_element {
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
         @media only screen and (max-width: 700px) {
             .secondary.pointing.menu .item,
             .secondary.pointing.menu .menu {
@@ -51,8 +75,24 @@
     </style>
     <script src="jquery.min.js"></script>
     <script src="semantic-ui/semantic.min.js"></script>
+    <script src="smoothState.js"></script>
     <script>
         $(function () {
+            var $body = $('html, body'),
+                    content = $('#main').smoothState({
+                        prefetch: true,
+                        pageCacheSize: 4,
+                        onStart: {
+                            duration: 250,
+                            render: function (url, $container) {
+                                content.addClass('is-exiting');
+                                $body.animate({
+                                    scrollTop: 0
+                                });
+                            }
+                        }
+                    }).data('smoothState');
+
             $('.nontech').hide();
 
             $('.dimmable.image').dimmer({
@@ -103,21 +143,33 @@
 
 <div class="ui container tech">
     <div class="ui inverted segment">
-        <div class="ui blurring dimmable centered image">
-        <div class="ui dimmer">
-            <div class="content">
-                <div class="center">
-                    <div class="ui inverted header">Pin the set of tasks by playing a simple game of darts.
-                        After getting your set of tasks, play them in a predetermined
-                        order under time constraint, fastest person to reach the end
-                        will be the winner! It’s an adrenaline filled game of speed
-                        and precision sure to put your tech knowledge to the test.</div>
+        <div class="ui two column divided grid">
+            <div class="ui blurring dimmable centered image column">
+                <div class="ui dimmer">
+                    <div class="content">
+                        <div class="center">
+                            <div class="ui inverted header">Pin the set of tasks by playing a simple game of darts.
+                                After getting your set of tasks, play them in a predetermined
+                                order under time constraint, fastest person to reach the end
+                                will be the winner! It’s an adrenaline filled game of speed
+                                and precision sure to put your tech knowledge to the test.
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <img src="images/pin.png" class="visible content">
+            </div>
+            <div class="ui column details">
+                <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                <div class="ui inverted centered header"> CC 1 - 6th floor</div>
+                <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                <div class="ui inverted centered header">Igor: 9619555302</div>
+                <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                <div class="ui inverted centered header">Rs. 100 per team</div>
+                <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                <div class="ui inverted centered header">Rs. 4000</div>
             </div>
         </div>
-        <img src="images/pin.png" class="visible content">
-    </div><DIV>Venue<BR>CC 1 - 6th floor<BR>Contact<BR>Igor: 9619555302<BR>Registration<BR>Rs. 100 per team<BR>Prize Worth<BR>Rs. 4000<BR></div>
-
     </div>
 
     <div class="ui inverted segment">
@@ -127,7 +179,8 @@
                     <div class="center">
                         <div class="ui inverted header">The participants will be given various codes to be decrypted.
                             The code will be in the form of a puzzle based on HTML,
-                            Windows and Internet</div>
+                            Windows and Internet
+                        </div>
                     </div>
                 </div>
             </div>
@@ -147,7 +200,8 @@
                             during course lectures shall be highlighted. Students will receive a
                             softcopy of all resources (E-book,ppt and sample codes) and shall
                             be introduced to coding platforms like codechef, SPOJ etc. Hands-on
-                            training and problem solving skills to be touched upon</div>
+                            training and problem solving skills to be touched upon
+                        </div>
                     </div>
                 </div>
             </div>
@@ -164,7 +218,8 @@
                             given a time limit of 2min and 30 seconds to defuse as
                             many bombs as they can. The bombs will be a combination
                             of logical circuits. The team with the maximum number of
-                            bomb defusals wins the game. 2 Participants per team</div>
+                            bomb defusals wins the game. 2 Participants per team
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,7 +236,8 @@
                             Level 2: Treasure hunt where 5 cryptic clues will be given,
                             which are hidden throughout the college premises. 2 hours
                             long. The final clue will give the problem statement of
-                            Level 3</div>
+                            Level 3
+                        </div>
                     </div>
                 </div>
             </div>
@@ -200,7 +256,8 @@
                             Third and final round is error detection
                             The team that gets and clears all three rounds successfully wins.
                             On the event of any team failing to clear all three rounds successfully,
-                            the team coming closest to perfect score wins.</div>
+                            the team coming closest to perfect score wins.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -216,7 +273,8 @@
                         <div class="ui inverted header">It is about making something useful from scrap material like
                             bottles, straws, batteries, a small motors etc. that will take
                             about one hour to make. It will later be tested in parameters
-                            like speed, efficiency.</div>
+                            like speed, efficiency.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -235,7 +293,8 @@
                             brains to make the best hovercraft according to the problem
                             statement that will be provided on the day of the competition.
                             No worries, all material will be provided by us so just get set &
-                            go..</div>
+                            go..
+                        </div>
                     </div>
                 </div>
             </div>
@@ -248,12 +307,14 @@
             <div class="ui dimmer">
                 <div class="content">
                     <div class="center">
-                        <div class="ui inverted header">The big bro of quiz up is here! Pick a theme of your choice from a
+                        <div class="ui inverted header">The big bro of quiz up is here! Pick a theme of your choice from
+                            a
                             wide range of 20+ unique topics. Test your knowledge on a topic
                             you feel to have mastered. Walk in individually or in a team of 2 &
                             go through some intense brainstorming sessions. And that’s not
                             all, you can also compete again for the same or different theme.
-                            So are you ready for the challenge?</div>
+                            So are you ready for the challenge?
+                        </div>
                     </div>
                 </div>
             </div>
@@ -269,7 +330,8 @@
                         <div class="ui inverted header">The participants are given a robot that is controlled by gyro
                             sensors in the hand. There are 10 LEDs that act as mice.
                             Participants will be given a time limit of 2 min to make the
-                            robot touch the LEDs. 2 participants per team</div>
+                            robot touch the LEDs. 2 participants per team
+                        </div>
                     </div>
                 </div>
             </div>
@@ -286,7 +348,8 @@
                             knowledge from basics to core with adrenaline fuelled tasks
                             and cutthroat tasks. With each task reaching an incredible
                             height you’re sure to feel challenge each time. So, join the
-                            race, prove yourself and be the techathon champion!</div>
+                            race, prove yourself and be the techathon champion!
+                        </div>
                     </div>
                 </div>
             </div>
@@ -298,8 +361,6 @@
 </div>
 
 
-
-
 <div class="ui container nontech">
     <div class="ui inverted segment">
         <div class="ui blurring dimmable centered image">
@@ -307,7 +368,8 @@
                 <div class="content">
                     <div class="center">
                         <div class="ui inverted header">Get in a team of 3-6 and shoot an advertisement for any non
-                            saleable product</div>
+                            saleable product
+                        </div>
                     </div>
                 </div>
             </div>
@@ -333,7 +395,8 @@
                     <div class="center">
                         <div class="ui inverted header">Team Event, 4 per team Aim to tag the opponent. Most no.
                             of tags in 5 minutes is the winner.
-                            Total overall team with most no of tags wins.</div>
+                            Total overall team with most no of tags wins.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -353,7 +416,8 @@
                             and take that shot. Aim your kick through the targets set
                             and raise the bar for the next one in line. Get all targets
                             and complete all requirements to get maximum points and
-                            rewards.</div>
+                            rewards.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -366,7 +430,8 @@
                 <div class="content">
                     <div class="center">
                         <div class="ui inverted header">Enter the amazing UV world at our UV center! Play and win.
-                            Mini-golf, table tennis, bowling</div>
+                            Mini-golf, table tennis, bowling
+                        </div>
                     </div>
                 </div>
             </div>
@@ -392,7 +457,8 @@
                 <div class="content">
                     <div class="center">
                         <div class="ui inverted header">A 5 player team game where each team shall battle it out for
-                            ultimate glory</div>
+                            ultimate glory
+                        </div>
                     </div>
                 </div>
             </div>
@@ -409,14 +475,14 @@
                             The game played is GTA in a virtual world. The game will be
                             cast on to mobile phones through Google Cardboard. Each
                             team plays 3 matches and the team that wins two matches
-                            qualifies for the next round</div>
+                            qualifies for the next round
+                        </div>
                     </div>
                 </div>
             </div>
             <img src="images/gta.png" class="visible content">
         </div>
     </div>
-
 
 
 </div>
