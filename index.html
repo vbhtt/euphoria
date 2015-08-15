@@ -27,15 +27,17 @@
     .masthead .ui.menu .ui.button {
       margin-left: 0.5em;
     }
-    .masthead h1.ui.header {
-      margin-top: 3em;
-      margin-bottom: 0em;
-      font-size: 4em;
+
+    .masthead .text {
+      position: absolute;
+      left: 25%;
+      top: 35%;
       font-weight: normal;
     }
     .masthead h2 {
       font-size: 1.7em;
       font-weight: normal;
+      display: none;
     }
 
     .ui.vertical.stripe {
@@ -114,7 +116,12 @@
       });
 
        // Dat Baaap Header
-            var header = new Vivus('header', {type: 'delayed', duration: 100, file: 'images/c-01.svg'});
+            var header = new Vivus('header', {type: 'async', duration: 200, file: 'images/c-01.svg'}, function () {
+              $('.masthead h2').transition({
+                animation: 'fade up',
+                duration: '2s'
+              });
+            });
 
       // fix menu when passed
       $('.masthead')
