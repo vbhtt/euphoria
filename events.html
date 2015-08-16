@@ -71,27 +71,14 @@
     </style>
     <script src="jquery.min.js"></script>
     <script src="semantic-ui/semantic.min.js"></script>
-    <script src="smoothState.js"></script>
+
     <script>
         $(function () {
 
             $('.ui.sidebar')
                     .sidebar('attach events', '.toc.item');
 
-            var $body = $('html, body'),
-                    content = $('#main').smoothState({
-                        prefetch: true,
-                        pageCacheSize: 4,
-                        onStart: {
-                            duration: 250,
-                            render: function (url, $container) {
-                                content.addClass('is-exiting');
-                                $body.animate({
-                                    scrollTop: 0
-                                });
-                            }
-                        }
-                    }).data('smoothState');
+
 
             $('.nontech').hide();
 
