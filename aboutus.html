@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Standard Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
     <title>About Us</title>
     <link rel="stylesheet" type="text/css" href="semantic-ui/semantic.css">
-    <script src="jquery.min.js"></script>
-    <script src="semantic-ui/semantic.min.js"></script>
     <link rel="stylesheet" href="animate.css">
 
     <style>
-        body {
+        #main {
             background: #222222;
         }
 
@@ -47,15 +50,6 @@
             animation-direction: alternate-reverse;
         }
 
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
         @media only screen and (max-width: 700px) {
             .secondary.pointing.menu .item,
             .secondary.pointing.menu .menu {
@@ -67,9 +61,14 @@
             }
         }
     </style>
+    <script src="jquery.min.js"></script>
+    <script src="semantic-ui/semantic.min.js"></script>
     <script src="smoothState.js"></script>
     <script>
         $(function () {
+            $('.ui.sidebar')
+                    .sidebar('attach events', '.toc.item');
+
             var $body = $('html, body'),
                     content = $('#main').smoothState({
                         prefetch: true,
@@ -87,293 +86,303 @@
         });
     </script>
 </head>
+
 <body>
 
-<div class="ui container">
-    <div class="ui large fluid four item secondary inverted pointing menu">
-        <a class="toc item">
-            <i class="sidebar icon"></i>
-        </a>
-        <a class="item" href="index.html">Home</a>
-        <a class="item" href="sponsors.html">Sponsors</a>
-        <a class="item" href="events.html">Events</a>
-        <a class="active item" href="aboutus.html">About Us</a>
-    </div>
+<div class="ui vertical inverted sidebar menu left">
+    <a class="item" href="index.html">Home</a>
+    <a class="item" href="sponsors.html">Sponsors</a>
+    <a class="item" href="events.html">Events</a>
+    <a class="active item" href="aboutus.html">About Us</a>
 </div>
 
-<div class="ui text container">
-    <h1 class="ui centered inverted header">
-        About Us
-    </h1>
-
-    <h2 class="ui centered inverted header">We'd love to hear from you.</h2>
-</div>
-
-<div class="ui container">
-    <div class="ui inverted horizontal divider"><h3 style="color: #005f81">Students' Council</h3></div>
-
-    <div class="ui centered stackable grid container">
-        <div class="four wide column">
-            <div class="ui compact center aligned inverted segment">
-            <img class="ui small circular image" src="images/maanav.jpg">
-
-            <div class="content">
-                <a class="header"><h3>Maanav Doshi</h3></a>
-
-                <div class="description">Technical Head</div>
-                <a class="description" href="tel:7666392946">Contact: 7666392946</a>
-            </div>
-            </div>
-        </div>
-
-        <div class="four wide column">
-            <div class="ui compact center aligned inverted segment">
-            <img class="ui small circular image" src="images/Shantanu.JPG">
-
-            <div class="content">
-                <a class="header"><h3>Shantanu Sabadra</h3></a>
-
-                <div class="description">General Secretary</div>
-                <a class="description" href="tel:9619007440">Contact: 9619007440</a>
-            </div>
-            </div>
+<div id="main" class="pusher">
+    <div class="ui container">
+        <div class="ui large fluid four item secondary inverted pointing menu">
+            <a class="toc item">
+                <i class="sidebar icon"></i>
+            </a>
+            <a class="item" href="index.html">Home</a>
+            <a class="item" href="sponsors.html">Sponsors</a>
+            <a class="item" href="events.html">Events</a>
+            <a class="active item" href="aboutus.html">About Us</a>
         </div>
     </div>
 
-    <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">WEBSITE TEAM</h3></div>
+    <div class="ui text container">
+        <h1 class="ui centered inverted header">
+            About Us
+        </h1>
 
-    <div class="ui horizontal segments">
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/flipkart.jpg">
-
-            <div class="content">
-                <a class="header"><h3>Varun Bhatt</h3></a>
-
-                <div class="description">Design Head</div>
-            </div>
-        </div>
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/flipkart.jpg">
-
-            <div class="content">
-                <a class="header"><h3>Warren Fernandes</h3></a>
-
-                <div class="description">THE BRAINS</div>
-            </div>
-        </div>
-
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/flipkart.jpg">
-
-            <div class="content">
-                <a class="header"><h3>Jason Nunes</h3></a>
-
-                <div class="description">Content Writer</div>
-            </div>
-        </div>
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/flipkart.jpg">
-
-            <div class="content">
-                <a class="header"><h3>Jason Nunes</h3></a>
-
-                <div class="description">Content Writer</div>
-            </div>
-        </div>
-
+        <h2 class="ui centered inverted header">We'd love to hear from you.</h2>
     </div>
 
+    <div class="ui container">
+        <div class="ui inverted horizontal divider"><h3 style="color: #005f81">Students' Council</h3></div>
 
-    <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">Other Councils</h3></div>
+        <div class="ui centered stackable grid container">
+            <div class="four wide column">
+                <div class="ui compact center aligned inverted segment">
+                    <img class="ui small circular image" src="images/maanav.jpg">
 
-    <div class="ui horizontal segments">
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/flipkart.jpg">
+                    <div class="content">
+                        <a class="header"><h3>Maanav Doshi</h3></a>
 
-            <div class="content">
-                <a class="header"><h3>FAIQA SHAIKH</h3></a>
-
-                <div class="description">CHAIRPERSON</div>
+                        <div class="description">Technical Head</div>
+                        <a class="description" href="tel:7666392946">Contact: 7666392946</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/Elton.jpg">
 
-            <div class="content">
-                <a class="header"><h3>ELTON DSOUZA </h3></a>
+            <div class="four wide column">
+                <div class="ui compact center aligned inverted segment">
+                    <img class="ui small circular image" src="images/Shantanu.JPG">
 
-                <div class="description">VICE CHAIRPERSON</div>
-            </div>
-        </div>
+                    <div class="content">
+                        <a class="header"><h3>Shantanu Sabadra</h3></a>
 
-    </div>
-
-    <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">IEEE</h3></div>
-
-    <div class="ui horizontal segments">
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/Rakesh.JPG">
-
-            <div class="content">
-                <a class="header"><h3>Rakesh Balasubramaniam</h3></a>
-
-                <div class="description">Technical Head!</div>
-            </div>
-        </div>
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/flipkart.jpg">
-
-            <div class="content">
-                <a class="header"><h3>Maanav Doshi</h3></a>
-
-                <div class="description">Technical Head!</div>
+                        <div class="description">General Secretary</div>
+                        <a class="description" href="tel:9619007440">Contact: 9619007440</a>
+                    </div>
+                </div>
             </div>
         </div>
 
-    </div>
+        <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">WEBSITE TEAM</h3></div>
 
-    <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">WIE</h3></div>
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/flipkart.jpg">
 
-    <div class="ui horizontal segments">
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/flipkart.jpg">
+                <div class="content">
+                    <a class="header"><h3>Varun Bhatt</h3></a>
 
-            <div class="content">
-                <a class="header"><h3>Pearl Fernandes</h3></a>
-
-                <div class="description">Technical Head!</div>
+                    <div class="description">Design Head</div>
+                </div>
             </div>
-        </div>
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/flipkart.jpg">
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/flipkart.jpg">
 
-            <div class="content">
-                <a class="header"><h3>Maanav Doshi</h3></a>
+                <div class="content">
+                    <a class="header"><h3>Warren Fernandes</h3></a>
 
-                <div class="description">Technical Head!</div>
+                    <div class="description">THE BRAINS</div>
+                </div>
             </div>
-        </div>
 
-    </div>
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/flipkart.jpg">
 
-    <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">ITSA</h3></div>
+                <div class="content">
+                    <a class="header"><h3>Jason Nunes</h3></a>
 
-    <div class="ui horizontal segments">
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/flipkart.jpg">
-
-            <div class="content">
-                <a class="header"><h3>MARYSON</h3></a>
-
-                <div class="description">CHAIRPERSON</div>
+                    <div class="description">Content Writer</div>
+                </div>
             </div>
-        </div>
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/Chaitrali.jpg">
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/flipkart.jpg">
 
-            <div class="content">
-                <a class="header"><h3>CHAITRALI</h3></a>
+                <div class="content">
+                    <a class="header"><h3>Jason Nunes</h3></a>
 
-                <div class="description">VICE CHAIRPERSON</div>
+                    <div class="description">Content Writer</div>
+                </div>
             </div>
+
         </div>
 
-    </div>
 
-    <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">NSS</h3></div>
+        <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">Other Councils</h3></div>
 
-    <div class="ui horizontal segments">
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/flipkart.jpg">
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/flipkart.jpg">
 
-            <div class="content">
-                <a class="header"><h3>BENJAMIN PATRAO</h3></a>
+                <div class="content">
+                    <a class="header"><h3>FAIQA SHAIKH</h3></a>
 
-                <div class="description">CHAIRPERSON</div>
+                    <div class="description">CHAIRPERSON</div>
+                </div>
             </div>
-        </div>
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/flipkart.jpg">
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/Elton.jpg">
 
-            <div class="content">
-                <a class="header"><h3></h3></a>
+                <div class="content">
+                    <a class="header"><h3>ELTON DSOUZA </h3></a>
 
-                <div class="description">VICE CHAIRPERSON</div>
+                    <div class="description">VICE CHAIRPERSON</div>
+                </div>
             </div>
-        </div>
 
-    </div>
-
-    <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">SAE</h3></div>
-
-    <div class="ui horizontal segments">
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/flipkart.jpg">
-
-            <div class="content">
-                <a class="header"><h3>RAGINI JOSHI</h3></a>
-
-                <div class="description">CHAIRPERSON</div>
-            </div>
-        </div>
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/Gautam.png">
-
-            <div class="content">
-                <a class="header"><h3>GAUTAM SHIDHAYE</h3></a>
-
-                <div class="description">VICE CHAIRPERSON</div>
-            </div>
         </div>
 
-    </div>
+        <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">IEEE</h3></div>
 
-    <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">ASME</h3></div>
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/Rakesh.JPG">
 
-    <div class="ui horizontal segments">
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/Rishabh.png">
+                <div class="content">
+                    <a class="header"><h3>Rakesh Balasubramaniam</h3></a>
 
-            <div class="content">
-                <a class="header"><h3>Rishabh Parekh</h3></a>
-
-                <div class="description">Technical Head!</div>
+                    <div class="description">Technical Head!</div>
+                </div>
             </div>
-        </div>
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/flipkart.jpg">
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/flipkart.jpg">
 
-            <div class="content">
-                <a class="header"><h3>Maanav Doshi</h3></a>
+                <div class="content">
+                    <a class="header"><h3>Maanav Doshi</h3></a>
 
-                <div class="description">Technical Head!</div>
+                    <div class="description">Technical Head!</div>
+                </div>
             </div>
-        </div>
 
-    </div>
-
-    <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">E CELL</h3></div>
-
-    <div class="ui horizontal segments">
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/flipkart.jpg">
-
-            <div class="content">
-                <a class="header"><h3>AAKAR KALE</h3></a>
-
-                <div class="description">CHAIRPERSON</div>
-            </div>
-        </div>
-        <div class="ui segment">
-            <img class="ui small circular image" src="images/flipkart.jpg">
-
-            <div class="content">
-                <a class="header"><h3>RACHIT VIJAN</h3></a>
-
-                <div class="description">VICE CHAIRPERSON</div>
-            </div>
         </div>
 
+        <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">WIE</h3></div>
+
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/flipkart.jpg">
+
+                <div class="content">
+                    <a class="header"><h3>Pearl Fernandes</h3></a>
+
+                    <div class="description">Technical Head!</div>
+                </div>
+            </div>
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/flipkart.jpg">
+
+                <div class="content">
+                    <a class="header"><h3>Maanav Doshi</h3></a>
+
+                    <div class="description">Technical Head!</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">ITSA</h3></div>
+
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/flipkart.jpg">
+
+                <div class="content">
+                    <a class="header"><h3>MARYSON</h3></a>
+
+                    <div class="description">CHAIRPERSON</div>
+                </div>
+            </div>
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/Chaitrali.jpg">
+
+                <div class="content">
+                    <a class="header"><h3>CHAITRALI</h3></a>
+
+                    <div class="description">VICE CHAIRPERSON</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">NSS</h3></div>
+
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/flipkart.jpg">
+
+                <div class="content">
+                    <a class="header"><h3>BENJAMIN PATRAO</h3></a>
+
+                    <div class="description">CHAIRPERSON</div>
+                </div>
+            </div>
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/flipkart.jpg">
+
+                <div class="content">
+                    <a class="header"><h3></h3></a>
+
+                    <div class="description">VICE CHAIRPERSON</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">SAE</h3></div>
+
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/flipkart.jpg">
+
+                <div class="content">
+                    <a class="header"><h3>RAGINI JOSHI</h3></a>
+
+                    <div class="description">CHAIRPERSON</div>
+                </div>
+            </div>
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/Gautam.png">
+
+                <div class="content">
+                    <a class="header"><h3>GAUTAM SHIDHAYE</h3></a>
+
+                    <div class="description">VICE CHAIRPERSON</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">ASME</h3></div>
+
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/Rishabh.png">
+
+                <div class="content">
+                    <a class="header"><h3>Rishabh Parekh</h3></a>
+
+                    <div class="description">Technical Head!</div>
+                </div>
+            </div>
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/flipkart.jpg">
+
+                <div class="content">
+                    <a class="header"><h3>Maanav Doshi</h3></a>
+
+                    <div class="description">Technical Head!</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ui inverted horizontal divider"><h3 style="color: #00b5ad">E CELL</h3></div>
+
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/flipkart.jpg">
+
+                <div class="content">
+                    <a class="header"><h3>AAKAR KALE</h3></a>
+
+                    <div class="description">CHAIRPERSON</div>
+                </div>
+            </div>
+            <div class="ui segment">
+                <img class="ui small circular image" src="images/flipkart.jpg">
+
+                <div class="content">
+                    <a class="header"><h3>RACHIT VIJAN</h3></a>
+
+                    <div class="description">VICE CHAIRPERSON</div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </div>
 </body>

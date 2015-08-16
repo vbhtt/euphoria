@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Standard Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
     <title>Our Awesome Sponsors</title>
     <link rel="stylesheet" type="text/css" href="semantic-ui/semantic.css">
     <link rel="stylesheet" href="animate.css">
 
     <style>
-        body {
+        #main {
             background: #222222;
         }
 
@@ -49,15 +54,6 @@
             animation-direction: alternate-reverse;
         }
 
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
         @media only screen and (max-width: 700px) {
             .secondary.pointing.menu .item,
             .secondary.pointing.menu .menu {
@@ -74,6 +70,10 @@
     <script src="smoothState.js"></script>
     <script>
         $(function () {
+
+            $('.ui.sidebar')
+                    .sidebar('attach events', '.toc.item');
+
             $('.special.cards .image').dimmer({
                 on: 'hover'
             })
@@ -98,51 +98,61 @@
 
 <body>
 
-<div class="ui container">
-    <div class="ui large fluid four item secondary inverted pointing menu">
-        <a class="toc item">
-            <i class="sidebar icon"></i>
-        </a>
-        <a class="item" href="index.html">Home</a>
-        <a class="active item" href="sponsors.html">Sponsors</a>
-        <a class="item" href="events.html">Events</a>
-        <a class="item" href="aboutus.html">About Us</a>
-    </div>
+<div class="ui vertical inverted sidebar menu left">
+    <a class="item" href="index.html">Home</a>
+    <a class="active item" href="sponsors.html">Sponsors</a>
+    <a class="item" href="events.html">Events</a>
+    <a class="item" href="aboutus.html">About Us</a>
 </div>
 
-<div class="ui text container">
-    <h1 class="ui centered inverted header">
-        Sponsors
-    </h1>
-
-    <h2 class="ui centered inverted header">The people that made this possible.</h2>
-</div>
-
-<div class="ui centered special cards">
-    <div class="ui card">
-        <div class="blurring dimmable image">
-            <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <a class="ui inverted button" href="http://www.endeavorcareers.com/" target="_blank">Click
-                            here!</a>
-                    </div>
-                </div>
-            </div>
-            <img src="images/endeavor.png" class="visible content">
+<div id="main" class="pusher">
+    <div class="ui container">
+        <div class="ui large fluid four item secondary inverted pointing menu">
+            <a class="toc item">
+                <i class="sidebar icon"></i>
+            </a>
+            <a class="item" href="index.html">Home</a>
+            <a class="active item" href="sponsors.html">Sponsors</a>
+            <a class="item" href="events.html">Events</a>
+            <a class="item" href="aboutus.html">About Us</a>
         </div>
     </div>
 
-    <div class="ui card">
-        <div class="blurring dimmable image">
-            <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <a class="ui inverted button" href="http://buckaroo.co.in/" target="_blank">Check them out !</a>
+    <div class="ui text container">
+        <h1 class="ui centered inverted header">
+            Sponsors
+        </h1>
+
+        <h2 class="ui centered inverted header">The people that made this possible.</h2>
+    </div>
+
+    <div class="ui centered special cards">
+        <div class="ui card">
+            <div class="blurring dimmable image">
+                <div class="ui dimmer">
+                    <div class="content">
+                        <div class="center">
+                            <a class="ui inverted button" href="http://www.endeavorcareers.com/" target="_blank">Click
+                                here!</a>
+                        </div>
                     </div>
                 </div>
+                <img src="images/endeavor.png" class="visible content">
             </div>
-            <img src="images/bk.png" class="visible content">
+        </div>
+
+        <div class="ui card">
+            <div class="blurring dimmable image">
+                <div class="ui dimmer">
+                    <div class="content">
+                        <div class="center">
+                            <a class="ui inverted button" href="http://buckaroo.co.in/" target="_blank">Check them out
+                                !</a>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/bk.png" class="visible content">
+            </div>
         </div>
     </div>
 </div>

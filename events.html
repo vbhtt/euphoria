@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Standard Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
     <title>Events</title>
     <link rel="stylesheet" type="text/css" href="semantic-ui/semantic.css">
     <link rel="stylesheet" href="animate.css">
 
     <style>
-        body {
+        #main {
             background: #222222;
         }
 
@@ -53,15 +58,6 @@
             animation-direction: alternate-reverse;
         }
 
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
         @media only screen and (max-width: 700px) {
             .secondary.pointing.menu .item,
             .secondary.pointing.menu .menu {
@@ -78,6 +74,10 @@
     <script src="smoothState.js"></script>
     <script>
         $(function () {
+
+            $('.ui.sidebar')
+                    .sidebar('attach events', '.toc.item');
+
             var $body = $('html, body'),
                     content = $('#main').smoothState({
                         prefetch: true,
@@ -116,111 +116,124 @@
     </script>
 </head>
 <body>
-<div class="ui container">
-    <div class="ui large fluid four item secondary inverted pointing menu">
-        <a class="toc item">
-            <i class="sidebar icon"></i>
-        </a>
-        <a class="item" href="index.html">Home</a>
-        <a class="item" href="sponsors.html">Sponsors</a>
-        <a class="active item">Events</a>
-        <a class="item" href="aboutus.html">About Us</a>
+
+<div class="ui vertical inverted sidebar menu left">
+    <a class="item" href="index.html">Home</a>
+    <a class="item" href="sponsors.html">Sponsors</a>
+    <a class="active item" href="events.html">Events</a>
+    <a class="item" href="aboutus.html">About Us</a>
+</div>
+
+<div id="main" class="pusher">
+
+    <div class="ui container">
+        <div class="ui large fluid four item secondary inverted pointing menu">
+            <a class="toc item">
+                <i class="sidebar icon"></i>
+            </a>
+            <a class="item" href="index.html">Home</a>
+            <a class="item" href="sponsors.html">Sponsors</a>
+            <a class="active item">Events</a>
+            <a class="item" href="aboutus.html">About Us</a>
+        </div>
     </div>
-</div>
 
-<div class="ui text container">
-    <h1 class="ui centered inverted header">
-        Events
-    </h1>
+    <div class="ui text container">
+        <h1 class="ui centered inverted header">
+            Events
+        </h1>
 
-    <h2 class="ui centered inverted header">It's all fun and games.</h2>
-</div>
+        <h2 class="ui centered inverted header">It's all fun and games.</h2>
+    </div>
 
-<div class="ui large fluid green four item secondary inverted pointing menu">
-    <div id="tech" class="ui active item">Technical</div>
-    <div id="nontech" class="ui item">Non Technical</div>
-</div>
+    <div class="ui two item inverted green stackable menu">
+        <div id="tech" class="ui active item">Technical</div>
+        <div id="nontech" class="ui item">Non Technical</div>
+    </div>
 
-<div class="ui container tech">
-    <div class="ui inverted segment">
-        <div class="ui two column divided grid">
-            <div class="ui blurring dimmable centered image column">
-                <div class="ui dimmer">
-                    <div class="content">
-                        <div class="center">
-                            <div class="ui inverted header">Pin the set of tasks by playing a simple game of darts.
-                                After getting your set of tasks, play them in a predetermined
-                                order under time constraint, fastest person to reach the end
-                                will be the winner! It’s an adrenaline filled game of speed
-                                and precision sure to put your tech knowledge to the test.
+    <div class="ui container tech">
+        <div class="ui inverted segment">
+            <div class="ui two column stackable divided grid">
+                <div class="ui blurring dimmable centered image column">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">Pin the set of tasks by playing a simple game of darts.
+                                    After getting your set of tasks, play them in a predetermined
+                                    order under time constraint, fastest person to reach the end
+                                    will be the winner! It’s an adrenaline filled game of speed
+                                    and precision sure to put your tech knowledge to the test.
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <img src="images/pin.png" class="visible content">
                 </div>
-                <img src="images/pin.png" class="visible content">
-            </div>
-            <div class="ui column details">
-                <div class="ui horizontal inverted divider"><b>Venue:</b></div>
-                <div class="ui inverted centered header">School Auditorium</div>
-                <div class="ui horizontal inverted divider"><b>Contact:</b></div>
-                <div class="ui inverted centered header">Wayne: 9820292567</div>
-                <div class="ui horizontal inverted divider"><b>Registration:</b></div>
-                <div class="ui inverted centered header">Rs 40/person</div>
-                <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
-                <div class="ui inverted centered header">Rs 2500</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="ui inverted segment">
-        <div class="ui two column divided grid">
-            <div class="ui blurring dimmable centered image column">
-                <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">The participants will be given various codes to be decrypted.
-                            The code will be in the form of a puzzle based on HTML,
-                            Windows and Internet
-                        </div>
-                    </div>
+                <div class="ui column details">
+                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                    <div class="ui inverted centered header">School Auditorium</div>
+                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                    <div class="ui inverted centered header">Wayne: 9820292567</div>
+                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                    <div class="ui inverted centered header">Rs 40/person</div>
+                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                    <div class="ui inverted centered header">Rs 2500</div>
                 </div>
             </div>
-            <img src="images/codehunt.png" class="visible content">
         </div>
-            <div class="ui column details">
-                <div class="ui horizontal inverted divider"><b>Venue:</b></div>
-                <div class="ui inverted centered header">-</div>
-                <div class="ui horizontal inverted divider"><b>Contact:</b></div>
-                <div class="ui inverted centered header">Alroy: 9702165655</div>
-                <div class="ui horizontal inverted divider"><b>Registration:</b></div>
-                <div class="ui inverted centered header">single: Rs.20
-                    pair: Rs. 30</div>
-                <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
-                <div class="ui inverted centered header">Rs. 2000</div>
-            </div>
-            </div>
-    </div>
 
         <div class="ui inverted segment">
-            <div class="ui two column divided grid">
+            <div class="ui two column stackable divided grid">
                 <div class="ui blurring dimmable centered image column">
                     <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">A seminar shall be conducted to acquaint fresher students to C
-                            Language. A comprehensive overview of all subtopics shall be
-                            given with emphasis on aspects like documentation, modularity, reusability,
-                            indentation and other such topics that can’t be covered
-                            during course lectures shall be highlighted. Students will receive a
-                            softcopy of all resources (E-book,ppt and sample codes) and shall
-                            be introduced to coding platforms like codechef, SPOJ etc. Hands-on
-                            training and problem solving skills to be touched upon
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">The participants will be given various codes to be
+                                    decrypted.
+                                    The code will be in the form of a puzzle based on HTML,
+                                    Windows and Internet
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <img src="images/codehunt.png" class="visible content">
+                </div>
+                <div class="ui column details">
+                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                    <div class="ui inverted centered header">-</div>
+                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                    <div class="ui inverted centered header">Alroy: 9702165655</div>
+                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                    <div class="ui inverted centered header">single: Rs.20
+                        pair: Rs. 30
+                    </div>
+                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                    <div class="ui inverted centered header">Rs. 2000</div>
                 </div>
             </div>
-            <img src="images/cprog.png" class="visible content">
         </div>
+
+        <div class="ui inverted segment">
+            <div class="ui two column stackable divided grid">
+                <div class="ui blurring dimmable centered image column">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">A seminar shall be conducted to acquaint fresher
+                                    students to C
+                                    Language. A comprehensive overview of all subtopics shall be
+                                    given with emphasis on aspects like documentation, modularity, reusability,
+                                    indentation and other such topics that can’t be covered
+                                    during course lectures shall be highlighted. Students will receive a
+                                    softcopy of all resources (E-book,ppt and sample codes) and shall
+                                    be introduced to coding platforms like codechef, SPOJ etc. Hands-on
+                                    training and problem solving skills to be touched upon
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/cprog.png" class="visible content">
+                </div>
                 <div class="ui column details">
                     <div class="ui horizontal inverted divider"><b>Venue:</b></div>
                     <div class="ui inverted centered header"> Room 611</div>
@@ -232,297 +245,305 @@
                     <div class="ui inverted centered header">2 hours</div>
                 </div>
             </div>
-    </div>
-
-            <div class="ui inverted segment">
-                <div class="ui two column divided grid">
-                    <div class="ui blurring dimmable centered image column">
-                        <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">10 logical bombs are placed in a room. Participants are
-                            given a time limit of 2min and 30 seconds to defuse as
-                            many bombs as they can. The bombs will be a combination
-                            of logical circuits. The team with the maximum number of
-                            bomb defusals wins the game. 2 Participants per team
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="images/diffuse.png" class="visible content">
         </div>
-                    <div class="ui column details">
-                        <div class="ui horizontal inverted divider"><b>Venue:</b></div>
-                        <div class="ui inverted centered header"> Room 302</div>
-                        <div class="ui horizontal inverted divider"><b>Contact:</b></div>
-                        <div class="ui inverted centered header">Savio: 7303270469</div>
-                        <div class="ui horizontal inverted divider"><b>Registration:</b></div>
-                        <div class="ui inverted centered header">Rs. 60 per team</div>
-                        <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
-                        <div class="ui inverted centered header">Rs. 3000</div>
-                    </div>
-                </div>
-    </div>
-
-                <div class="ui inverted segment">
-                    <div class="ui two column divided grid">
-                        <div class="ui blurring dimmable centered image column">
-                            <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">Level 1: A riddle based game of 45 minutess
-                            Level 2: Treasure hunt where 5 cryptic clues will be given,
-                            which are hidden throughout the college premises. 2 hours
-                            long. The final clue will give the problem statement of
-                            Level 3
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="images/encryp.png" class="visible content">
-        </div>
-                        <div class="ui column details">
-                            <div class="ui horizontal inverted divider"><b>Venue:</b></div>
-                            <div class="ui inverted centered header"> Rooms 801, 802</div>
-                            <div class="ui horizontal inverted divider"><b>Contact:</b></div>
-                            <div class="ui inverted centered header">Lillita: 9769382695</div>
-                            <div class="ui horizontal inverted divider"><b>Registration:</b></div>
-                            <div class="ui inverted centered header">RS 75 single
-                                Rs 100 per pair</div>
-                            <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
-                            <div class="ui inverted centered header">Rs 4000</div>
-                        </div>
-                    </div>
-    </div>
-
-                    <div class="ui inverted segment">
-                        <div class="ui two column divided grid">
-                            <div class="ui blurring dimmable centered image column">
-                                <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">Team Event,2 players per team. It is a 3 round competition.
-                            First Round is technical crossword
-                            Second round is coding problem
-                            Third and final round is error detection
-                            The team that gets and clears all three rounds successfully wins.
-                            On the event of any team failing to clear all three rounds successfully,
-                            the team coming closest to perfect score wins.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="images/gameofcodes.png" class="visible content">
-        </div>
-                            <div class="ui column details">
-                                <div class="ui horizontal inverted divider"><b>Venue:</b></div>
-                                <div class="ui inverted centered header"> CC 2 - 6th floor</div>
-                                <div class="ui horizontal inverted divider"><b>Contact:</b></div>
-                                <div class="ui inverted centered header">Aditya: 9757012805</div>
-                                <div class="ui horizontal inverted divider"><b>Registration:</b></div>
-                                <div class="ui inverted centered header">Rs. 100 per team</div>
-                                <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
-                                <div class="ui inverted centered header">Rs. 4000</div>
-                            </div>
-                        </div>
-    </div>
-
-                        <div class="ui inverted segment">
-                            <div class="ui two column divided grid">
-                                <div class="ui blurring dimmable centered image column">
-                                    <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">It is about making something useful from scrap material like
-                            bottles, straws, batteries, a small motors etc. that will take
-                            about one hour to make. It will later be tested in parameters
-                            like speed, efficiency.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="images/junk.png" class="visible content">
-        </div>
-                                <div class="ui column details">
-                                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
-                                    <div class="ui inverted centered header"> Room 307</div>
-                                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
-                                    <div class="ui inverted centered header">Immanuel: 8879119105</div>
-                                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
-                                    <div class="ui inverted centered header">Rs. 100 per team</div>
-                                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
-                                    <div class="ui inverted centered header">Rs 3500</div>
-                                </div>
-                            </div>
-    </div>
-
-                            <div class="ui inverted segment">
-                                <div class="ui two column divided grid">
-                                    <div class="ui blurring dimmable centered image column">
-                                        <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">Are you one of those crazy racing fans? Then here is a chance
-                            to test your fabricating skills & compete with your opponents
-                            in a race that too with your self designed hovercraft. Rack your
-                            brains to make the best hovercraft according to the problem
-                            statement that will be provided on the day of the competition.
-                            No worries, all material will be provided by us so just get set &
-                            go..
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="images/prop.png" class="visible content">
-        </div>
-                                    <div class="ui column details">
-                                        <div class="ui horizontal inverted divider"><b>Venue:</b></div>
-                                        <div class="ui inverted centered header"> Room 407</div>
-                                        <div class="ui horizontal inverted divider"><b>Contact:</b></div>
-                                        <div class="ui inverted centered header">Rishabh: 8097141561</div>
-                                        <div class="ui horizontal inverted divider"><b>Registration:</b></div>
-                                        <div class="ui inverted centered header">Rs. 100 per team</div>
-                                        <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
-                                        <div class="ui inverted centered header">Rs 5000</div>
-                                    </div>
-                                </div>
-    </div>
-
-                                <div class="ui inverted segment">
-                                    <div class="ui two column divided grid">
-                                        <div class="ui blurring dimmable centered image column">
-                                            <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">The big bro of quiz up is here! Pick a theme of your choice from
-                            a
-                            wide range of 20+ unique topics. Test your knowledge on a topic
-                            you feel to have mastered. Walk in individually or in a team of 2 &
-                            go through some intense brainstorming sessions. And that’s not
-                            all, you can also compete again for the same or different theme.
-                            So are you ready for the challenge?
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="images/quiz.png" class="visible content">
-        </div>
-                                        <div class="ui column details">
-                                            <div class="ui horizontal inverted divider"><b>Venue:</b></div>
-                                            <div class="ui inverted centered header"> Room 401</div>
-                                            <div class="ui horizontal inverted divider"><b>Contact:</b></div>
-                                            <div class="ui inverted centered header">Srishti: 9920802227</div>
-                                            <div class="ui horizontal inverted divider"><b>Registration:</b></div>
-                                            <div class="ui inverted centered header">Rs 15 per person</div>
-                                            <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
-                                            <div class="ui inverted centered header">Rs 2000</div>
-                                        </div>
-                                    </div>
-    </div>
-
-                                    <div class="ui inverted segment">
-                                        <div class="ui two column divided grid">
-                                            <div class="ui blurring dimmable centered image column">
-                                                <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">The participants are given a robot that is controlled by gyro
-                            sensors in the hand. There are 10 LEDs that act as mice.
-                            Participants will be given a time limit of 2 min to make the
-                            robot touch the LEDs. 2 participants per team
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="images/robosnake.png" class="visible content">
-        </div>
-                                            <div class="ui column details">
-                                                <div class="ui horizontal inverted divider"><b>Venue:</b></div>
-                                                <div class="ui inverted centered header"> Room 303</div>
-                                                <div class="ui horizontal inverted divider"><b>Contact:</b></div>
-                                                <div class="ui inverted centered header">Savio: 7303270469</div>
-                                                <div class="ui horizontal inverted divider"><b>Registration:</b></div>
-                                                <div class="ui inverted centered header">Rs 60 per team</div>
-                                                <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
-                                                <div class="ui inverted centered header">Rs. 2000</div>
-                                            </div>
-                                        </div>
-    </div>
-
-                                        <div class="ui inverted segment">
-                                            <div class="ui two column divided grid">
-                                                <div class="ui blurring dimmable centered image column">
-                                                    <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">Techathon is a race against time challenging your technical
-                            knowledge from basics to core with adrenaline fuelled tasks
-                            and cutthroat tasks. With each task reaching an incredible
-                            height you’re sure to feel challenge each time. So, join the
-                            race, prove yourself and be the techathon champion!
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="images/techathon.png" class="visible content">
-        </div>
-                                                <div class="ui column details">
-                                                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
-                                                    <div class="ui inverted centered header"> Room 406</div>
-                                                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
-                                                    <div class="ui inverted centered header">Shruti: 7666911202</div>
-                                                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
-                                                    <div class="ui inverted centered header">Rs 150 per team</div>
-                                                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
-                                                    <div class="ui inverted centered header">Rs 5000</div>
-                                                </div>
-                                            </div>
-    </div>
-
-
-</div>
-
-
-<div class="ui container nontech">
-    <div class="ui inverted segment">
-        <div class="ui two column divided grid">
-            <div class="ui blurring dimmable centered image column">
-                <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">Get in a team of 3-6 and shoot an advertisement for any non
-                            saleable product
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="images/ad.png" class="visible content">
-        </div>
-            <div class="ui column details">
-                <div class="ui horizontal inverted divider"><b>Venue:</b></div>
-                <div class="ui inverted centered header">Seminar Hall</div>
-                <div class="ui horizontal inverted divider"><b>Contact:</b></div>
-                <div class="ui inverted centered header">Rachit: 9664693022</div>
-                <div class="ui horizontal inverted divider"><b>Registration:</b></div>
-                <div class="ui inverted centered header">Rs. 100 per team</div>
-                <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
-                <div class="ui inverted centered header">Rs 3000</div>
-            </div>
-        </div>
-    </div>
 
         <div class="ui inverted segment">
-            <div class="ui two column divided grid">
+            <div class="ui two column stackable divided grid">
                 <div class="ui blurring dimmable centered image column">
                     <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">CONSOLE GAMING</div>
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">10 logical bombs are placed in a room. Participants are
+                                    given a time limit of 2min and 30 seconds to defuse as
+                                    many bombs as they can. The bombs will be a combination
+                                    of logical circuits. The team with the maximum number of
+                                    bomb defusals wins the game. 2 Participants per team
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <img src="images/diffuse.png" class="visible content">
+                </div>
+                <div class="ui column details">
+                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                    <div class="ui inverted centered header"> Room 302</div>
+                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                    <div class="ui inverted centered header">Savio: 7303270469</div>
+                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                    <div class="ui inverted centered header">Rs. 60 per team</div>
+                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                    <div class="ui inverted centered header">Rs. 3000</div>
                 </div>
             </div>
-            <img src="images/console.png" class="visible content">
         </div>
+
+        <div class="ui inverted segment">
+            <div class="ui two column stackable divided grid">
+                <div class="ui blurring dimmable centered image column">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">Level 1: A riddle based game of 45 minutess
+                                    Level 2: Treasure hunt where 5 cryptic clues will be given,
+                                    which are hidden throughout the college premises. 2 hours
+                                    long. The final clue will give the problem statement of
+                                    Level 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/encryp.png" class="visible content">
+                </div>
+                <div class="ui column details">
+                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                    <div class="ui inverted centered header"> Rooms 801, 802</div>
+                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                    <div class="ui inverted centered header">Lillita: 9769382695</div>
+                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                    <div class="ui inverted centered header">RS 75 single
+                        Rs 100 per pair
+                    </div>
+                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                    <div class="ui inverted centered header">Rs 4000</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui inverted segment">
+            <div class="ui two column stackable divided grid">
+                <div class="ui blurring dimmable centered image column">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">Team Event,2 players per team. It is a 3 round
+                                    competition.
+                                    First Round is technical crossword
+                                    Second round is coding problem
+                                    Third and final round is error detection
+                                    The team that gets and clears all three rounds successfully wins.
+                                    On the event of any team failing to clear all three rounds successfully,
+                                    the team coming closest to perfect score wins.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/gameofcodes.png" class="visible content">
+                </div>
+                <div class="ui column details">
+                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                    <div class="ui inverted centered header"> CC 2 - 6th floor</div>
+                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                    <div class="ui inverted centered header">Aditya: 9757012805</div>
+                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                    <div class="ui inverted centered header">Rs. 100 per team</div>
+                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                    <div class="ui inverted centered header">Rs. 4000</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui inverted segment">
+            <div class="ui two column stackable divided grid">
+                <div class="ui blurring dimmable centered image column">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">It is about making something useful from scrap material
+                                    like
+                                    bottles, straws, batteries, a small motors etc. that will take
+                                    about one hour to make. It will later be tested in parameters
+                                    like speed, efficiency.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/junk.png" class="visible content">
+                </div>
+                <div class="ui column details">
+                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                    <div class="ui inverted centered header"> Room 307</div>
+                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                    <div class="ui inverted centered header">Immanuel: 8879119105</div>
+                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                    <div class="ui inverted centered header">Rs. 100 per team</div>
+                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                    <div class="ui inverted centered header">Rs 3500</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui inverted segment">
+            <div class="ui two column stackable divided grid">
+                <div class="ui blurring dimmable centered image column">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">Are you one of those crazy racing fans? Then here is a
+                                    chance
+                                    to test your fabricating skills & compete with your opponents
+                                    in a race that too with your self designed hovercraft. Rack your
+                                    brains to make the best hovercraft according to the problem
+                                    statement that will be provided on the day of the competition.
+                                    No worries, all material will be provided by us so just get set &
+                                    go..
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/prop.png" class="visible content">
+                </div>
+                <div class="ui column details">
+                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                    <div class="ui inverted centered header"> Room 407</div>
+                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                    <div class="ui inverted centered header">Rishabh: 8097141561</div>
+                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                    <div class="ui inverted centered header">Rs. 100 per team</div>
+                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                    <div class="ui inverted centered header">Rs 5000</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui inverted segment">
+            <div class="ui two column stackable divided grid">
+                <div class="ui blurring dimmable centered image column">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">The big bro of quiz up is here! Pick a theme of your
+                                    choice from
+                                    a
+                                    wide range of 20+ unique topics. Test your knowledge on a topic
+                                    you feel to have mastered. Walk in individually or in a team of 2 &
+                                    go through some intense brainstorming sessions. And that’s not
+                                    all, you can also compete again for the same or different theme.
+                                    So are you ready for the challenge?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/quiz.png" class="visible content">
+                </div>
+                <div class="ui column details">
+                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                    <div class="ui inverted centered header"> Room 401</div>
+                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                    <div class="ui inverted centered header">Srishti: 9920802227</div>
+                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                    <div class="ui inverted centered header">Rs 15 per person</div>
+                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                    <div class="ui inverted centered header">Rs 2000</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui inverted segment">
+            <div class="ui two column stackable divided grid">
+                <div class="ui blurring dimmable centered image column">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">The participants are given a robot that is controlled by
+                                    gyro
+                                    sensors in the hand. There are 10 LEDs that act as mice.
+                                    Participants will be given a time limit of 2 min to make the
+                                    robot touch the LEDs. 2 participants per team
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/robosnake.png" class="visible content">
+                </div>
+                <div class="ui column details">
+                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                    <div class="ui inverted centered header"> Room 303</div>
+                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                    <div class="ui inverted centered header">Savio: 7303270469</div>
+                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                    <div class="ui inverted centered header">Rs 60 per team</div>
+                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                    <div class="ui inverted centered header">Rs. 2000</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui inverted segment">
+            <div class="ui two column stackable divided grid">
+                <div class="ui blurring dimmable centered image column">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">Techathon is a race against time challenging your
+                                    technical
+                                    knowledge from basics to core with adrenaline fuelled tasks
+                                    and cutthroat tasks. With each task reaching an incredible
+                                    height you’re sure to feel challenge each time. So, join the
+                                    race, prove yourself and be the techathon champion!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/techathon.png" class="visible content">
+                </div>
+                <div class="ui column details">
+                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                    <div class="ui inverted centered header"> Room 406</div>
+                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                    <div class="ui inverted centered header">Shruti: 7666911202</div>
+                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                    <div class="ui inverted centered header">Rs 150 per team</div>
+                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                    <div class="ui inverted centered header">Rs 5000</div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="ui container nontech">
+        <div class="ui inverted segment">
+            <div class="ui two column stackable divided grid">
+                <div class="ui blurring dimmable centered image column">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">Get in a team of 3-6 and shoot an advertisement for any
+                                    non
+                                    saleable product
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/ad.png" class="visible content">
+                </div>
+                <div class="ui column details">
+                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                    <div class="ui inverted centered header">Seminar Hall</div>
+                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                    <div class="ui inverted centered header">Rachit: 9664693022</div>
+                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                    <div class="ui inverted centered header">Rs. 100 per team</div>
+                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                    <div class="ui inverted centered header">Rs 3000</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui inverted segment">
+            <div class="ui two column stackable divided grid">
+                <div class="ui blurring dimmable centered image column">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">CONSOLE GAMING</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/console.png" class="visible content">
+                </div>
                 <div class="ui column details">
                     <div class="ui horizontal inverted divider"><b>Venue:</b></div>
                     <div class="ui inverted centered header"> Room 209</div>
@@ -534,187 +555,193 @@
                     <div class="ui inverted centered header">RS 3000</div>
                 </div>
             </div>
-    </div>
-
-
-            <div class="ui inverted segment">
-                <div class="ui two column divided grid">
-                    <div class="ui blurring dimmable centered image column">
-                        <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">Team Event, 4 per team Aim to tag the opponent. Most no.
-                            of tags in 5 minutes is the winner.
-                            Total overall team with most no of tags wins.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="images/lazer.png" class="visible content">
         </div>
-                    <div class="ui column details">
-                        <div class="ui horizontal inverted divider"><b>Venue:</b></div>
-                        <div class="ui inverted centered header"> ED hall - 5th floor</div>
-                        <div class="ui horizontal inverted divider"><b>Contact:</b></div>
-                        <div class="ui inverted centered header">Yash: 9619260195</div>
-                        <div class="ui horizontal inverted divider"><b>Registration:</b></div>
-                        <div class="ui inverted centered header">Rs. 100 per team</div>
-                        <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
-                        <div class="ui inverted centered header">Rs. 8000</div>
-                    </div>
-                </div>
-    </div>
-
-                <div class="ui inverted segment">
-                    <div class="ui two column divided grid">
-                        <div class="ui blurring dimmable centered image column">
-                            <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">Its not just a game, Its Passion, Its Football! Calling on the
-                            most enthusiastic football players of our college and beyond.
-                            Yes, the season of Football may be over but here at Fr.CRCE
-                            the game is always on! Think you got what it
-                            takes? Then step into the field, get your aiming shoes on
-                            and take that shot. Aim your kick through the targets set
-                            and raise the bar for the next one in line. Get all targets
-                            and complete all requirements to get maximum points and
-                            rewards.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="images/kick.png" class="visible content">
-        </div>
-                        <div class="ui column details">
-                            <div class="ui horizontal inverted divider"><b>Venue:</b></div>
-                            <div class="ui inverted centered header"> Room 511</div>
-                            <div class="ui horizontal inverted divider"><b>Contact:</b></div>
-                            <div class="ui inverted centered header">Rahul: 8097585170</div>
-                            <div class="ui horizontal inverted divider"><b>Registration:</b></div>
-                            <div class="ui inverted centered header">Rs 30 for 4 shots</div>
-                            <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
-                            <div class="ui inverted centered header">Rs 2000</div>
-                        </div>
-                    </div>
-    </div>
 
 
-                    <div class="ui inverted segment">
-                        <div class="ui two column divided grid">
-                            <div class="ui blurring dimmable centered image column">
-                                <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">Enter the amazing UV world at our UV center! Play and win.
-                            Mini-golf, table tennis, bowling
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="images/uv.png" class="visible content">
-        </div>
-                            <div class="ui column details">
-                                <div class="ui horizontal inverted divider"><b>Venue:</b></div>
-                                <div class="ui inverted centered header"> Room 610</div>
-                                <div class="ui horizontal inverted divider"><b>Contact:</b></div>
-                                <div class="ui inverted centered header">Sheldon: 8446823256</div>
-                                <div class="ui horizontal inverted divider"><b>Registration:</b></div>
-                                <div class="ui inverted centered header">bowling-Rs 100
-                                    golf-Rs 50
-                                    tt-Rs 50</div>
-                                <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
-                                <div class="ui inverted centered header">Rs 5000</div>
-                            </div>
-                        </div>
-    </div>
-
-
-                        <div class="ui inverted segment">
-                            <div class="ui two column divided grid">
-                                <div class="ui blurring dimmable centered image column">
-                                    <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">MUMBAI BEHIND THE SCENES</div>
-                    </div>
-                </div>
-            </div>
-            <img src="images/nss.png" class="visible content">
-        </div>
-                                <div class="ui column details">
-                                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
-                                    <div class="ui inverted centered header"> Samvaad</div>
-                                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
-                                    <div class="ui inverted centered header">Benjamin: 9920707587</div>
-                                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
-                                    <div class="ui inverted centered header">Rs 400 per team</div>
-                                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
-                                    <div class="ui inverted centered header">Rs 10000</div>
+        <div class="ui inverted segment">
+            <div class="ui two column stackable divided grid">
+                <div class="ui blurring dimmable centered image column">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">Team Event, 4 per team Aim to tag the opponent. Most no.
+                                    of tags in 5 minutes is the winner.
+                                    Total overall team with most no of tags wins.
                                 </div>
                             </div>
-    </div>
-
-
-                            <div class="ui inverted segment">
-                                <div class="ui two column divided grid">
-                                    <div class="ui blurring dimmable centered image column">
-                                        <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">A 5 player team game where each team shall battle it out for
-                            ultimate glory
                         </div>
                     </div>
+                    <img src="images/lazer.png" class="visible content">
+                </div>
+                <div class="ui column details">
+                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                    <div class="ui inverted centered header"> ED hall - 5th floor</div>
+                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                    <div class="ui inverted centered header">Yash: 9619260195</div>
+                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                    <div class="ui inverted centered header">Rs. 100 per team</div>
+                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                    <div class="ui inverted centered header">Rs. 8000</div>
                 </div>
             </div>
-            <img src="images/cs.png" class="visible content">
         </div>
-                                    <div class="ui column details">
-                                        <div class="ui horizontal inverted divider"><b>Venue:</b></div>
-                                        <div class="ui inverted centered header"> CC 1 - 6th floor</div>
-                                        <div class="ui horizontal inverted divider"><b>Contact:</b></div>
-                                        <div class="ui inverted centered header">Igor: 9619555302</div>
-                                        <div class="ui horizontal inverted divider"><b>Registration:</b></div>
-                                        <div class="ui inverted centered header">Rs. 100 per team</div>
-                                        <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
-                                        <div class="ui inverted centered header">Rs. 4000</div>
-                                    </div>
+
+        <div class="ui inverted segment">
+            <div class="ui two column stackable divided grid">
+                <div class="ui blurring dimmable centered image column">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">Its not just a game, Its Passion, Its Football! Calling
+                                    on the
+                                    most enthusiastic football players of our college and beyond.
+                                    Yes, the season of Football may be over but here at Fr.CRCE
+                                    the game is always on! Think you got what it
+                                    takes? Then step into the field, get your aiming shoes on
+                                    and take that shot. Aim your kick through the targets set
+                                    and raise the bar for the next one in line. Get all targets
+                                    and complete all requirements to get maximum points and
+                                    rewards.
                                 </div>
-    </div>
-
-
-                                <div class="ui inverted segment">
-                                    <div class="ui two column divided grid">
-                                        <div class="ui blurring dimmable centered image column">
-                                            <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">2 teams with three players each compete against each other.
-                            The game played is GTA in a virtual world. The game will be
-                            cast on to mobile phones through Google Cardboard. Each
-                            team plays 3 matches and the team that wins two matches
-                            qualifies for the next round
+                            </div>
                         </div>
                     </div>
+                    <img src="images/kick.png" class="visible content">
+                </div>
+                <div class="ui column details">
+                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                    <div class="ui inverted centered header"> Room 511</div>
+                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                    <div class="ui inverted centered header">Rahul: 8097585170</div>
+                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                    <div class="ui inverted centered header">Rs 30 for 4 shots</div>
+                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                    <div class="ui inverted centered header">Rs 2000</div>
                 </div>
             </div>
-            <img src="images/gta.png" class="visible content">
         </div>
-                                        <div class="ui column details">
-                                            <div class="ui horizontal inverted divider"><b>Venue:</b></div>
-                                            <div class="ui inverted centered header"> Room 706</div>
-                                            <div class="ui horizontal inverted divider"><b>Contact:</b></div>
-                                            <div class="ui inverted centered header">Savio: 7303270469</div>
-                                            <div class="ui horizontal inverted divider"><b>Registration:</b></div>
-                                            <div class="ui inverted centered header">Rs 150 per team</div>
-                                            <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
-                                            <div class="ui inverted centered header">Rs. 3000</div>
-                                        </div>
-                                    </div>
+
+
+        <div class="ui inverted segment">
+            <div class="ui two column stackable divided grid">
+                <div class="ui blurring dimmable centered image column">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">Enter the amazing UV world at our UV center! Play and
+                                    win.
+                                    Mini-golf, table tennis, bowling
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/uv.png" class="visible content">
+                </div>
+                <div class="ui column details">
+                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                    <div class="ui inverted centered header"> Room 610</div>
+                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                    <div class="ui inverted centered header">Sheldon: 8446823256</div>
+                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                    <div class="ui inverted centered header">bowling-Rs 100
+                        golf-Rs 50
+                        tt-Rs 50
+                    </div>
+                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                    <div class="ui inverted centered header">Rs 5000</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ui inverted segment">
+            <div class="ui two column stackable divided grid">
+                <div class="ui blurring dimmable centered image column">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">MUMBAI BEHIND THE SCENES</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/nss.png" class="visible content">
+                </div>
+                <div class="ui column details">
+                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                    <div class="ui inverted centered header"> Samvaad</div>
+                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                    <div class="ui inverted centered header">Benjamin: 9920707587</div>
+                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                    <div class="ui inverted centered header">Rs 400 per team</div>
+                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                    <div class="ui inverted centered header">Rs 10000</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ui inverted segment">
+            <div class="ui two column stackable divided grid">
+                <div class="ui blurring dimmable centered image column">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">A 5 player team game where each team shall battle it out
+                                    for
+                                    ultimate glory
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/cs.png" class="visible content">
+                </div>
+                <div class="ui column details">
+                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                    <div class="ui inverted centered header"> CC 1 - 6th floor</div>
+                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                    <div class="ui inverted centered header">Igor: 9619555302</div>
+                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                    <div class="ui inverted centered header">Rs. 100 per team</div>
+                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                    <div class="ui inverted centered header">Rs. 4000</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ui inverted segment">
+            <div class="ui two column stackable divided grid">
+                <div class="ui blurring dimmable centered image column">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <div class="ui inverted header">2 teams with three players each compete against each
+                                    other.
+                                    The game played is GTA in a virtual world. The game will be
+                                    cast on to mobile phones through Google Cardboard. Each
+                                    team plays 3 matches and the team that wins two matches
+                                    qualifies for the next round
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/gta.png" class="visible content">
+                </div>
+                <div class="ui column details">
+                    <div class="ui horizontal inverted divider"><b>Venue:</b></div>
+                    <div class="ui inverted centered header"> Room 706</div>
+                    <div class="ui horizontal inverted divider"><b>Contact:</b></div>
+                    <div class="ui inverted centered header">Savio: 7303270469</div>
+                    <div class="ui horizontal inverted divider"><b>Registration:</b></div>
+                    <div class="ui inverted centered header">Rs 150 per team</div>
+                    <div class="ui horizontal inverted divider"><b>Prizes Worth:</b></div>
+                    <div class="ui inverted centered header">Rs. 3000</div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
-
-
 </div>
 </body>
 </html>

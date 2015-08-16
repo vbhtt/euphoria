@@ -32,9 +32,7 @@
         }
 
         .masthead .text {
-            position: absolute;
-            left: 25%;
-            top: 35%;
+            margin-top: 5em;
             font-weight: normal;
         }
 
@@ -114,6 +112,11 @@
                 min-height: 350px;
             }
 
+            .masthead .text {
+                margin-top: 5em;
+                font-weight: normal;
+            }
+
             .masthead h1.ui.header {
                 font-size: 2em;
                 margin-top: 1.5em;
@@ -137,7 +140,9 @@
                 .ready(function () {
                     //resize masthead
                     $('.masthead.segment').css({height: $(window).innerHeight()});
+                    $('.masthead .text').css({'margin-top': $(window).innerHeight() / 3});
                     $(window).resize(function () {
+                        $('.masthead .text').css({'margin-top': $(window).innerHeight() / 3});
                         $('.masthead.segment').css({height: $(window).innerHeight()});
                     });
 
