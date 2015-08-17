@@ -133,6 +133,24 @@
 
     <script src="jquery.min.js"></script>
     <script src="semantic-ui/semantic.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map');
+            var mapOptions = {
+                center: new google.maps.LatLng(19.0440618,72.8202039),
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({
+                position: {lat: 19.0440618, lng: 72.8202039},
+                map: map,
+                title: 'Hello World!'
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
     <script src="vivus.min.js"></script>
 
     <script>
@@ -251,22 +269,22 @@
         </div>
     </div>
 
-
-    <div class="ui vertical stripe quote segment scene_element slideInRight">
+<!--
+    <div class="ui vertical segment scene_element slideInRight" style="height: 300px">
         <div class="ui equal width stackable internally celled grid">
             <div class="center aligned row">
-                <div class="column">
-                    <h3>"What a Company"</h3>
-
-                    <p>That is what they all say about us</p>
+                <div class="column" id="map">
                 </div>
                 <div class="column">
-                    <h3>"I shouldn't have gone with their competitor."</h3>
-
-                    <p>
-                        <img src="./index_files/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
-                    </p>
+                    <h3>How to get here</h3>
                 </div>
+            </div>
+        </div>
+    </div>
+    -->
+    <div class="ui container">
+        <div class="item">
+            <div class="image" id="map" style="height: 300px">
             </div>
         </div>
     </div>
