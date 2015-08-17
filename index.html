@@ -138,7 +138,7 @@
         function initialize() {
             var mapCanvas = document.getElementById('map');
             var mapOptions = {
-                center: new google.maps.LatLng(19.0440618,72.8202039),
+                center: new google.maps.LatLng(19.0440618, 72.8202039),
                 zoom: 15,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             }
@@ -175,7 +175,6 @@
                             duration: '2s'
                         });
                     });
-
 
 
                     // fix menu when passed
@@ -249,9 +248,11 @@
                     <h3 class="ui header">The best technical fest ever</h3>
 
                     <p>Our inter-college technical festival,Crescendo, will be held on the 28th of August this year.
-                        All the technical councils in the college have been working tirelessly to take this year's Crescendo to a whole new level.
+                        All the technical councils in the college have been working tirelessly to take this year's
+                        Crescendo to a whole new level.
                         With amazing events lined up this time, there's something for everybody...
-                        The winners will walk away with spectacular cash prizes and merchandise.Hoping to see you there :D.</p>
+                        The winners will walk away with spectacular cash prizes and merchandise.Hoping to see you there
+                        :D.</p>
 
                     <h3 class="ui header">AT CRESCENDO THE FUN JUST BEGINS.. ..NEVER ENDS.. ..</h3>
 
@@ -269,22 +270,29 @@
         </div>
     </div>
 
-<!--
-    <div class="ui vertical segment scene_element slideInRight" style="height: 300px">
-        <div class="ui equal width stackable internally celled grid">
-            <div class="center aligned row">
-                <div class="column" id="map">
-                </div>
-                <div class="column">
-                    <h3>How to get here</h3>
+    <!--
+        <div class="ui vertical segment scene_element slideInRight" style="height: 300px">
+            <div class="ui equal width stackable internally celled grid">
+                <div class="center aligned row">
+                    <div class="column" id="map">
+                    </div>
+                    <div class="column">
+                        <h3>How to get here</h3>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    -->
-    <div class="ui container">
-        <div class="item">
-            <div class="image" id="map" style="height: 300px">
+        -->
+    <div class="ui vertical stripe segment">
+        <div class="ui middle aligned stackable grid container">
+            <div class="row">
+                <div class="eight center aligned wide column" id="map" style="height: 300px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="center aligned column">
+                    <a class="ui huge button" href="geo:19.0440618,72.8202039?z=15">Open in app</a>
+                </div>
             </div>
         </div>
     </div>
