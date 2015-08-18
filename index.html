@@ -18,9 +18,23 @@
             display: none;
         }
 
+        #map {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
         .masthead.segment {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             min-height: 700px;
             padding: 1em 0em;
+            z-index: 100;
         }
 
         .masthead .logo.item img {
@@ -85,13 +99,65 @@
         }
 
         .m-scene .scene_element {
-            animation-duration: 0.50s;
+            animation-duration: 0.75s;
             transition-timing-function: ease-in;
             animation-fill-mode: both;
         }
 
         .m-scene.is-exiting .scene_element {
             animation-direction: alternate-reverse;
+        }
+
+        ::-webkit-scrollbar {
+            width: inherit;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #B2182A;
+            border-radius: 5px;
+            width: 13px;
+        }
+
+        ::-webkit-scrollbar-button {
+            display: none;
+        }
+
+        ::-webkit-scrollbar-corner {
+            display: none;
+        }
+
+        @-moz-keyframes pulsate {
+            from {
+                -moz-transform: scale(0.25);
+                opacity: 1.0;
+            }
+            95% {
+                -moz-transform: scale(1.3);
+                opacity: 0;
+            }
+            to {
+                -moz-transform: scale(0.3);
+                opacity: 0;
+            }
+        }
+
+        @-webkit-keyframes pulsate {
+            from {
+                -webkit-transform: scale(0.25);
+                opacity: 1.0;
+            }
+            95% {
+                -webkit-transform: scale(1.3);
+                opacity: 0;
+            }
+            to {
+                -webkit-transform: scale(0.3);
+                opacity: 0;
+            }
         }
 
         @media only screen and (max-width: 700px) {
@@ -136,18 +202,23 @@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
         function initialize() {
+            var drag = true;
+            if (window.innerWidth < 700)drag = false;
             var mapCanvas = document.getElementById('map');
             var mapOptions = {
-                center: new google.maps.LatLng(19.0440618, 72.8202039),
-                zoom: 15,
+                center: new google.maps.LatLng(19.0440085, 72.8202039),
+                zoom: 14,
+                scrollwheel: false,
+                disableDefaultUI: true,
+                draggable: drag,
                 styles: [{
                     "featureType": "all",
                     "elementType": "labels.text.fill",
-                    "stylers": [{"color": "#ffffff"}]
+                    "stylers": [{"color": "#ffffff"}, {"weight": "0.20"}, {"lightness": "28"}, {"saturation": "23"}, {"visibility": "off"}]
                 }, {
                     "featureType": "all",
                     "elementType": "labels.text.stroke",
-                    "stylers": [{"visibility": "off"}]
+                    "stylers": [{"color": "#494949"}, {"lightness": 13}, {"visibility": "off"}]
                 }, {
                     "featureType": "all",
                     "elementType": "labels.icon",
@@ -155,65 +226,58 @@
                 }, {
                     "featureType": "administrative",
                     "elementType": "geometry.fill",
-                    "stylers": [{"color": "#c9323b"}]
+                    "stylers": [{"color": "#000000"}]
                 }, {
                     "featureType": "administrative",
                     "elementType": "geometry.stroke",
-                    "stylers": [{"color": "#c9323b"}, {"weight": 1.2}]
-                }, {
-                    "featureType": "administrative.locality",
-                    "elementType": "geometry.fill",
-                    "stylers": [{"lightness": "-1"}]
-                }, {
-                    "featureType": "administrative.neighborhood",
-                    "elementType": "labels.text.fill",
-                    "stylers": [{"lightness": "0"}, {"saturation": "0"}]
-                }, {
-                    "featureType": "administrative.neighborhood",
-                    "elementType": "labels.text.stroke",
-                    "stylers": [{"weight": "0.01"}]
-                }, {
-                    "featureType": "administrative.land_parcel",
-                    "elementType": "labels.text.stroke",
-                    "stylers": [{"weight": "0.01"}]
+                    "stylers": [{"color": "#144b53"}, {"lightness": 14}, {"weight": 1.4}]
                 }, {
                     "featureType": "landscape",
-                    "elementType": "geometry",
-                    "stylers": [{"color": "#c9323b"}]
+                    "elementType": "all",
+                    "stylers": [{"color": "#08304b"}]
                 }, {
                     "featureType": "poi",
                     "elementType": "geometry",
-                    "stylers": [{"color": "#99282f"}]
-                }, {
-                    "featureType": "road",
-                    "elementType": "geometry.stroke",
-                    "stylers": [{"visibility": "off"}]
+                    "stylers": [{"color": "#0c4152"}, {"lightness": 5}]
                 }, {
                     "featureType": "road.highway",
                     "elementType": "geometry.fill",
-                    "stylers": [{"color": "#99282f"}]
+                    "stylers": [{"color": "#000000"}]
                 }, {
-                    "featureType": "road.highway.controlled_access",
+                    "featureType": "road.highway",
                     "elementType": "geometry.stroke",
-                    "stylers": [{"color": "#99282f"}]
+                    "stylers": [{"color": "#0b434f"}, {"lightness": 25}]
                 }, {
                     "featureType": "road.arterial",
-                    "elementType": "geometry",
-                    "stylers": [{"color": "#99282f"}]
+                    "elementType": "geometry.fill",
+                    "stylers": [{"color": "#000000"}]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{"color": "#0b3d51"}, {"lightness": 16}]
                 }, {
                     "featureType": "road.local",
                     "elementType": "geometry",
-                    "stylers": [{"color": "#99282f"}]
+                    "stylers": [{"color": "#000000"}]
                 }, {
                     "featureType": "transit",
-                    "elementType": "geometry",
-                    "stylers": [{"color": "#99282f"}]
-                }, {"featureType": "water", "elementType": "geometry", "stylers": [{"color": "#090228"}]}],
+                    "elementType": "all",
+                    "stylers": [{"color": "#146474"}]
+                }, {"featureType": "water", "elementType": "all", "stylers": [{"color": "#021019"}]}],
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             }
             var map = new google.maps.Map(mapCanvas, mapOptions);
+            var blu = new google.maps.MarkerImage(
+                    'images/blu.png',
+                    null, // size
+                    null, // origin
+                    new google.maps.Point(20, 20),
+                    new google.maps.Size(40, 40)
+            );
             var marker = new google.maps.Marker({
                 position: {lat: 19.0440618, lng: 72.8202039},
+                flat: true,
+                icon: blu,
                 map: map,
                 title: 'Get here!'
             });
@@ -226,10 +290,10 @@
         $(document)
                 .ready(function () {
                     //resize masthead
-                    $('.masthead.segment').css({height: $(window).innerHeight()});
+                    $('#map').css({height: $(window).innerHeight()});
                     $('.masthead .text').css({'margin-top': $(window).innerHeight() / 3});
                     $(window).resize(function () {
-                        $('.masthead .text').css({'margin-top': $(window).innerHeight() / 3});
+                        $('#map').css({'margin-top': $(window).innerHeight() / 3});
                         $('.masthead.segment').css({height: $(window).innerHeight()});
                     });
 
@@ -246,19 +310,6 @@
                     });
 
 
-                    // fix menu when passed
-                    $('.masthead')
-                            .visibility({
-                                once: false,
-                                onBottomPassed: function () {
-                                    $('.fixed.menu').transition('fade in');
-                                },
-                                onBottomPassedReverse: function () {
-                                    $('.fixed.menu').transition('fade out');
-                                }
-                            })
-                    ;
-
                     // create sidebar and attach to menu open
                     $('.ui.sidebar')
                             .sidebar('attach events', '.toc.item')
@@ -267,16 +318,7 @@
         ;
     </script>
 </head>
-<body class="pushable m-scene">
-<!-- Following Menu -->
-<div class="ui large top fixed hidden menu">
-    <div class="ui container">
-        <a class="active item" href="#">Home</a>
-        <a class="item" href="sponsors.html">Sponsors</a>
-        <a class="item" href="events.html">Events</a>
-        <a class="item" href="aboutus.html">About Us</a>
-    </div>
-</div>
+<body class="m-scene">
 
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar menu left">
@@ -289,9 +331,11 @@
 
 <!-- Page Contents -->
 <div id="main" class="pusher">
-    <div class="ui inverted vertical masthead center aligned segment scene_element slideInRight">
+    <div id="map"></div>
+    <div class="ui inverted vertical masthead center aligned segment"
+         style="background: rgba(0,0,0,0)">
 
-        <div class="ui container">
+        <div class="ui container scene_element slideInDown">
             <div class="ui large fluid four item secondary inverted pointing menu">
                 <a class="toc item">
                     <i class="sidebar icon"></i>
@@ -305,86 +349,12 @@
 
         <div class="ui text container">
             <div id="header"></div>
-            <h2 style="color: #B2182A">Fr. CRCE Bandra<br>August 28, 2015</h2>
+            <h2>Fr. CRCE Bandra | August 28, 2015</h2>
         </div>
 
     </div>
 
-    <div class="ui vertical stripe segment scene_element slideInRight">
-        <div class="ui middle aligned stackable grid container">
-            <div class="row">
-                <div class="eight wide column">
-                    <h3 class="ui header">The best technical fest ever</h3>
 
-                    <p>Crescendo brings to you an exciting and mindblowing platform where you sure can flaunt your Techxiness.
-                        This is where fun meets technology  and gives rise to the exceptional ideas .
-                        Each year Crescendo sees a new face of technology.
-                        Improvising is what we believe in and that's what we do in our tech fest .
-                        We improvise with technology.
-                        From technical competitions to FIFA , from workshops to counterstrike, from guest lectures to laser tag . Crescendo always has something techxy for everyone.
-                        Over the years Crescendo has given the minds a chance to take their take on technology and showcase what they believe in.
-
-                    <h3 class="ui header">AT CRESCENDO THE FUN JUST BEGINS.. ..NEVER ENDS.. ..</h3>
-
-                    <p>OUR COLLEGE BRINGS TO YOU ENTERTAINMENT LIKE NEVER BEFORE</p>
-                </div>
-                <div class="six wide right floated column">
-                    <img src="images/1.jpg" class="ui large bordered rounded image">
-                </div>
-            </div>
-            <div class="row">
-                <div class="center aligned column">
-                    <a class="ui huge button" HREF="events.html">Check Them Out</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--
-        <div class="ui vertical segment scene_element slideInRight" style="height: 300px">
-            <div class="ui equal width stackable internally celled grid">
-                <div class="center aligned row">
-                    <div class="column" id="map">
-                    </div>
-                    <div class="column">
-                        <h3>How to get here</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        -->
-    <div class="ui vertical stripe segment" style="padding: 5px">
-        <div class="ui horizontal header divider" style="margin: 5px">Where We're At</div>
-        <div class="ui middle aligned stackable grid">
-            <div class="row">
-                <div class="sixteen center aligned wide column" id="map" style="min-height: 400px">
-                </div>
-            </div>
-            <div class="mobile only row">
-                <div class="center aligned column">
-                    <a class="ui huge button" href="https://www.google.com/maps/place/Fr.+Conceicao+Rodrigues+College+of+Engineering/@19.0443356,72.8204369,17z/">Open in app</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="ui vertical stripe segment scene_element slideInRight">
-        <div class="ui text container">
-            <h3 class="ui header">WORK FORCE:</h3>
-
-            <p>This years CResCEndo is brought to you because of the hard work of our councils and their dedication to give to the
-                college their best. So here are the people behind the scene this crescendo.</p>
-            <a class="ui large button" href="aboutus.html">CREDITS</a>
-            <h4 class="ui horizontal header divider">
-                <a href="aboutus.html">Our College</a>
-            </h4>
-
-            <h3 class="ui header">Fr. Conceicao Rodrigues College of Engineering</h3>
-
-            <p>Fr. Conceicao Rodrigues College of Engineering (CRCE), popularly known as Fr. Agnel Bandra, is an un-aided, minority, non-autonomous institute affiliated to the University of Mumbai offering B.E. degrees in Computers, Electronics, Production and Information Technology branches.</p>
-            <a class="ui large button" href="http://www.frcrce.ac.in/">CHECK US OUT</a>
-        </div>
-    </div>
 </div>
 
 </body>

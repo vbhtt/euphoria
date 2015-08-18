@@ -45,13 +45,35 @@
         }
 
         .m-scene .scene_element {
-            animation-duration: 0.25s;
+            animation-duration: 0.75s;
             transition-timing-function: ease-in;
             animation-fill-mode: both;
         }
 
         .m-scene.is-exiting .scene_element {
             animation-direction: alternate-reverse;
+        }
+
+        ::-webkit-scrollbar {
+            width: inherit;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #B2182A;
+            border-radius: 5px;
+            width: 13px;
+        }
+
+        ::-webkit-scrollbar-button {
+            display: none;
+        }
+
+        ::-webkit-scrollbar-corner {
+            display: none;
         }
 
         @media only screen and (max-width: 700px) {
@@ -83,7 +105,7 @@
     </script>
 </head>
 
-<body>
+<body class="m-scene">
 
 <div class="ui vertical inverted sidebar menu left">
     <a class="item" href="index.html">Home</a>
@@ -93,7 +115,7 @@
 </div>
 
 <div id="main" class="pusher">
-    <div class="ui container">
+    <div class="ui container scene_element slideInDown">
         <div class="ui large fluid four item secondary inverted pointing menu">
             <a class="toc item">
                 <i class="sidebar icon"></i>
