@@ -82,10 +82,6 @@
         display: none;
     }
 
-    #stick + .segment {
-        margin-top: 39px;
-    }
-
     @media only screen and (max-width: 700px) {
         .secondary.pointing.menu .item,
         .secondary.pointing.menu .menu {
@@ -103,26 +99,23 @@
 <script>
     $(function () {
 
-        $('#tabmenu .item').tab();
-
-        $('#stick').sticky({context: '#cont'});
-
         $('.ui.sidebar')
                 .sidebar('attach events', '.toc.item');
+        $('#stick')
+                .sticky();
+
+
+        $('.nontech').hide();
 
         $('.dimmable.image').dimmer({
-            on: 'hover',
-            onShow: function () {
-                $('#stick').sticky('refresh');
-            }
+            on: 'hover'
         });
 
-        /*$('#tech').click(function () {
+        $('#tech').click(function () {
             $('.tech').show();
             $('.nontech').hide();
             $(this).addClass('active');
             $('#nontech').removeClass('active');
-         $('#stick').sticky('refresh');
         });
 
         $('#nontech').click(function () {
@@ -130,8 +123,7 @@
             $('.nontech').show();
             $(this).addClass('active');
             $('#tech').removeClass('active');
-         $('#stick').sticky('refresh');
-         });*/
+        });
     });
 </script>
 </head>
@@ -150,9 +142,11 @@
 
     <div class="ui container scene_element slideInDown">
         <div class="ui large fluid four item secondary inverted pointing menu">
-            <div class="ui black image label">
-                <img src="images/down.svg">Menu
-            </div>
+            <a class="toc item">
+                <div class="ui black label">
+                    <i class="sidebar icon"></i>Menu
+                </div>
+            </a>
             <a class="item" href="index.html">Home</a>
             <a class="item" href="sponsors.html">Sponsors</a>
             <a class="active item">Events</a>
@@ -167,17 +161,14 @@
 
         <h2 class="ui centered inverted header">It's all fun and games.</h2>
     </div>
-
-    <div id="cont" style="position: relative;">
-        <div id="stick" class="ui fixed top sticky">
-            <div id="tabmenu" class="ui two item inverted red stackable menu">
-                <a id="tech" class="ui active item" data-tab="tech"><span
-                        style="cursor:pointer">Technical</span><br></a>
-                <a id="nontech" class="ui item" data-tab="nontech"><span style="cursor:pointer">Non Technical</span><br></a>
+    <div id="stick" class="ui sticky">
+        <div class="ui two item inverted red stackable menu">
+            <a id="tech" class="ui active item"><span style="cursor:pointer">Technical</span><br></a>
+            <a id="nontech" class="ui item"><span style="cursor:pointer">Non Technical</span><br></a>
         </div>
     </div>
 
-        <div class="ui container active tab" data-tab="tech">
+    <div class="ui container tech">
             <div class="ui inverted segment">
                 <div class="ui two column stackable divided grid">
                     <div class="ui blurring dimmable centered image column">
@@ -534,7 +525,7 @@
         </div>
 
 
-        <div class="ui container tab" data-tab="nontech">
+        <div class="ui container nontech">
             <div class="ui inverted segment">
                 <div class="ui two column stackable divided grid">
                     <div class="ui blurring dimmable centered image column">
@@ -807,6 +798,5 @@
 
         </div>
     </div>
-</div>
 </body>
 </html>
