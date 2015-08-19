@@ -102,7 +102,7 @@
         $('.ui.sidebar')
                 .sidebar('attach events', '.toc.item');
         $('#stick')
-                .sticky({context:'#cont'});
+                .sticky();
 
 
         $('.nontech').hide();
@@ -167,8 +167,8 @@
             <a id="nontech" class="ui item"><span style="cursor:pointer">Non Technical</span><br></a>
         </div>
     </div>
-    <div id="cont">
-        <div class="ui container tech">
+
+    <div class="ui container tech">
             <div class="ui inverted segment">
                 <div class="ui two column stackable divided grid">
                     <div class="ui blurring dimmable centered image column">
@@ -798,6 +798,5 @@
 
         </div>
     </div>
-</div>
 </body>
 </html>
