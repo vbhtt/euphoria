@@ -20,7 +20,7 @@
             display: none;
         }
 
-        .body{
+        .body {
             background-color: #222222;
         }
 
@@ -204,6 +204,23 @@
     </style>
 
     <script src="jquery.min.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-66521221-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
     <script src="semantic-ui/semantic.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
@@ -329,10 +346,10 @@
 <!-- Sidebar Menu -->
 <div class="ui inverted sidebar top">
     <div class="ui four item inverted menu">
-    <a class="active item">Home</a>
-    <a class="item" href="sponsors.html">Sponsors</a>
-    <a class="item" href="events.html">Events</a>
-    <a class="item" href="aboutus.html">About Us</a>
+        <a class="active item">Home</a>
+        <a class="item" href="sponsors.html">Sponsors</a>
+        <a class="item" href="events.html">Events</a>
+        <a class="item" href="aboutus.html">About Us</a>
     </div>
 </div>
 
