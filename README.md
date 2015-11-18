@@ -1,2 +1,2 @@
-# Euphoria
+# euporia
 A website
