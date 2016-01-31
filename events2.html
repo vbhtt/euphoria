@@ -26,7 +26,7 @@
 <div id="container">
 
     <div class="masonryImage">
-        <img src="images/1.jpg" alt="" />
+        <img src="images/Varun-1.png" alt="" />
     </div>
 
     <div class="masonryImage">
@@ -50,7 +50,23 @@
     </div>
 
     <div class="masonryImage">
-        <img src="images/Warren.png" alt="" />
+
+        <div class="ui blurring dimmable centered image column">
+            <div class="ui dimmer">
+                <div class="content">
+                    <div class="center">
+                        <div class="ui inverted header">Pin the set of tasks by playing a simple game of
+                            darts.
+                            After getting your set of tasks, play them in a predetermined
+                            order under time constraint, fastest person to reach the end
+                            will be the winner! It’s an adrenaline filled game of speed
+                            and precision sure to put your tech knowledge to the test.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/Warren.png" class="visible content">
+        </div>
     </div>
 
     <div class="masonryImage">
@@ -105,7 +121,7 @@
     </div>
 
     <div class="masonryImage">
-        <img src="images/Varun-1.png" alt="" />
+        <img src="images/Varun-1.jpg" alt="" />
     </div>
 
     <div class="masonryImage">
@@ -117,24 +133,23 @@
     </div>
 
     <div class="masonryImage">
-        <img src="images/Warren.png" alt="" />
+        <img src="images/Warren.jpg" alt="" />
     </div>
 
 </div>
 
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script>
     $(function(){
-
         var $container = $('#container');
 
-        $container.imagesLoaded( function(){
+        $container.imagesLoaded(function(){
             $container.masonry({
                 itemSelector : '.masonryImage'
             });
         });
-
     });
 </script>
 
