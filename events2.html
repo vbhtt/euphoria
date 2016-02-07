@@ -5,16 +5,73 @@
 
     <title>Masonry</title>
 
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="experimental1.css"/>-->
     <link rel="stylesheet" type="text/css" media="screen" href="masonry.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="fluid_jquery.js"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="experimental1.css"/>
+    
 
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+<style>
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box;
+}
+ 
+.accordion {
+    overflow:hidden;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    border-radius:3px;
+    background:#f7f7f7;
+}
 
+.accordion-section-content {
+    padding:15px;
+    display:none;
+}
+</style>
 </head>
 
 <body>
+<script>
+    /*$(function(){
+        var $container = $('#container');
 
+        $container.masonry({
+            itemSelector : '.masonryImage'
+        });
+    });*/
+	$(document).ready(function(e) {
+		//$('.accordion-section-content').hide();
+        function close_accordion_section (){
+			$('.accordion .accordion-section-title').removeClass('active');
+			$('.accordion-section-content').slideUp('slow').removeClass('open');
+		}
+		
+		$('.accordion-section-title').click(function (e){
+			var attr=$(this).attr('href');
+			
+			if($(e.target).is('.active'))
+			{
+				close_accordion_section();
+			}
+			else
+			{
+				close_accordion_section();
+			$(this).addClass('.active');
+			$('.accordion'+attr).slideDown('slow').addClass('open');
+			}
+			e.preventDefault();
+		});
+    });
+</script>
 <div class="nav">
     <ul>
         <li><a href="#" class="current">Masonry</a></li>
@@ -23,13 +80,20 @@
     </ul>
 </div>
 
-<div id="container">
+<!--<div id="container">-->
 
-    <div class="masonryImage">
-        <img src="images/Varun-1.png" alt="" />
+    <div class="accordion">
+    <div class="accordion-section">
+    <a href="#accordion-1" class="accordion-section-title">
+     <img src="images/Varun-1.png" alt="abc" />
+     </a>
+     <div class="accordion-section-content" id="accordion-1"> <p> ABC </p>
     </div>
-
-    <div class="masonryImage">
+     </div>
+	</div>
+    <!--</div>-->
+    
+    <!--<div class="masonryImage">
         <img src="images/endlogo.jpg" alt="" />
     </div>
 
@@ -47,26 +111,6 @@
 
     <div class="masonryImage">
         <img src="images/Varun-1.png" alt="" />
-    </div>
-
-    <div class="masonryImage">
-
-        <div class="ui blurring dimmable centered image column">
-            <div class="ui dimmer">
-                <div class="content">
-                    <div class="center">
-                        <div class="ui inverted header">Pin the set of tasks by playing a simple game of
-                            darts.
-                            After getting your set of tasks, play them in a predetermined
-                            order under time constraint, fastest person to reach the end
-                            will be the winner! It’s an adrenaline filled game of speed
-                            and precision sure to put your tech knowledge to the test.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="images/Warren.png" class="visible content">
-        </div>
     </div>
 
     <div class="masonryImage">
@@ -134,22 +178,8 @@
 
     <div class="masonryImage">
         <img src="images/Warren.jpg" alt="" />
-    </div>
+    </div>-->
 
-</div>
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
-<script>
-    $(function(){
-        var $container = $('#container');
-
-        $container.masonry({
-            itemSelector : '.masonryImage'
-        });
-    });
-</script>
-
+<!--</div>-->
 </body>
 </html>
