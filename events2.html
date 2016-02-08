@@ -146,7 +146,9 @@
         var $container = $('#container');
 
         $container.masonry({
-            itemSelector : '.masonryImage'
+            gutter: 1,
+            itemSelector : '.masonryImage',
+            percentPosition: true
         });
     });
 </script>
