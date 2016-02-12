@@ -34,6 +34,9 @@
             border-radius: 3px;
             max-width: 95%;
             margin: auto;
+            top: 50px;
+            left: 400px;
+            position: relative;
         }
 
         .ui-accordion-header {
@@ -61,13 +64,34 @@
         .masonryImage {
             margin-bottom: 3%;
         }
+
+        .image1 {
+            background: url("images/endlogo.png") no-repeat;
+            width: 400px;
+            height: 200px;
+            /*z-index: -1;*/
+        }
+
+        .image2 {
+            background: url("images/Varun-1.png") no-repeat;
+            height: 400px;
+            width: 400px;
+        }
+
+        .image3 {
+            background: url("images/Warren.png")no-repeat;
+            height: 400px;
+            width: 400px;
+        }
     </style>
 </head>
 
 <body>
 <script>
     $(function () {
-        $('.accordion').accordion();
+        $('.accordion').accordion({
+            collapsible: true
+        });
     });
 </script>
 <div class="nav">
@@ -78,10 +102,43 @@
     </ul>
 </div>
 
-<!--<div id="container">-->
+<!--accordion container-->
+<div class="accordion" style="align-self: center;">
+    <!--accordion title 1-->
+   <h3 style="color: #6c71c4;" class="image1">Fun Events</h3>
+    <!--accordion section 1-->
+   <div class="fun">
+        <div class="masonryImage">
+            <img src="images/endlogo.jpg" alt=""/>
+        </div>
 
-<div class="accordion">
-    <h3 style="color: #dc322f">Fun Events</h3>
+        <div class="masonryImage">
+            <img src="images/endlogo.jpg" alt=""/>
+        </div>
+
+        <div class="masonryImage">
+            <img src="images/endlogo.jpg" alt=""/>
+        </div>
+
+        <div class="masonryImage">
+            <img src="images/Warren.png" alt=""/>
+        </div>
+
+        <div class="masonryImage">
+            <img src="images/Varun-1.png" alt=""/>
+        </div>
+
+        <div class="masonryImage">
+            <img src="images/Varun-1.png" alt=""/>
+        </div>
+
+        <div class="masonryImage">
+            <img src="images/Warren.png" alt=""/>
+        </div>
+    </div>
+    <!--accordion title 2-->
+    <h3 style="color: #6c71c4" class="image2">Fun Events</h3>
+    <!--accordion section 2-->
     <div class="fun">
         <div class="masonryImage">
             <img src="images/endlogo.jpg" alt=""/>
@@ -111,37 +168,9 @@
             <img src="images/Warren.png" alt=""/>
         </div>
     </div>
-    <h3 style="color: #6c71c4">Fun Events</h3>
-    <div class="fun">
-        <div class="masonryImage">
-            <img src="images/endlogo.jpg" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/endlogo.jpg" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/endlogo.jpg" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/Warren.png" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/Varun-1.png" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/Varun-1.png" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/Warren.png" alt=""/>
-        </div>
-    </div>
-    <h3 style="color: #859900">Fun Events</h3>
+    <!--accordion title 3-->
+    <h3 style="color: #859900" class="image3">Fun Events</h3>
+    <!--accordion section 3-->
     <div class="fun">
         <div class="masonryImage">
             <img src="images/endlogo.jpg" alt=""/>
