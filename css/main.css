@@ -421,7 +421,7 @@ html.js,
     text-align: left;
 }
 
-.meta__brand {
+.meta__organizer {
     font-size: .85em;
     font-weight: bold;
     display: block;
@@ -435,7 +435,7 @@ html.js,
     padding: .4em 0 .1em;
 }
 
-.meta__price {
+.meta__day {
     font-size: .95em;
     font-weight: bold;
     position: absolute;

@@ -281,10 +281,6 @@
             isResizeBound: false,
             itemSelector: '.grid__item',
             percentPosition: true,
-            masonry: {
-                // use outer width of grid-sizer for columnWidth
-                columnWidth: '.grid__sizer'
-            },
             transitionDuration: '0.6s'
         });
     }
