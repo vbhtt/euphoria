@@ -8,6 +8,7 @@
     <title>Euphoria 2016</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flickity.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <style>
         @import url(https://fonts.googleapis.com/css?family=Raleway);
@@ -58,7 +59,77 @@
     </div>
     <!-- /page -->
     <div class="page" id="page-events">
-
+        <div class="bar">
+            <div class="filter">
+                <span class="filter__label">Events: </span>
+                <button class="action filter__item filter__item--selected" data-filter="*">All</button>
+                <button class="action filter__item" data-filter=".fun">
+                    <i class="icon icon--jacket"></i>
+                    <span class="action__text">Fun</span>
+                </button>
+                <button class="action filter__item" data-filter=".random">
+                    <i class="icon icon--shirt"></i>
+                    <span class="action__text">Random</span>
+                </button>
+                <button class="action filter__item" data-filter=".other">
+                    <i class="icon icon--dress"></i>
+                    <span class="action__text">Other</span>
+                </button>
+                <button class="action filter__item" data-filter=".nofun">
+                    <i class="icon icon--trousers"></i>
+                    <span class="action__text">No Fun</span>
+                </button>
+                <button class="action filter__item" data-filter=".possiblyfun">
+                    <i class="icon icon--shoe"></i>
+                    <span class="action__text">Possibly Fun</span>
+                </button>
+            </div>
+            <button class="cart">
+                <i class="cart__icon fa fa-shopping-cart"></i>
+                <span class="text-hidden">Shopping cart</span>
+                <span class="cart__count">0</span>
+            </button>
+        </div>
+        <!-- Main view -->
+        <div class="view">
+            <!-- Grid -->
+            <section class="grid">
+                <!-- Loader -->
+                <img class="grid__loader" src="images/loader.svg" width="60" alt="Loading..." />
+                <!-- Grid sizer for a fluid Isotope (Masonry) layout -->
+                <div class="grid__sizer"></div>
+                <!-- Grid items -->
+                <div class="grid__item fun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/artEvent.jpg" alt="product1_1" /></div>
+                        <div class="slider__item"><img src="images/creativewritin.jpg" alt="product1_2" /></div>
+                        <div class="slider__item"><img src="images/stepup.jpg" alt="product1_3" /></div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Miriam Classic</h3>
+                        <span class="meta__brand">Miriam</span>
+                        <span class="meta__price">$79</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item grid__item--size-a random">
+                    <!-- ... -->
+                </div>
+                <div class="grid__item other">
+                    <!-- ... -->
+                </div>
+                <div class="grid__item nofun">
+                    <!-- ... -->
+                </div>
+                <div class="grid__item possiblyfun">
+                    <!-- ... -->
+                </div>
+            </section>
+            <!-- /grid-->
+        </div>
     </div>
 
     <div class="page" id="page-aboutus">
@@ -77,6 +148,8 @@
 <!-- /pages-stack -->
 <button class="menu-button"><span>Menu</span></button>
 <script src="js/classie.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/flickity.pkgd.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 
