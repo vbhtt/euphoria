@@ -327,10 +327,11 @@ html.js,
 
 .grid {
     position: relative;
-    overflow: hidden;
     max-width: 1300px;
+    max-height: 80vh;
+    overflow-y: scroll;
     margin: 0 auto;
-    padding: 5%;
+    padding: 1% 5%;
     text-align: center;
 }
 
