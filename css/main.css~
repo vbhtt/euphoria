@@ -559,7 +559,11 @@ html.js,
     font-size: 1.5em;
     position: absolute;
     top: 0;
+<<<<<<< 559b67c1a2ebf80e9d4c4a48a6e9fa249a922909
+    right: 0%;
+=======
     right: 0;
+>>>>>>> Fixed Mobile view
     overflow: hidden;
     height: 100%;
     padding: 0 1.195em;
