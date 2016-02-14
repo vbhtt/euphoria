@@ -1,90 +1,9 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset=utf-8/>
-    <meta name="description" content="description">
-
-    <title>Masonry</title>
-
-    <!--<link rel="stylesheet" type="text/css" media="screen" href="experimental1.css"/>-->
-    <link rel="stylesheet" type="text/css" media="screen" href="masonry.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <!--<link rel="stylesheet" type="text/css" media="screen" href="fluid_jquery.js"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="experimental1.css"/>
-    
-
-    <!--[if IE]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-
-    <![endif]-->
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
     <style>
-        body {
-            background: #222222;
-        }
-
-        .accordion, .accordion * {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-
-        .accordion {
-            overflow: hidden;
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
-            border-radius: 3px;
-            max-width: 95%;
-            margin: auto;
-            top: 50px;
-            left: 50px;
-            position: relative;
-        }
-
-        .ui-accordion-header {
-            text-align: center;
-            font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-            background: #1a1a1a;
-        }
-
-        .ui-accordion-content {
-            background: #222222;
-        }
-
-        .fun {
-            -moz-column-count:3;
-            -moz-column-gap: 3%;
-            -moz-column-width: 30%;
-            -webkit-column-count:3;
-            -webkit-column-gap: 3%;
-            -webkit-column-width: 30%;
-            column-count: 3;
-            column-gap: 3%;
-            column-width: 30%;
-        }
-
-        .masonryImage {
-            margin-bottom: 3%;
-        }
-
-        .image1 {
-            background: linear-gradient(to top,rgba(0.2,0.2,0.2,0.1) 0%,rgba(0.2,0.2,0.2,0.5) 100%); //, url("images/endlogo.png") no-repeat;
-            width: 400px;
-            height: 200px;
-            /*z-index: -1;*/
-        }
-
-        .image2 {
-            background: url("images/Varun-1.png") no-repeat;
-            height: 400px;
-            width: 400px;
-        }
-
-        .image3 {
-            background: url("images/Warren.png") no-repeat;
-            height: 400px;
-            width: 400px;
-        }
-
         .menu,
         .menu .btn .fa,
         .menu .btn.trigger .line {
@@ -325,235 +244,83 @@
             -ms-transform: translateX(-10em) rotate(-337.5deg);
             transform: translateX(-10em) rotate(-337.5deg);
         }
+
+        .text {
+            position: absolute;
+            top: 40%;
+            left: 20%;
+            opacity: 50;
+            /*text-align: center;*/
+        }
+
+        div.btn.trigger span.text{
+            top: 25%;
+            left: 16%;
+        }
+
     </style>
 </head>
+<body style="background-color: #0e0f0f">
+<div class="menu" id="div1">
+    <div class="btn trigger"> <span class="text">Students Council</span> </div>
 
-<body>
-<script>
-    $(function () {
-        $('.accordion').accordion({
-            collapsible: true
-        });
-    });
-</script>
-<script>
-    $(document).ready(function() {
-        $(".trigger").click(function() {
-            $(".menu").toggleClass("active");
-        });
-    });
-</script>
-<div class="nav">
-    <ul>
-        <li><a href="#" class="current">Masonry</a></li>
-        <li><a href="sponsors.html">Wookmark</a></li>
-        <li><a href="events.html">CSS</a></li>
-    </ul>
-</div>
-
-<!--accordion container-->
-<!--<div class="accordion" style="align-self: center;">-->
-    <!--accordion title 1-->
-   <!--<h3 style="color: #6c71c4;" class="image1">Performing arts</h3>-->
-    <!--accordion section 1-->
-   <!--<div class="fun">
-        <div class="masonryImage">
-            <img src="images/stepup.jpg" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/60secs.jpg" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/unscr.jpg" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/Dance%20face-off.jpg" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/antak.jpg" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/stomptheyard.jpg" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/rhythmdevine.jpg" alt=""/>
-        </div>
-    </div>-->
-    <!--accordion title 2-->
-    <!--<h3 style="color: #6c71c4" class="image2">Fun Events</h3>-->
-    <!--accordion section 2-->
-    <!--<div class="fun">
-        <div class="masonryImage">
-            <img src="images/endlogo.jpg" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/endlogo.jpg" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/endlogo.jpg" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/Warren.png" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/Varun-1.png" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/Varun-1.png" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/Warren.png" alt=""/>
-        </div>
-    </div>-->
-    <!--accordion title 3-->
-    <!--<h3 style="color: #859900" class="image3">Fun Events</h3>-->
-    <!--accordion section 3-->
-    <!--<div class="fun">
-        <div class="masonryImage">
-            <img src="images/endlogo.jpg" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/endlogo.jpg" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/endlogo.jpg" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/Warren.png" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/Varun-1.png" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/Varun-1.png" alt=""/>
-        </div>
-
-        <div class="masonryImage">
-            <img src="images/Warren.png" alt=""/>
-        </div>
-    </div>
-</div>-->
-
-<!-- Circular navigation experimental-->
-<div class="menu">
-    <div class="btn-trigger"><span class="line"></span></div>
     <div class="rotater">
-        <div class="btn btn-icon">Menu</div>
+        <div><img class="btn btn-icon" src="images/5ingredients.jpg"></div>
     </div>
+
     <div class="rotater">
-        <div class="btn btn-icon">Menu1</div>
+        <div><img class="btn btn-icon" src="images/admad.jpg"></div>
     </div>
+
     <div class="rotater">
-        <div class="btn btn-icon">Menu2</div>
+        <div><img class="btn btn-icon" src="images/antak.jpg"></div>
     </div>
-</div>
-<!--</div>-->
 
-<!--<div class="masonryImage">
-    <img src="images/endlogo.jpg" alt="" />
 </div>
 
-<div class="masonryImage">
-    <img src="images/endlogo.jpg" alt="" />
-</div>
+<div class="menu" style="top: 50%; left: 60%;" id="div2">
+    <div class="btn trigger"> <span class="text">Students Council</span> </div>
 
-<div class="masonryImage">
-    <img src="images/endlogo.jpg" alt="" />
-</div>
+    <div class="rotater">
+        <div><img class="btn btn-icon" src="images/5ingredients.jpg"></div>
+    </div>
 
-<div class="masonryImage">
-    <img src="images/Warren.png" alt="" />
-</div>
+    <div class="rotater">
+        <div><img class="btn btn-icon" src="images/admad.jpg"></div>
+    </div>
 
-<div class="masonryImage">
-    <img src="images/Varun-1.png" alt="" />
-</div>
+    <div class="rotater">
+        <div><img class="btn btn-icon" src="images/antak.jpg"></div>
+    </div>
 
-<div class="masonryImage">
-    <img src="images/Varun-1.png" alt="" />
 </div>
-
-<div class="masonryImage">
-    <img src="images/Warren.png" alt="" />
-</div>
-
-<div class="masonryImage">
-    <img src="images/endlogo.jpg" alt="" />
-</div>
-
-<div class="masonryImage">
-    <img src="images/endlogo.jpg" alt="" />
-</div>
-
-<div class="masonryImage">
-    <img src=images/Varun-1.png" alt="" />
-</div>
-<div class="masonryImage">
-    <img src="images/flipkart.jpg" alt="" />
-</div>
-
-<div class="masonryImage">
-    <img src="images/Warren.png" alt="" />
-</div>
-
-<div class="masonryImage">
-    <img src="images/Varun-1.png" alt="" />
-</div>
-
-<div class="masonryImage">
-    <img src="images/flipkart.jpg" alt="" />
-</div>
-
-<div class="masonryImage">
-    <img src="images/Varun-1.png" alt="" />
-</div>
-
-<div class="masonryImage">
-    <img src=images/Warren.png" alt="" />
-</div>
-
-<div class="masonryImage">
-    <img src="images/flipkart.jpg" alt="" />
-</div>
-
-<div class="masonryImage">
-    <img src="images/endlogo.jpg" alt="" />
-</div>
-
-<div class="masonryImage">
-    <img src="images/Varun-1.jpg" alt="" />
-</div>
-
-<div class="masonryImage">
-    <img src="images/Warren.png" alt="" />
-</div>
-
-<div class="masonryImage">
-    <img src="images/endlogo.jpg" alt="" />
-</div>
-
-<div class="masonryImage">
-    <img src="images/Warren.jpg" alt="" />
-</div>-->
-
-<!--</div>-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>$(document).ready(function() {
+    $(".trigger").click(function() {
+        if($("#div1").hasClass("active")) {
+            $("#div1").toggleClass("active");
+            $("this").addClass("active");
+        }
+
+        else if($("#div2").hasClass("active")){
+            $("#div2").toggleClass("active");
+            $("this").addClass("active");
+        }
+
+        /*else {
+            $("this").toggleClass("active");
+        }
+
+
+        /*else if($("this").hasClass("active")){
+            close_circle();
+            $("this").addClass("active");
+        }*/
+        function close_circle(){
+            $("this").removeClass("active");
+        }
+    });
+});
+</script>
 </body>
 </html>

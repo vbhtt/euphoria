@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euphoria 2016</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flickity.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <style>
+        *,
+        *:after,
+        *:before {
+            box-sizing: border-box;
+        }
+<<<<<<< 559b67c1a2ebf80e9d4c4a48a6e9fa249a922909
+
+=======
+>>>>>>> Fixed Mobile view
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+        body {
+            font-family: 'Raleway', 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+            margin: 0;
+            color: #cecece;
+            background: #1d1e21;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        a {
+            text-decoration: none;
+            color: #5c5edc;
+            outline: none;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+    </style>
+
+    <script src="js/modernizr-custom.js"></script>
+</head>
+
+<body>
+<!-- navigation -->
+<nav class="pages-nav">
+    <div class="pages-nav__item"><a class="link link--page" href="#page-home">Home</a></div>
+    <div class="pages-nav__item"><a class="link link--page" href="#page-events">Events</a></div>
+    <div class="pages-nav__item"><a class="link link--page" href="#page-aboutus">About Us</a></div>
+    <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-sc">Students Council</a></div>
+    <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-contact">Contact</a></div>
+    <div class="pages-nav__item pages-nav__item--social">
+        <a class="link link--social link--faded" href="#"><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
+        <a class="link link--social link--faded" href="#"><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+        <a class="link link--social link--faded" href="#"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+        <a class="link link--social link--faded" href="#"><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
+    </div>
+</nav>
+<!-- /navigation-->
+<!-- pages stack -->
+<div class="pages-stack">
+    <!-- page -->
+    <div class="page" id="page-home">
+
+    </div>
+    <!-- /page -->
+    <div class="page" id="page-events">
+        <div class="bar">
+            <div class="filter">
+                <span class="filter__label">Events: </span>
+                <button class="action filter__item filter__item--selected" data-filter="*">All</button>
+                <button class="action filter__item" data-filter=".fun">
+                    <i class="icon "></i>
+                    <span class="action__text">Fun</span>
+                </button>
+                <button class="action filter__item" data-filter=".random">
+                    <i class="icon "></i>
+                    <span class="action__text">Performing Arts</span>
+                </button>
+                <button class="action filter__item" data-filter=".other">
+                    <i class="icon "></i>
+                    <span class="action__text">Art Events</span>
+                </button>
+                <button class="action filter__item" data-filter=".nofun">
+                    <i class="icon "></i>
+                    <span class="action__text">Literary Events</span>
+                </button>
+                <button class="action filter__item" data-filter=".possiblyfun">
+                    <i class="icon "></i>
+                    <span class="action__text">Personality Events</span>
+                </button>
+                <button class="action filter__item" data-filter=".gaming">
+                    <i class="icon "></i>
+                    <span class="action__text">Gaming Events</span>
+                </button>
+            </div>
+            <button class="cart">
+                <i class="cart__icon fa fa-shopping-cart"></i>
+                <span class="text-hidden">Events</span>
+                <span class="cart__count">0</span>
+            </button>
+        </div>
+        <!-- Main view -->
+        <div class="view">
+            <!-- Grid -->
+            <section class="grid">
+                <!-- Loader -->
+                <img class="grid__loader" src="images/loader.svg" width="60" alt="Loading..." />
+                <!-- Grid sizer for a fluid Isotope (Masonry) layout -->
+                <div class="grid__sizer"></div>
+                <!-- Grid items -->
+
+                <div class="grid__item fun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/taboo.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Standard game of taboo. Describe the word to your teammates without speaking the taboo words given.</div>
+                        <div class="slider__item">	Multiple teams per class with 5 to 8 participants.
+                           Word cards will be provided.
+                        </div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Taboo</h3>
+                        <span class="meta__organizer">Nivea Dabre & Valencia Dias</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item fun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/admad.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Be the ad-guru and create an advertisement for an object given by us. Be crazy, funky and let the creativity flow. </div>
+                        <div class="slider__item">	Multiple teams per class with 4 to 8 participants.
+                            	Participants will be given topics on the spot for the first round.
+                            	For the final round team will be given time to prepare.
+                        </div>
+                        </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Ad-mad</h3>
+                        <span class="meta__organizer">Janice Abraham</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item fun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/jenga.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Nobody can say no to a good game of jenga. The tower stands tall. Remove its blocks without knocking it to the ground. Sounds simple? Try it!</div>
+                        <div class="slider__item">Multiple teams per class with a maximum number of 3 participants.</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Jenga</h3>
+                        <span class="meta__organizer">Shem Pereira</span>
+                        <span class="meta__day">Day 3</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item fun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/monopoly.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Game of monopoly with a twist. Play it the MU way where you get kt’s and extra credits as you move along the years. Roll the dice & beware of the drop.</div>
+                        <div class="slider__item">	Multiple teams from one class with 2 participants.</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">MUnopoly</h3>
+                        <span class="meta__organizer">Ruchira Rachaprolu</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item fun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/5ingredients.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Calling in all the masterchefs in the house.
+                            Given:  5 random ingredients.
+                            Your task: Prepare a good, tasty dish out of them.
+                            The catch: No cooking allowed.
+                        </div>
+                        <div class="slider__item">	Multiple teams per class with 5 to 8 participants</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">FIVE Ingredients</h3>
+                        <span class="meta__organizer">Tracy Pereira</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item fun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/guessTheMovie.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Who doesn’t like watching movies? Or enacting them in a game of charades? Well here’s a game where you’ll do just that. Come test your movie knowledge.</div>
+                        <div class="slider__item">	Multiple teams per class with a maximum of 3 participants.
+                            	One of the participants will be given a movie to enact to the other teammates.
+                            	Writing or saying out the name of the movie will get the team disqualified.
+                            	The words can be broken into 2 parts in order to make it easier for your teammates to understand.
+                        </div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Guess the movie</h3>
+                        <span class="meta__organizer">Ruchita Rozario</span>
+                        <span class="meta__day">Day 2</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item fun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/treasure_hunt_header.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">An elaborate treasure hunt planned just for your fun & amusement. Pass the levels and look for clues all around the college. Crack the riddles and you receive the treasure.</div>
+                        <div class="slider__item">	1 team per class with maximum number of 5 participants.
+                            	The clues will be within the college premises
+                        </div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Treasure Hunt</h3>
+                        <span class="meta__organizer">Abhishek Kateliya</span>
+                        <span class="meta__day">Day 2</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item fun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/connect.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Find out what’s common between all the four images shown to you.</div>
+                        <div class="slider__item">	Multiple teams per class with a maximum of 2 participants
+                            	Four pictures are  given per team and expected to find the connection among them
+                        </div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Connect</h3>
+                        <span class="meta__organizer">Jeet Thakur</span>
+                        <span class="meta__day">Day 3</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item fun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/hogathon.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Indulge the foodie in you and showcase your hogging prowess by gobbling up everything that’s in your way to win our foodestination.</div>
+                        <div class="slider__item">	Single team entry from each class.
+                            	Each team can have 3 participants
+                            	All 3 participants need to finish the food served in the least time possible
+                        </div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Hogathon</h3>
+                        <span class="meta__organizer">Brijesh Thapa</span>
+                        <span class="meta__day">Day 3</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item fun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/poker.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">A perfect place to unwind and relax. The stakes are high and each move is a nail biter. So suit up and gamble away!</div>
+                        <div class="slider__item">	Single team entry from each class.
+                            	Each team can have 3 participants
+                            	All 3 participants need to finish the food served in the least time possible
+                        </div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Poker</h3>
+                        <span class="meta__organizer">Shivani Vartak</span>
+                        <span class="meta__day">Day 2</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+
+                <div class="grid__item gaming">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/langaming.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Grab your players and come play NFS, CS and FIFA</div>
+                        <div class="slider__item">	Multiple teams allowed for all class for CS
+                            	Multiple entries per class FIFA
+                            </div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">LAN Gaming</h3>
+                        <span class="meta__organizer">Shaun Kollannur</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item gaming">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/boxcric.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Indoor cricket for all cricket lovers. Standard rules of cricket apply but with a twist!</div>
+                        <div class="slider__item">	Number of participants per team = 5+2
+                            	Multiple teams allowed
+                            	One girl player compulsory
+                            	Usual box rules
+                        </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Glow In The Dark Box Cricket</h3>
+                        <span class="meta__organizer">Binny Joshua</span>
+                        <span class="meta__day">Day 2</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                    </div>
+                <div class="grid__item gaming">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/fooseball.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Play human foose ball as you’re tied to your places and the ball keeps rolling. Defend! Attack! GOAL!!</div>
+                        <div class="slider__item">	Multiple teams allowed with 5 participants per team
+                            	No shots above the waist
+                        </div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Foose Ball</h3>
+                        <span class="meta__organizer">Immanuel Thomas</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item gaming">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/abadhubi.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Aba Dhubi</h3>
+                        <span class="meta__organizer">Charmaine Alexander</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item gaming">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/darts.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Darts</h3>
+                        <span class="meta__organizer">Akshaya Poojari</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item gaming">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/chess.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Real Chess</h3>
+                        <span class="meta__organizer">Peter Emil</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item gaming">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/blur.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Blur</h3>
+                        <span class="meta__organizer">Siddhant Dimri</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+
+
+                <div class="grid__item random">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/doremi.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Do Re Mi</h3>
+                        <span class="meta__organizer">Pearl Almeida</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item random">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/saregama.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Sa Re Ga Ma</h3>
+                        <span class="meta__organizer">Pearl Almeida</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item random">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/stepup.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Step Up</h3>
+                        <span class="meta__organizer">Robin Mathew & Gail Pinto</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item random">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/60secs.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">60 Seconds to Fame</h3>
+                        <span class="meta__organizer">Rebecca</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item random">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/unscr.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Unscripted</h3>
+                        <span class="meta__organizer">Saylee Lanjewar & Puja</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item random">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/Dance%20face-off.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Dance Face Off</h3>
+                        <span class="meta__organizer">Gavin Tauro & varun Mullins</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item random">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/antak.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Antakshari</h3>
+                        <span class="meta__organizer">Rubina Praveen</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item random">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/stomptheyard.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Stomp the Yard</h3>
+                        <span class="meta__organizer">Darren Sequeira</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item random">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/rhythmdevine.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Rhythm Divine</h3>
+                        <span class="meta__organizer">Dylan Dcruz</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item random">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/karaoke.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Karaoke</h3>
+                        <span class="meta__organizer">Kevin Rodrigues</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+
+
+
+                <div class="grid__item other">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/facepainting.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Face Painting</h3>
+                        <span class="meta__organizer">Rachel Joseph</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item other">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/revamped.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Revamped</h3>
+                        <span class="meta__organizer">Apurva Nehru</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item other">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/pixel.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Pixel Perfect</h3>
+                        <span class="meta__organizer">Pratik Shetty</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item other">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/rangoli.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Race To Rangoli</h3>
+                        <span class="meta__organizer">Karishma Dalvi</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item other">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/nailart.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Nail Art</h3>
+                        <span class="meta__organizer">Rasika Acharya</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item other">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/tattoo.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Tattoo Making</h3>
+                        <span class="meta__organizer">Abhishek Lakade</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+
+                <div class="grid__item nofun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/extempore.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Extempore</h3>
+                        <span class="meta__organizer">Sweta Singh</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item nofun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/creativewritin.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Creative Writing</h3>
+                        <span class="meta__organizer">Flavion D'sa</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item nofun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/spellbee.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Spell Bee</h3>
+                        <span class="meta__organizer">Slavvy Coelho</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item nofun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/comicstrip.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Comic Strip</h3>
+                        <span class="meta__organizer">Rahul Pereira</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item nofun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/justamin.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Just a minute</h3>
+                        <span class="meta__organizer">Melchzidek Caleb</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item nofun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/scrabble.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Scrabble with Friends</h3>
+                        <span class="meta__organizer">Neeraj Nair</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item nofun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/debate.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Intracollege Parliamentary Debate</h3>
+                        <span class="meta__organizer">StuCo</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+
+                <div class="grid__item possiblyfun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/mrandmrs.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Mr. & Ms. CRCE</h3>
+                        <span class="meta__organizer">Pearl Almeida</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item possiblyfun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/crcefittest.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">CRCE’s Fittest</h3>
+                        <span class="meta__organizer">Rahul Pereira</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item possiblyfun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/armwrest.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">Arm wrestling</h3>
+                        <span class="meta__organizer">Rishabh Sharma</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+                <div class="grid__item possiblyfun">
+                    <div class="slider">
+                        <div class="slider__item"><img src="images/roadies.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Description of the event</div>
+                    </div>
+                    <div class="meta">
+                        <h3 class="meta__title">CRCE Roadies</h3>
+                        <span class="meta__organizer">Pranav Gala</span>
+                        <span class="meta__day">Day 1</span>
+                    </div>
+                    <button class="action action--button action--buy">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="text-hidden">Add to cart</span>
+                    </button>
+                </div>
+
+            </section>
+            <!-- /grid-->
+        </div>
+    </div>
+
+    <div class="page" id="page-aboutus">
+
+    </div>
+
+    <div class="page" id="page-sc">
+
+    </div>
+
+    <div class="page" id="page-contact">
+
+    </div>
+</div>
+
+<!-- /pages-stack -->
+<button class="menu-button"><span>Menu</span></button>
+<script src="js/classie.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
