@@ -329,7 +329,7 @@ html.js,
     position: relative;
     max-width: 1300px;
     max-height: 80vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     margin: 0 auto;
     padding: 1% 5%;
     text-align: center;
