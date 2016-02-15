@@ -8,8 +8,6 @@
         .menu .btn .fa,
         .menu .btn.trigger .line {
             position: absolute;
-            top: 50%;
-            left: 50%;
             -webkit-transform: translateX(-50%) translateY(-50%);
             -ms-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
@@ -247,9 +245,9 @@
 
         .text {
             position: absolute;
-            top: 60%;
+            top: 40%;
             left: 20%;
-            opacity: 1;
+            opacity: 50;
             /*text-align: center;*/
         }
 
@@ -261,11 +259,10 @@
     </style>
 </head>
 <body style="background-color: #0e0f0f">
-<div class="menu" id="div1">
+<div class="menu" style="top: 50%; left: 40%;" id="div1">
     <div class="btn trigger"> <span class="text">Students Council</span> </div>
 
     <div class="rotater">
-        <span class="btn btn-icon">Title</span>
         <div><img class="btn btn-icon" src="images/5ingredients.jpg"></div>
     </div>
 
@@ -295,37 +292,18 @@
     </div>
 
 </div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function() {
-    $(".menu").click(function() {
-        if($(this).hasClass("active")){
-            $(this).removeClass("active");
-            /*$(this).addClass("active");*/
-
-        }
-        else{
-            $(".menu").removeClass("active");
-            $(this).addClass("active");
-        }
-        /*else {
-            $("this").toggleClass("active");
-        }
-
-
-        /*else if($("this").hasClass("active")){
-            close_circle();
-            $("this").addClass("active");
-        }*/
-        /*function close_circle(){
-            $("this").removeClass("active");
-        }*/
+<script src="js/jquery.min.js"></script>
+<script>$(document).ready(function() {
+    $(".menu").click(function(e) {
+        e.stopPropagation();
+        $('.menu').removeClass('active');
+        $(this).addClass('active');
     });
-        $(".btn.btn-icon").hover(function () {
-            $(this).find(".hover").fadeIn(300);
-        }, function(){
-            $(this).find(".hover").fadeOut(100);
-        });
+
+    $('body').click(function(){
+        console.log('b')
+        $('.menu').removeClass('active');
+    });
 });
 </script>
 </body>
