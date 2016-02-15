@@ -2,15 +2,14 @@
 <html lang="en" class="no-js">
 
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Euphoria 2016</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/flickity.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <style>
         *,
         *:after,
@@ -19,7 +18,6 @@
         }
 
         @import url(https://fonts.googleapis.com/css?family=Raleway);
-
         body {
             font-family: 'Raleway', 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
             margin: 0;
@@ -38,315 +36,6 @@
         a:hover {
             color: #fff;
         }
-
-        #page-home {
-            background: linear-gradient(230deg, #246655, #16aa84, #a1ce15, #ffce00, #fd4703, #f0180c);
-            background-size: 1200% 1200%;
-
-            -webkit-animation: home 30s ease infinite;
-            -moz-animation: home 30s ease infinite;
-            animation: home 30s ease infinite;
-        }
-
-        #page-home img {
-            margin-left: 15vw;
-            margin-top: 20vh;
-            width: 70vw;
-        }
-
-        @-webkit-keyframes home {
-            0% {
-                background-position: 0% 50%
-            }
-            50% {
-                background-position: 100% 51%
-            }
-            100% {
-                background-position: 0% 50%
-            }
-        }
-
-        @-moz-keyframes home {
-            0% {
-                background-position: 0% 50%
-            }
-            50% {
-                background-position: 100% 51%
-            }
-            100% {
-                background-position: 0% 50%
-            }
-        }
-
-        @keyframes home {
-            0% {
-                background-position: 0% 50%
-            }
-            50% {
-                background-position: 100% 51%
-            }
-            100% {
-                background-position: 0% 50%
-            }
-        }
-
-        #page-aboutus{
-            display: flex;
-            position: absolute;
-            align-items: center;
-            justify-content: space-around;
-        }
-
-        .menu,
-        .menu .btn .fa,
-        .menu .btn.trigger .line {
-            -webkit-transform: translateX(-50%) translateY(-50%);
-            -ms-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-        }
-
-        .menu {
-            width: 5em;
-            height: 5em;
-        }
-
-        .menu .btn {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.15);
-            opacity: 0;
-            z-index: -10;
-            cursor: pointer;
-            -webkit-transition: opacity 1s, z-index 0.3s, -webkit-transform 1s;
-            transition: opacity 1s, z-index 0.3s, transform 1s;
-            -webkit-transform: translateX(0);
-            -ms-transform: translateX(0);
-            transform: translateX(0);
-        }
-
-        .menu .btn .fa {
-            font-size: 3em;
-            -webkit-transition: color 0.3s;
-            transition: color 0.3s;
-        }
-
-        .menu .btn:hover .fa { color: rgba(255, 255, 255, 0.7); }
-
-        .menu .btn.trigger {
-            opacity: 1;
-            z-index: 100;
-            cursor: pointer;
-            -webkit-transition: -webkit-transform 0.3s;
-            transition: transform 0.3s;
-        }
-
-        .menu .btn.trigger:hover {
-            -webkit-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-            transform: scale(1.2);
-        }
-
-        .menu .btn.trigger:hover .line { background-color: rgba(255, 255, 255, 0.7); }
-
-        .menu .btn.trigger:hover .line:before,
-        .menu .btn.trigger:hover .line:after { background-color: rgba(255, 255, 255, 0.7); }
-
-        .menu .btn.trigger .line {
-            width: 60%;
-            height: 6px;
-            background: #000;
-            border-radius: 6px;
-            -webkit-transition: background-color 0.3s, height 0.3s, top 0.3s;
-            transition: background-color 0.3s, height 0.3s, top 0.3s;
-        }
-
-        .menu .btn.trigger .line:before,
-        .menu .btn.trigger .line:after {
-            content: "";
-            display: block;
-            position: absolute;
-            left: 0;
-            width: 100%;
-            height: 6px;
-            background: #000;
-            border-radius: 6px;
-            -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-
-        .menu .btn.trigger .line:before {
-            top: -12px;
-            -webkit-transform-origin: 15% 100%;
-            -ms-transform-origin: 15% 100%;
-            transform-origin: 15% 100%;
-        }
-
-        .menu .btn.trigger .line:after {
-            top: 12px;
-            -webkit-transform-origin: 25% 30%;
-            -ms-transform-origin: 25% 30%;
-            transform-origin: 25% 30%;
-        }
-
-        .menu .rotater {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            -webkit-transform-origin: 50% 50%;
-            -ms-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-        }
-
-        .menu.active .btn-icon {
-            opacity: 1;
-            z-index: 50;
-        }
-
-        .menu.active .trigger .line {
-            height: 0px;
-            top: 45%;
-        }
-
-        .menu.active .trigger .line:before {
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-            width: 110%;
-        }
-
-        .menu.active .trigger .line:after {
-            -webkit-transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-            width: 110%;
-        }
-
-        .rotater:nth-child(1) {
-            -webkit-transform: rotate(-22.5deg);
-            -ms-transform: rotate(-22.5deg);
-            transform: rotate(-22.5deg);
-        }
-
-        .menu.active .rotater:nth-child(1) .btn-icon {
-            -webkit-transform: translateX(-10em) rotate(22.5deg);
-            -ms-transform: translateX(-10em) rotate(22.5deg);
-            transform: translateX(-10em) rotate(22.5deg);
-        }
-
-        .rotater:nth-child(2) {
-            -webkit-transform: rotate(22.5deg);
-            -ms-transform: rotate(22.5deg);
-            transform: rotate(22.5deg);
-        }
-
-        .menu.active .rotater:nth-child(2) .btn-icon {
-            -webkit-transform: translateX(-10em) rotate(-22.5deg);
-            -ms-transform: translateX(-10em) rotate(-22.5deg);
-            transform: translateX(-10em) rotate(-22.5deg);
-        }
-
-        .rotater:nth-child(3) {
-            -webkit-transform: rotate(67.5deg);
-            -ms-transform: rotate(67.5deg);
-            transform: rotate(67.5deg);
-        }
-
-        .menu.active .rotater:nth-child(3) .btn-icon {
-            -webkit-transform: translateX(-10em) rotate(-67.5deg);
-            -ms-transform: translateX(-10em) rotate(-67.5deg);
-            transform: translateX(-10em) rotate(-67.5deg);
-        }
-
-        .rotater:nth-child(4) {
-            -webkit-transform: rotate(112.5deg);
-            -ms-transform: rotate(112.5deg);
-            transform: rotate(112.5deg);
-        }
-
-        .menu.active .rotater:nth-child(4) .btn-icon {
-            -webkit-transform: translateX(-10em) rotate(-112.5deg);
-            -ms-transform: translateX(-10em) rotate(-112.5deg);
-            transform: translateX(-10em) rotate(-112.5deg);
-        }
-
-        .rotater:nth-child(5) {
-            -webkit-transform: rotate(157.5deg);
-            -ms-transform: rotate(157.5deg);
-            transform: rotate(157.5deg);
-        }
-
-        .menu.active .rotater:nth-child(5) .btn-icon {
-            -webkit-transform: translateX(-10em) rotate(-157.5deg);
-            -ms-transform: translateX(-10em) rotate(-157.5deg);
-            transform: translateX(-10em) rotate(-157.5deg);
-        }
-
-        .rotater:nth-child(6) {
-            -webkit-transform: rotate(202.5deg);
-            -ms-transform: rotate(202.5deg);
-            transform: rotate(202.5deg);
-        }
-
-        .menu.active .rotater:nth-child(6) .btn-icon {
-            -webkit-transform: translateX(-10em) rotate(-202.5deg);
-            -ms-transform: translateX(-10em) rotate(-202.5deg);
-            transform: translateX(-10em) rotate(-202.5deg);
-        }
-
-        .rotater:nth-child(7) {
-            -webkit-transform: rotate(247.5deg);
-            -ms-transform: rotate(247.5deg);
-            transform: rotate(247.5deg);
-        }
-
-        .menu.active .rotater:nth-child(7) .btn-icon {
-            -webkit-transform: translateX(-10em) rotate(-247.5deg);
-            -ms-transform: translateX(-10em) rotate(-247.5deg);
-            transform: translateX(-10em) rotate(-247.5deg);
-        }
-
-        .rotater:nth-child(8) {
-            -webkit-transform: rotate(292.5deg);
-            -ms-transform: rotate(292.5deg);
-            transform: rotate(292.5deg);
-        }
-
-        .menu.active .rotater:nth-child(8) .btn-icon {
-            -webkit-transform: translateX(-10em) rotate(-292.5deg);
-            -ms-transform: translateX(-10em) rotate(-292.5deg);
-            transform: translateX(-10em) rotate(-292.5deg);
-        }
-
-        .rotater:nth-child(9) {
-            -webkit-transform: rotate(337.5deg);
-            -ms-transform: rotate(337.5deg);
-            transform: rotate(337.5deg);
-        }
-
-        .menu.active .rotater:nth-child(9) .btn-icon {
-            -webkit-transform: translateX(-10em) rotate(-337.5deg);
-            -ms-transform: translateX(-10em) rotate(-337.5deg);
-            transform: translateX(-10em) rotate(-337.5deg);
-        }
-
-        .text {
-            position: absolute;
-            top: 40%;
-            left: 20%;
-            opacity: 50;
-            /*text-align: center;*/
-        }
-
-        div.btn.trigger span.text{
-            top: 25%;
-            left: 16%;
-        }
     </style>
 
     <script src="js/modernizr-custom.js"></script>
@@ -358,13 +47,10 @@
     <div class="pages-nav__item"><a class="link link--page" href="#page-home">Home</a></div>
     <div class="pages-nav__item"><a class="link link--page" href="#page-events">Events</a></div>
     <div class="pages-nav__item"><a class="link link--page" href="#page-aboutus">About Us</a></div>
-    <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-sc">Students
-        Council</a></div>
-    <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-contact">Contact</a>
-    </div>
+    <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-sc">Students Council</a></div>
+    <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-contact">Contact</a></div>
     <div class="pages-nav__item pages-nav__item--social">
-        <a class="link link--social link--faded" href="#"><i class="fa fa-twitter"></i><span
-                class="text-hidden">Twitter</span></a>
+        <a class="link link--social link--faded" href="#"><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
         <a class="link link--social link--faded" href="#"><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
         <a class="link link--social link--faded" href="#"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
         <a class="link link--social link--faded" href="#"><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
@@ -375,7 +61,7 @@
 <div class="pages-stack">
     <!-- page -->
     <div class="page" id="page-home">
-        <img class="animated zoomIn" src="images/Euphoria-logo.png">
+
     </div>
     <!-- /page -->
     <div class="page" id="page-events">
@@ -384,27 +70,27 @@
                 <span class="filter__label">Events: </span>
                 <button class="action filter__item filter__item--selected" data-filter="*">All</button>
                 <button class="action filter__item" data-filter=".fun">
-                    <i class="icon fa fa-handlizard-o"></i>
+                    <i class="icon "></i>
                     <span class="action__text">Fun</span>
                 </button>
                 <button class="action filter__item" data-filter=".random">
-                    <i class="icon fa fa-circle-o-notch fa-spin"></i>
+                    <i class="icon "></i>
                     <span class="action__text">Performing Arts</span>
                 </button>
                 <button class="action filter__item" data-filter=".other">
-                    <i class="icon fa fa-paint-brush"></i>
+                    <i class="icon "></i>
                     <span class="action__text">Art Events</span>
                 </button>
                 <button class="action filter__item" data-filter=".nofun">
-                    <i class="icon fa fa-pencil"></i>
+                    <i class="icon "></i>
                     <span class="action__text">Literary Events</span>
                 </button>
                 <button class="action filter__item" data-filter=".possiblyfun">
-                    <i class="icon fa fa-modx"></i>
+                    <i class="icon "></i>
                     <span class="action__text">Personality Events</span>
                 </button>
                 <button class="action filter__item" data-filter=".gaming">
-                    <i class="icon fa fa-gamepad"></i>
+                    <i class="icon "></i>
                     <span class="action__text">Gaming Events</span>
                 </button>
             </div>
@@ -419,18 +105,16 @@
             <!-- Grid -->
             <section class="grid">
                 <!-- Loader -->
-                <img class="grid__loader" src="images/loader.svg" width="60" alt="Loading..."/>
+                <img class="grid__loader" src="images/loader.svg" width="60" alt="Loading..." />
                 <!-- Grid sizer for a fluid Isotope (Masonry) layout -->
                 <div class="grid__sizer"></div>
                 <!-- Grid items -->
 
                 <div class="grid__item fun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/taboo.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Standard game of taboo. Describe the word to your teammates without
-                            speaking the taboo words given.
-                        </div>
-                        <div class="slider__item"> Multiple teams per class with 5 to 8 participants.
+                        <div class="slider__item"><img src="images/taboo.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Standard game of taboo. Describe the word to your teammates without speaking the taboo words given.</div>
+                        <div class="slider__item">	Multiple teams per class with 5 to 8 participants.
                             Word cards will be provided.
                         </div>
                     </div>
@@ -446,13 +130,11 @@
                 </div>
                 <div class="grid__item fun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/admad.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Be the ad-guru and create an advertisement for an object given by us.
-                            Be crazy, funky and let the creativity flow.
-                        </div>
-                        <div class="slider__item"> Multiple teams per class with 4 to 8 participants.
-                             Participants will be given topics on the spot for the first round.
-                             For the final round team will be given time to prepare.
+                        <div class="slider__item"><img src="images/admad.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Be the ad-guru and create an advertisement for an object given by us. Be crazy, funky and let the creativity flow. </div>
+                        <div class="slider__item">	Multiple teams per class with 4 to 8 participants.
+                            	Participants will be given topics on the spot for the first round.
+                            	For the final round team will be given time to prepare.
                         </div>
                     </div>
                     <div class="meta">
@@ -467,12 +149,9 @@
                 </div>
                 <div class="grid__item fun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/jenga.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Nobody can say no to a good game of jenga. The tower stands tall.
-                            Remove its blocks without knocking it to the ground. Sounds simple? Try it!
-                        </div>
-                        <div class="slider__item">Multiple teams per class with a maximum number of 3 participants.
-                        </div>
+                        <div class="slider__item"><img src="images/jenga.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Nobody can say no to a good game of jenga. The tower stands tall. Remove its blocks without knocking it to the ground. Sounds simple? Try it!</div>
+                        <div class="slider__item">Multiple teams per class with a maximum number of 3 participants.</div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Jenga</h3>
@@ -486,11 +165,9 @@
                 </div>
                 <div class="grid__item fun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/monopoly.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Game of monopoly with a twist. Play it the MU way where you get kt’s
-                            and extra credits as you move along the years. Roll the dice & beware of the drop.
-                        </div>
-                        <div class="slider__item"> Multiple teams from one class with 2 participants.</div>
+                        <div class="slider__item"><img src="images/monopoly.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Game of monopoly with a twist. Play it the MU way where you get kt’s and extra credits as you move along the years. Roll the dice & beware of the drop.</div>
+                        <div class="slider__item">	Multiple teams from one class with 2 participants.</div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">MUnopoly</h3>
@@ -504,13 +181,13 @@
                 </div>
                 <div class="grid__item fun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/5ingredients.jpg" alt="product1_2"/></div>
+                        <div class="slider__item"><img src="images/5ingredients.jpg" alt="product1_2" /></div>
                         <div class="slider__item">Calling in all the masterchefs in the house.
-                            Given: 5 random ingredients.
+                            Given:  5 random ingredients.
                             Your task: Prepare a good, tasty dish out of them.
                             The catch: No cooking allowed.
                         </div>
-                        <div class="slider__item"> Multiple teams per class with 5 to 8 participants</div>
+                        <div class="slider__item">	Multiple teams per class with 5 to 8 participants</div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">FIVE Ingredients</h3>
@@ -524,15 +201,12 @@
                 </div>
                 <div class="grid__item fun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/guessTheMovie.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Who doesn’t like watching movies? Or enacting them in a game of
-                            charades? Well here’s a game where you’ll do just that. Come test your movie knowledge.
-                        </div>
-                        <div class="slider__item"> Multiple teams per class with a maximum of 3 participants.
-                             One of the participants will be given a movie to enact to the other teammates.
-                             Writing or saying out the name of the movie will get the team disqualified.
-                             The words can be broken into 2 parts in order to make it easier for your teammates to
-                            understand.
+                        <div class="slider__item"><img src="images/guessTheMovie.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Who doesn’t like watching movies? Or enacting them in a game of charades? Well here’s a game where you’ll do just that. Come test your movie knowledge.</div>
+                        <div class="slider__item">	Multiple teams per class with a maximum of 3 participants.
+                            	One of the participants will be given a movie to enact to the other teammates.
+                            	Writing or saying out the name of the movie will get the team disqualified.
+                            	The words can be broken into 2 parts in order to make it easier for your teammates to understand.
                         </div>
                     </div>
                     <div class="meta">
@@ -547,13 +221,10 @@
                 </div>
                 <div class="grid__item fun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/treasure_hunt_header.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">An elaborate treasure hunt planned just for your fun & amusement. Pass
-                            the levels and look for clues all around the college. Crack the riddles and you receive the
-                            treasure.
-                        </div>
-                        <div class="slider__item"> 1 team per class with maximum number of 5 participants.
-                             The clues will be within the college premises
+                        <div class="slider__item"><img src="images/treasure_hunt_header.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">An elaborate treasure hunt planned just for your fun & amusement. Pass the levels and look for clues all around the college. Crack the riddles and you receive the treasure.</div>
+                        <div class="slider__item">	1 team per class with maximum number of 5 participants.
+                            	The clues will be within the college premises
                         </div>
                     </div>
                     <div class="meta">
@@ -568,10 +239,10 @@
                 </div>
                 <div class="grid__item fun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/connect.jpg" alt="product1_2"/></div>
+                        <div class="slider__item"><img src="images/connect.jpg" alt="product1_2" /></div>
                         <div class="slider__item">Find out what’s common between all the four images shown to you.</div>
-                        <div class="slider__item"> Multiple teams per class with a maximum of 2 participants
-                             Four pictures are given per team and expected to find the connection among them
+                        <div class="slider__item">	Multiple teams per class with a maximum of 2 participants
+                            	Four pictures are  given per team and expected to find the connection among them
                         </div>
                     </div>
                     <div class="meta">
@@ -586,13 +257,11 @@
                 </div>
                 <div class="grid__item fun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/hogathon.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Indulge the foodie in you and showcase your hogging prowess by
-                            gobbling up everything that’s in your way to win our foodestination.
-                        </div>
-                        <div class="slider__item"> Single team entry from each class.
-                             Each team can have 3 participants
-                             All 3 participants need to finish the food served in the least time possible
+                        <div class="slider__item"><img src="images/hogathon.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Indulge the foodie in you and showcase your hogging prowess by gobbling up everything that’s in your way to win our foodestination.</div>
+                        <div class="slider__item">	Single team entry from each class.
+                            	Each team can have 3 participants
+                            	All 3 participants need to finish the food served in the least time possible
                         </div>
                     </div>
                     <div class="meta">
@@ -607,13 +276,11 @@
                 </div>
                 <div class="grid__item fun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/poker.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">A perfect place to unwind and relax. The stakes are high and each move
-                            is a nail biter. So suit up and gamble away!
-                        </div>
-                        <div class="slider__item"> Single team entry from each class.
-                             Each team can have 3 participants
-                             All 3 participants need to finish the food served in the least time possible
+                        <div class="slider__item"><img src="images/poker.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">A perfect place to unwind and relax. The stakes are high and each move is a nail biter. So suit up and gamble away!</div>
+                        <div class="slider__item">	Single team entry from each class.
+                            	Each team can have 3 participants
+                            	All 3 participants need to finish the food served in the least time possible
                         </div>
                     </div>
                     <div class="meta">
@@ -629,10 +296,10 @@
 
                 <div class="grid__item gaming">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/langaming.jpg" alt="product1_2"/></div>
+                        <div class="slider__item"><img src="images/langaming.jpg" alt="product1_2" /></div>
                         <div class="slider__item">Grab your players and come play NFS, CS and FIFA</div>
-                        <div class="slider__item"> Multiple teams allowed for all class for CS
-                             Multiple entries per class FIFA
+                        <div class="slider__item">	Multiple teams allowed for all class for CS
+                            	Multiple entries per class FIFA
                         </div>
                     </div>
                     <div class="meta">
@@ -647,14 +314,12 @@
                 </div>
                 <div class="grid__item gaming">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/boxcric.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Indoor cricket for all cricket lovers. Standard rules of cricket apply
-                            but with a twist!
-                        </div>
-                        <div class="slider__item"> Number of participants per team = 5+2
-                             Multiple teams allowed
-                             One girl player compulsory
-                             Usual box rules
+                        <div class="slider__item"><img src="images/boxcric.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Indoor cricket for all cricket lovers. Standard rules of cricket apply but with a twist!</div>
+                        <div class="slider__item">	Number of participants per team = 5+2
+                            	Multiple teams allowed
+                            	One girl player compulsory
+                            	Usual box rules
                         </div>
                         <div class="meta">
                             <h3 class="meta__title">Glow In The Dark Box Cricket</h3>
@@ -669,12 +334,10 @@
                 </div>
                 <div class="grid__item gaming">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/fooseball.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Play human foose ball as you’re tied to your places and the ball keeps
-                            rolling. Defend! Attack! GOAL!!
-                        </div>
-                        <div class="slider__item"> Multiple teams allowed with 5 participants per team
-                             No shots above the waist
+                        <div class="slider__item"><img src="images/fooseball.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Play human foose ball as you’re tied to your places and the ball keeps rolling. Defend! Attack! GOAL!!</div>
+                        <div class="slider__item">	Multiple teams allowed with 5 participants per team
+                            	No shots above the waist
                         </div>
                     </div>
                     <div class="meta">
@@ -689,8 +352,9 @@
                 </div>
                 <div class="grid__item gaming">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/abadhubi.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/abadhubi.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">A game where the rules say that you gotta hit the players hard.  Grab your teammates, aim at the opponents, dodge the balls and fire away! </div>
+                        <div class="slider__item">	Multiple teams allowed with 5+2 participants per team</div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Aba Dhubi</h3>
@@ -704,8 +368,11 @@
                 </div>
                 <div class="grid__item gaming">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/darts.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/darts.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">If there is precision in your aim, the target is yours to claim!</div>
+                        <div class="slider__item">	Multiple teams allowed per class with 3 participants per team
+                            	Each player has 3 darts and will throw all of them from the oche
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Darts</h3>
@@ -719,8 +386,11 @@
                 </div>
                 <div class="grid__item gaming">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/chess.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/chess.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Grab your pawns, ministers and Queen. Be the king and the Chess Master in this game of real chess.  </div>
+                        <div class="slider__item">	16 players per class
+                            	Other rules will be explained on the spot
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Real Chess</h3>
@@ -734,13 +404,18 @@
                 </div>
                 <div class="grid__item gaming">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/blur.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/blur.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Enter the world of advanced powered up racing. Destroy your rivals in the ultimate race with no holds barred!</div>
+                        <div class="slider__item">	Each race will have 3 or 4 players depending on the round.
+                            	Players can choose a car from any class from the default selection.
+                            	Top two places advance to the next round
+                            	Available power ups will be declared  by the event head
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Blur</h3>
                         <span class="meta__organizer">Siddhant Dimri</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -751,13 +426,26 @@
 
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/doremi.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/doremi.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Channel your favorite English music artists and become CRCE’s very own Eminem, Beyonce or Bieber!</div>
+                        <div class="slider__item">Eliminations :
+                            	Multiple entries are permitted
+                            	3mins inclusive of set up time
+                            	One accompanist will be allowed
+                            	Karaoke tracks are allowed. (Participants have to arrange for a player/laptop)
+                            	5 finalists will be selected.
+
+
+                            Finals :
+                            	4mins inclusive of set up time
+                            	One accompanist will be allowed
+                            	Karaoke tracks are allowed
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Do Re Mi</h3>
                         <span class="meta__organizer">Pearl Almeida</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -766,13 +454,25 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/saregama.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/saregama.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">If your Sur and Taal are in sync, and your voice also has the magic of Arijit Singh and if you’re as sassy as Honey Singh, then you’re in line to becoming the next CRCE’S Idol! </div>
+                        <div class="slider__item">Eliminations:
+                            	3mins inclusive of set up time
+                            	Multiple entries are permitted
+                            	One accompanist will be allowed
+                            	Karaoke tracks are allowed. (Participants have to arrange for a player/laptop)
+                            	5 finalists will be selected.
+
+                            Finals:
+                            	4mins inclusive of set up time
+                            	One accompanist will be allowed
+                            	Karaoke tracks are allowed
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Sa Re Ga Ma</h3>
                         <span class="meta__organizer">Pearl Almeida</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -781,8 +481,18 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/stepup.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/stepup.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Solo Dance Competition for all the Hip-Hop, Classical and contemporary dancers</div>
+                        <div class="slider__item">Elimination:
+                            	Multiple entries are permitted
+                            	3mins inclusive of set up time
+                            	Use of props is allowed
+                            	5 finalists will be selected
+
+                            Finals:
+                            	4mins inclusive of set up time
+                            	Use of props is allowed
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Step Up</h3>
@@ -796,13 +506,23 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/60secs.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/60secs.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">What is your X- factor? Mimicry? Origami?  Playing an instrument or Magic? Show your talent & enthrall the audience. It’s your 60 sec road to fame.</div>
+                        <div class="slider__item">Elimination:
+                            	Multiple entries are permitted
+                            	2mins inclusive of  1 min set up time
+                            	No solo singing or solo dance act allowed
+                            	5 finalists will be selected
+
+                            Finals:
+                            	2mins inclusive of set up time
+                            	2 winners
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">60 Seconds to Fame</h3>
                         <span class="meta__organizer">Rebecca</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -811,8 +531,14 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/unscr.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/unscr.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Given a topic, Decide, Direct and Perform an impromptu skit within the time limit. The true genius of an actor comes forth when he’s least prepared (or so they say).</div>
+                        <div class="slider__item">	Multiple entries are permitted
+                            	Team of 5 maximum
+                            	Pick up a chit with a situation/scene they have to enact
+                            	Teams get 20 mins to prepare a 10 mins act
+                            	Teams can use any of the props provided
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Unscripted</h3>
@@ -826,13 +552,24 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/Dance%20face-off.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/Dance%20face-off.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">One on One dance battle. If you’ve seen the Step Up series, you know what I am talking about. Same music, same beats, lets see who can keep up</div>
+                        <div class="slider__item">Elimination:
+                            	Multiple entries are permitted
+                            	Participants are required to prepare a minute long routine on their choice of music
+                            	Two participants will compete at a time, participants are selected at random using a spinning bottle.
+                            	When the music starts, the first participant dances for the first 30secs followed by the next participant for the next 30secs. Both of them then dance together for 30 seconds.
+                            	Number of rounds will be decided according to number of entries
+                            	4 finalists will be selected
+
+                            Finals:
+                            	1 winner will be selected
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Dance Face Off</h3>
                         <span class="meta__organizer">Gavin Tauro & varun Mullins</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -841,13 +578,17 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/antak.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/antak.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">A much loved game for all the music buffs.</div>
+                        <div class="slider__item">	Multiple teams per class permitted
+                            	3 participants per team
+                            	No written material or use of internet allowed
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Antakshari</h3>
                         <span class="meta__organizer">Rubina Praveen</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -856,13 +597,18 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/stomptheyard.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/stomptheyard.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">With your b-boying stunts and uber cool hip hop grooves, make the streets of New York come alive right here in CRCE!</div>
+                        <div class="slider__item">	Multiple teams per class permitted
+                            	Minimum 4 participants per team
+                            	No physical contact between the opponents during the battle
+                            	Music for the battle will be provided by the head
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Stomp the Yard</h3>
                         <span class="meta__organizer">Darren Sequeira</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -871,13 +617,26 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/rhythmdevine.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/rhythmdevine.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">When words fail, music speaks! Think you can dazzle and captivate he audience with your instrument?</div>
+                        <div class="slider__item">	Multiple entries are permitted
+                            	3mins inclusive of set up time
+                            	No vocalist allowed
+                            	Only guitar, keyboard, violin, octopad, cello, flute, sitar, table is allowed
+                            	Beat- boxing is allowed
+                            	5 finalists will be selected.
+
+                            Finals:
+                            	4mins inclusive of set up time
+                            	One winner will be selected
+
+                        </div>
+
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Rhythm Divine</h3>
                         <span class="meta__organizer">Dylan Dcruz</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -886,13 +645,17 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/karaoke.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/karaoke.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Does bollywood or Hollywood run in your blood? Let’s find out. Let your music finesse surface and enthuse the crowd.</div>
+                        <div class="slider__item">	Multiple team are permitted from each class
+                            	each team can
+                            	The songs will be played at random
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Karaoke</h3>
                         <span class="meta__organizer">Kevin Rodrigues</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -901,15 +664,19 @@
                 </div>
 
 
+
                 <div class="grid__item other">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/facepainting.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/facepainting.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Paint your partners face and create a poster on it based on a socially relevant theme. Incentive to participate: You get to paint someone’s face  :D </div>
+                        <div class="slider__item">	Multiple teams consisting of 2-3participants
+                            	Only paints will be provided
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Face Painting</h3>
                         <span class="meta__organizer">Rachel Joseph</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -918,13 +685,18 @@
                 </div>
                 <div class="grid__item other">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/revamped.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/revamped.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">A classic game to test your creativity. Create a gorgeous ensemble, complete with a painted mask . Prove old is gold! Your creation will be showcased on the ramp</div>
+                        <div class="slider__item">	Multiple teams per class
+                            	4-8 participants per team including one model.
+                            	Participants will have to carry their own material. Pariticipants will also have to make and paint a mask on the same model.
+                            	These models will be participating in a fashion show
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Revamped</h3>
                         <span class="meta__organizer">Apurva Nehru</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -933,13 +705,17 @@
                 </div>
                 <div class="grid__item other">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/pixel.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/pixel.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">This one’s for the photographers . Take out your camera , tighten your shoes, in this event you have no time lose. Come back on time, show your pictures in a line and let your photography skills shine.</div>
+                        <div class="slider__item">	Team of 2 participants.
+                            	The photographer has to click a picture of any scene in college or at bandstand.
+                            	Multiple enteries per class allowed
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Pixel Perfect</h3>
                         <span class="meta__organizer">Pratik Shetty</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -948,8 +724,11 @@
                 </div>
                 <div class="grid__item other">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/rangoli.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/rangoli.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Making sure we pay homage to our culture, here is an event to see who can make the best celebratory and beautiful rangoli.</div>
+                        <div class="slider__item">	2 participants per team.
+                            	Time limit- 1 hour
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Race To Rangoli</h3>
@@ -963,13 +742,17 @@
                 </div>
                 <div class="grid__item other">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/nailart.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/nailart.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">For all the ladies. Get your nails painted in the most trending and cool pattern and colors. Be a trendsetter with those killer nails :p</div>
+                        <div class="slider__item">	Team of 2 participants; model and artist
+                            	Participants need to carry their own material
+                            	Time limit- 30 minutes
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Nail Art</h3>
                         <span class="meta__organizer">Rasika Acharya</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -978,8 +761,11 @@
                 </div>
                 <div class="grid__item other">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/tattoo.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/tattoo.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Not just  your average art, crazy thinking you’ll have to start.</div>
+                        <div class="slider__item">	Team of 2 participants; model and artist
+                            	Participants need to carry their own material
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Tattoo Making</h3>
@@ -994,13 +780,27 @@
 
                 <div class="grid__item nofun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/extempore.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/extempore.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Pick a topic and speak away. For all the smart talkers who have something to say about everything.</div>
+                        <div class="slider__item">	English should be the language of communication
+                            	Multiple entries allowed.
+                            	Only 5 minutes will be allotted to each contestant: 2
+                            minutes for speaking and 3 minutes for preparing.
+                            	The speech should include a brief introduction of the
+                            participant.
+                            	A warning bell will be given at the end of 1.5 minutes.
+                            	Speech notes are not to be used by the contestant while
+                            presenting his/ her speech
+                            	Second round will be conducted in case of tie of winning or
+                            runner-up position.
+                            	Participants must carry their own pens.
+                            	Decision of judges will be considered final.
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Extempore</h3>
                         <span class="meta__organizer">Sweta Singh</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -1009,13 +809,18 @@
                 </div>
                 <div class="grid__item nofun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/creativewritin.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/creativewritin.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Can you come up with the most unbelievable story at the blink of an eye? If yes, this is for you.  Write a captivating story for the ending that we provide.</div>
+                        <div class="slider__item">	Multiple entries allowed
+                            	Participants will have 30 minutes to submit their writing
+                            	At the very beginning will be given a sentence with which the participants will have to start you’re the essay
+                            	Be ready for a twist mid way through your essay
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Creative Writing</h3>
                         <span class="meta__organizer">Flavion D'sa</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -1024,13 +829,32 @@
                 </div>
                 <div class="grid__item nofun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/spellbee.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/spellbee.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Sounds so simple and yet few brave hearts participate in this quiz of spellings </div>
+                        <div class="slider__item">	The pronouncer announces the word to be spelled. He
+                            speaks slowly and clearly, without distorting the normal
+                            pronunciation of the word.
+                            	When the speller is sure she understands the word, she
+                            pronounces it, spells it and then says the word again. She
+                            must say it loudly enough for the judge to hear it.
+                            	The judge(s) determines whether or not the word was
+                            spelled correctly.
+                            	 If the correct spelling was given, the speller remains in
+                            the game.
+                            	 If the spelling was incorrect, that speller is eliminated
+                            from the game. The judge gives the correct spelling of that
+                            word. Then the pronouncer reads a new word to the next
+                            student.
+                            	When there are only two spellers left, if one player
+                            misspells a word, the other player must spell that word
+                            correctly, plus one more word to be declared the winner of
+                            the spelling bee.
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Spell Bee</h3>
                         <span class="meta__organizer">Slavvy Coelho</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -1039,13 +863,20 @@
                 </div>
                 <div class="grid__item nofun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/comicstrip.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/comicstrip.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">This one’s a purely creative event; specially meant for those few students who love making caricatures of their profs & fellow students. Create a comic strip with the theme of “Behind of Mask” and get it published in Fragmag.</div>
+                        <div class="slider__item">The Comic Strip gives you the chance to make your own comic episode.
+                            You chose your own characters and make a comic episode of
+                            your own comic series.
+                            Rack your brains and create a world of your own.
+                            We want someone who can be spontaneous and creative at
+                            the same time.
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Comic Strip</h3>
                         <span class="meta__organizer">Rahul Pereira</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -1054,13 +885,21 @@
                 </div>
                 <div class="grid__item nofun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/justamin.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/justamin.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Are you a chatterbox who also has a good command over English? If yes, here’s a game that’ll reward you for just that. Don’t stammer, Don’t stop. Keep speaking for Just A Minute</div>
+                        <div class="slider__item">	You have one whole minute to talk without hesitation, repetition and deviation. So speak out on the topic that will be given to you.
+                            	The topics will be given on the spot. Show others you have a
+                            spontaneous and creative bone in you.
+                            	You will be judged on the basis of your speech, the way you
+                            deliver it and most importantly your language.
+                            	Walk in with your head held high and speak out what you
+                            feel.
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Just a minute</h3>
                         <span class="meta__organizer">Melchzidek Caleb</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -1069,13 +908,16 @@
                 </div>
                 <div class="grid__item nofun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/scrabble.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/scrabble.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">If you wait to solve those Crossword puzzles in the daily newspaper, then this game is for you. Find the maximum no. of words in time.</div>
+                        <div class="slider__item">	Multiple teams of 4 allowed per class
+                            	Words formed have to be ones that are present in the dictionary, following British English pattern, in order to be scored.
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Scrabble with Friends</h3>
                         <span class="meta__organizer">Neeraj Nair</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -1084,12 +926,18 @@
                 </div>
                 <div class="grid__item nofun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/debate.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/debate.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Presenting the first ever Intra Parliamentary Debate. This will be the battle of words and wit!</div>
+                        <div class="slider__item">	Topics will be given 15 minutes before the actual debate
+                            	Internet access is not allowed
+                            	Speeches will be of 4 minutes only
+                            	There won’t be any refutation round, opposition can ask POIs
+                            	30 seconds will be protected in the speech(from start as well as the end)
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Intracollege Parliamentary Debate</h3>
-                        <span class="meta__organizer">StuCo</span>
+                        <span class="meta__organizer">Rahul Pereira</span>
                         <span class="meta__day">Day 1</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -1100,13 +948,18 @@
 
                 <div class="grid__item possiblyfun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/mrandmrs.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/mrandmrs.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">This is an exclusive competition for all the BE’s. Y’all will be tested on the basis of your talent, personality and brains. Two of y’all will get the crowning glory and the title of Mr. & Ms. CRCE  </div>
+                        <div class="slider__item">	Multiple entries are permitted
+                            	This event is only for the final years.
+                            	Interested participants will have to fill a form in advance.
+                            Participants are advised to prepare a short performance of their choice portraying their skills
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Mr. & Ms. CRCE</h3>
                         <span class="meta__organizer">Pearl Almeida</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -1115,8 +968,33 @@
                 </div>
                 <div class="grid__item possiblyfun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/crcefittest.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/crcefittest.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">A series of physical events to test your grit, strength and to determine who truly owns the title of the Fittest Guy & Girl in CRCE </div>
+                        <div class="slider__item">About the event:
+                            This is a time based event, the participant who takes least amount of time to complete the task's wins.
+                            There will be separate judging for guys and girls.
+                            This event starts from the gate of our college, the particpant has to run up the slope. Tasks in this event:-
+
+
+                            For GUYS:
+                            	20 push ups
+                            	 15 pull ups
+                            	20 crunches
+                            	Reach the 6th floor using the main staircase.
+
+                            For GIRLS:
+                            	10 push ups
+                            	20 squats
+                            	30 skips using a skipping rope
+                            	Reach the 6th floor using the main staircase.
+
+                            Rules :
+                            	Multiple entries per class are permitted
+                            	The decision of time keepers will be final.
+                            	If found cheating in any way the participant will be withdrawn from the event
+                            	The accuracy of any activity in the event will be judged by the event organizer and participants cannot complain about it.
+                            	Time penalty will be given to the participant who wants to skip an activity and move to the next.
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">CRCE’s Fittest</h3>
@@ -1130,13 +1008,26 @@
                 </div>
                 <div class="grid__item possiblyfun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/armwrest.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/armwrest.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">Prove your prowess and strength in a classic game of arm wrestling.</div>
+                        <div class="slider__item">	Both players must be square to the arm wrestling table prior to the starting of a given match.
+                            	Players must start after they hear ‘Ready and Go”
+                            	In order to constitute a pin, you can touch any part of the other player’s fingers, forearm or wrist
+                            	You cannot touch your body with any of your hands during a competition
+                            	If you commit a foul three times, you will be disqualified from the match
+                            	For whatever reason the grip falls apart, the grip is placed in its right alignment again
+                            	If any of the player’s position is such that his arm can hurt or break, the referee can stop the match right away and rule it as a foul
+                            	If any player lifts his or her elbow from the table, the referee can stop the match and rule it as a foul.
+                            	For any unsportsmanlike conduct, the referee can give a disciplinary foul
+                            	False starting the match will result in a foul
+                            	All decision made by the referee are final
+                            	Multiple entries per class are permitted
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Arm wrestling</h3>
                         <span class="meta__organizer">Rishabh Sharma</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -1145,13 +1036,20 @@
                 </div>
                 <div class="grid__item possiblyfun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/roadies.jpg" alt="product1_2"/></div>
-                        <div class="slider__item">Description of the event</div>
+                        <div class="slider__item"><img src="images/roadies.jpg" alt="product1_2" /></div>
+                        <div class="slider__item">There is no description required here, is there?</div>
+                        <div class="slider__item">	Interested people have to fill a form
+                            	Maximum 3 candidates will be shortlisted from each class depending upon the form contents
+                            	Event will consists of an interview judging the contender’s personality
+                            	A few tasks might be included
+                            	The council is in no way responsible for the tasks or questions asked by the judges.
+                            	Apply at your own risk
+                        </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">CRCE Roadies</h3>
                         <span class="meta__organizer">Pranav Gala</span>
-                        <span class="meta__day">Day 1</span>
+                        <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
                         <i class="fa fa-shopping-cart"></i>
@@ -1165,39 +1063,6 @@
     </div>
 
     <div class="page" id="page-aboutus">
-        <div class="menu" id="div1">
-            <div class="btn trigger"> <span class="text">Students Council</span> </div>
-
-            <div class="rotater">
-                <div><img class="btn btn-icon" src="images/5ingredients.jpg"></div>
-            </div>
-
-            <div class="rotater">
-                <div><img class="btn btn-icon" src="images/admad.jpg"></div>
-            </div>
-
-            <div class="rotater">
-                <div><img class="btn btn-icon" src="images/antak.jpg"></div>
-            </div>
-
-        </div>
-
-        <div class="menu" style="top: 50%; left: 60%;" id="div2">
-            <div class="btn trigger"> <span class="text">Students Council</span> </div>
-
-            <div class="rotater">
-                <div><img class="btn btn-icon" src="images/5ingredients.jpg"></div>
-            </div>
-
-            <div class="rotater">
-                <div><img class="btn btn-icon" src="images/admad.jpg"></div>
-            </div>
-
-            <div class="rotater">
-                <div><img class="btn btn-icon" src="images/antak.jpg"></div>
-            </div>
-
-        </div>
 
     </div>
 
@@ -1216,22 +1081,6 @@
 <script src="js/isotope.pkgd.min.js"></script>
 <script src="js/flickity.pkgd.min.js"></script>
 <script src="js/main.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $(".menu").click(function() {
-            if($(this).hasClass("active")){
-                $(this).removeClass("active");
-                /*$(this).addClass("active");*/
-
-            }
-            else{
-                $(".menu").removeClass("active");
-                $(this).addClass("active");
-            }
-        });
-    });
-</script>
 </body>
 
 </html>
