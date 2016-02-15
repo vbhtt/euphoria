@@ -46,11 +46,12 @@
             -webkit-animation: home 30s ease infinite;
             -moz-animation: home 30s ease infinite;
             animation: home 30s ease infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         #page-home img {
-            margin-left: 15vw;
-            margin-top: 20vh;
             width: 70vw;
         }
 
@@ -375,7 +376,7 @@
 <div class="pages-stack">
     <!-- page -->
     <div class="page" id="page-home">
-        <img class="animated zoomIn" src="images/Euphoria-logo.png">
+        <img class="animated fadeIn" src="images/Euphoria-logo.png">
     </div>
     <!-- /page -->
     <div class="page" id="page-events">
@@ -645,6 +646,7 @@
                         <span class="text-hidden">Add to cart</span>
                     </button>
                 </div>
+
                 <div class="grid__item gaming">
                     <div class="slider">
                         <div class="slider__item"><img src="images/boxcric.jpg" alt="product1_2"/></div>
@@ -656,6 +658,7 @@
                              One girl player compulsory
                              Usual box rules
                         </div>
+                        </div>
                         <div class="meta">
                             <h3 class="meta__title">Glow In The Dark Box Cricket</h3>
                             <span class="meta__organizer">Binny Joshua</span>
@@ -665,8 +668,8 @@
                             <i class="fa fa-shopping-cart"></i>
                             <span class="text-hidden">Add to cart</span>
                         </button>
-                    </div>
                 </div>
+
                 <div class="grid__item gaming">
                     <div class="slider">
                         <div class="slider__item"><img src="images/fooseball.jpg" alt="product1_2"/></div>
@@ -1165,7 +1168,8 @@
     </div>
 
     <div class="page" id="page-aboutus">
-        <div class="menu" id="div1">
+
+        <div class="active menu" id="div1">
             <div class="btn trigger"> <span class="text">Students Council</span> </div>
 
             <div class="rotater">
@@ -1182,7 +1186,7 @@
 
         </div>
 
-        <div class="menu" style="top: 50%; left: 60%;" id="div2">
+        <div class="active menu" style="top: 50%; left: 60%;" id="div2">
             <div class="btn trigger"> <span class="text">Students Council</span> </div>
 
             <div class="rotater">
