@@ -247,9 +247,9 @@
 
         .text {
             position: absolute;
-            top: 40%;
+            top: 60%;
             left: 20%;
-            opacity: 50;
+            opacity: 1;
             /*text-align: center;*/
         }
 
@@ -265,6 +265,7 @@
     <div class="btn trigger"> <span class="text">Students Council</span> </div>
 
     <div class="rotater">
+        <span class="btn btn-icon">Title</span>
         <div><img class="btn btn-icon" src="images/5ingredients.jpg"></div>
     </div>
 
@@ -295,18 +296,18 @@
 
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>$(document).ready(function() {
-    $(".trigger").click(function() {
-        if($("#div1").hasClass("active")) {
-            $("#div1").toggleClass("active");
-            $("this").addClass("active");
-        }
+<script>
+    $(document).ready(function() {
+    $(".menu").click(function() {
+        if($(this).hasClass("active")){
+            $(this).removeClass("active");
+            /*$(this).addClass("active");*/
 
-        else if($("#div2").hasClass("active")){
-            $("#div2").toggleClass("active");
-            $("this").addClass("active");
         }
-
+        else{
+            $(".menu").removeClass("active");
+            $(this).addClass("active");
+        }
         /*else {
             $("this").toggleClass("active");
         }
@@ -316,10 +317,15 @@
             close_circle();
             $("this").addClass("active");
         }*/
-        function close_circle(){
+        /*function close_circle(){
             $("this").removeClass("active");
-        }
+        }*/
     });
+        $(".btn.btn-icon").hover(function () {
+            $(this).find(".hover").fadeIn(300);
+        }, function(){
+            $(this).find(".hover").fadeOut(100);
+        });
 });
 </script>
 </body>
