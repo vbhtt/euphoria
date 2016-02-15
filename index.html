@@ -90,12 +90,16 @@
             }
         }
 
+        #page-aboutus{
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: space-around;
+        }
+
         .menu,
         .menu .btn .fa,
         .menu .btn.trigger .line {
-            position: absolute;
-            top: 50%;
-            left: 50%;
             -webkit-transform: translateX(-50%) translateY(-50%);
             -ms-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
@@ -1225,18 +1229,6 @@
                 $(".menu").removeClass("active");
                 $(this).addClass("active");
             }
-            /*else {
-             $("this").toggleClass("active");
-             }
-
-
-             /*else if($("this").hasClass("active")){
-             close_circle();
-             $("this").addClass("active");
-             }*/
-            /*function close_circle(){
-             $("this").removeClass("active");
-             }*/
         });
     });
 </script>
