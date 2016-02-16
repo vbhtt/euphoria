@@ -116,8 +116,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 100px;
-            height: 100px;
+            width: 100%;
+            height: 100%;
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.15);
             opacity: 0;
@@ -338,27 +338,16 @@
         }
 
         .text {
-            /*position: absolute;
-            font-size: 15px;
-            top: 50%;
-            left: 50%;
+            position: absolute;
+            top: 40%;
+            left: 20%;
             opacity: 50;
             /*text-align: center;*/
         }
 
         div.btn.trigger span.text{
-            position: absolute;
-            top: 30%;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        #span1 {
-            position: absolute;
-            left: 6%;
-            top: 35%;
-            text-align: center;
-            font-size: 14px;
+            top: 25%;
+            left: 16%;
         }
     </style>
 
@@ -1416,7 +1405,7 @@
 
     <div class="page" id="page-aboutus">
 
-        <div class="menu" id="div1">
+        <div class="active menu" id="div1">
             <div class="btn trigger"> <span class="text">Students Council</span> </div>
 
             <div class="rotater">
@@ -1453,8 +1442,8 @@
 
         </div>
 
-        <div class="menu" id="div2">
-            <div class="btn trigger"> <span id="span1">Website Team</span> </div>
+        <div class="active menu" id="div2">
+            <div class="btn trigger"> <span class="text">Website Team</span> </div>
 
             <div class="rotater">
             </div>
@@ -1515,15 +1504,6 @@
                 $(".menu").removeClass("active");
                 $(this).addClass("active");
             }
-        });
-        $("div.flickity-viewport").hover(function(){
-            $("div.flickity-viewport").addClass("is-pointer-down");
-            $("div.flickity-slider").css("transform","translateX(-100%");
-            $("div.slider__item").addClass("is-selected");
-        },function(){
-            $("div.flickity-viewport").removeClass("is-pointer-down");
-            $("div.flickity-slider").css("transform","translateX(0%");
-            $("div.slider__item").removeClass("is-selected");
         });
     });
 </script>
