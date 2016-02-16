@@ -55,6 +55,17 @@
             width: 70vw;
         }
 
+        #page-events {
+            position: absolute;
+        }
+
+        #page-events .grid__loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
         @-webkit-keyframes home {
             0% {
                 background-position: 0% 50%
@@ -235,6 +246,10 @@
             /*text-align: center;*/
         }
 
+        .btn-icon:hover {
+            content: attr(data-name);
+        }
+
         div.btn.trigger span.text {
             top: 25%;
             left: 16%;
@@ -313,9 +328,9 @@
         <!-- Main view -->
         <div class="view">
             <!-- Grid -->
-            <section class="grid">
+            <section class="grid grid--loading">
                 <!-- Loader -->
-                <img class="grid__loader" src="images/loader.svg" width="60" alt="Loading..."/>
+                <img class="grid__loader" src="images/loader.svg" width="200" alt="Loading..."/>
                 <!-- Grid sizer for a fluid Isotope (Masonry) layout -->
                 <div class="grid__sizer"></div>
                 <!-- Grid items -->
@@ -1475,7 +1490,7 @@
             </div>
 
             <div class="rotater">
-                <div><img class="btn btn-icon" src="images/varun.jpg"></div>
+                <div><img class="btn btn-icon" data-name="Varun" src="images/varun.jpg"></div>
             </div>
 
             <div class="rotater">
