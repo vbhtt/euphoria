@@ -91,8 +91,6 @@
             }
         }
 
-
-
         .menu,
         .menu .btn .fa,
         .menu .btn.trigger .line {
@@ -130,7 +128,9 @@
             transition: color 0.3s;
         }
 
-        .menu .btn:hover .fa { color: rgba(255, 255, 255, 0.7); }
+        .menu .btn:hover .fa {
+            color: rgba(255, 255, 255, 0.7);
+        }
 
         .menu .btn.trigger {
             opacity: 1;
@@ -146,10 +146,14 @@
             transform: scale(1.2);
         }
 
-        .menu .btn.trigger:hover .line { background-color: rgba(255, 255, 255, 0.7); }
+        .menu .btn.trigger:hover .line {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
 
         .menu .btn.trigger:hover .line:before,
-        .menu .btn.trigger:hover .line:after { background-color: rgba(255, 255, 255, 0.7); }
+        .menu .btn.trigger:hover .line:after {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
 
         .menu .btn.trigger .line {
             width: 60%;
@@ -223,8 +227,6 @@
             width: 110%;
         }
 
-
-
         .text {
             position: absolute;
             top: 40%;
@@ -233,9 +235,13 @@
             /*text-align: center;*/
         }
 
-        div.btn.trigger span.text{
+        div.btn.trigger span.text {
             top: 25%;
             left: 16%;
+        }
+
+        button.action--buy {
+            display: none;
         }
     </style>
 
@@ -250,7 +256,7 @@
     <div class="pages-nav__item"><a class="link link--page" href="#page-aboutus">About Us</a></div>
     <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-sc">Students
         Council</a></div>
-    <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-contact">Contact</a>
+    <div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-contact">Register</a>
     </div>
     <div class="pages-nav__item pages-nav__item--social">
         <a class="link link--social link--faded" href="#"><i class="fa fa-twitter"></i><span
@@ -301,8 +307,7 @@
             </div>
             <button class="cart">
                 <i class="cart__icon fa fa-shopping-cart"></i>
-                <span class="text-hidden">Events</span>
-                <span class="cart__count">0</span>
+                <span class="text-hidden">Register</span>
             </button>
         </div>
         <!-- Main view -->
@@ -323,13 +328,14 @@
                         </div>
                         <div class="slider__item"> Multiple teams per class with 5 to 8 participants.
                             Word cards will be provided.<br/>
-                            <a href="9860234273">Phone : 9860234273</a><br/>
-                            <a href="8390593526">Phone : 8390593526</a>
+                            <a href="tel:9860234273">Phone : 9860234273</a><br/>
+                            <a href="tel:8390593526">Phone : 8390593526</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Taboo</h3>
-                        <span class="meta__organizer"><a href="9860234273">Nivea Dabre</a> & <a href="8390593526">Valencia Dias</a></span>
+                        <span class="meta__organizer"><a href="tel:9860234273">Nivea Dabre</a> & <a
+                                href="tel:8390593526">Valencia Dias</a></span>
                         <span class="meta__day">Day 1</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -343,15 +349,15 @@
                         <div class="slider__item">Be the ad-guru and create an advertisement for an object given by us.
                             Be crazy, funky and let the creativity flow.
                         </div>
-                        <div class="slider__item"> Multiple teams per class with 4 to 8 participants.
-                             Participants will be given topics on the spot for the first round.
-                             For the final round team will be given time to prepare.
-                            <br/><a href="9833084720">Phone : 9833084720</a>
+                        <div class="slider__item"><br/> Multiple teams per class with 4 to 8 participants.
+                            <br/> Participants will be given topics on the spot for the first round.
+                            <br/> For the final round team will be given time to prepare.
+                            <br/><a href="tel:9833084720">Phone : 9833084720</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Ad-mad</h3>
-                        <span class="meta__organizer"><a href="9833084720">Janice Abraham</a></span>
+                        <span class="meta__organizer"><a href="tel:9833084720">Janice Abraham</a></span>
                         <span class="meta__day">Day 1</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -365,13 +371,13 @@
                         <div class="slider__item">Nobody can say no to a good game of jenga. The tower stands tall.
                             Remove its blocks without knocking it to the ground. Sounds simple? Try it!
                         </div>
-                            <div class="slider__item">Multiple teams per class with a maximum number of 3 participants.
-                                <br/><a href="8898606556">Phone : 8898606556</a>
+                        <div class="slider__item">Multiple teams per class with a maximum number of 3 participants.
+                            <br/><a href="tel:8898606556">Phone : 8898606556</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Jenga</h3>
-                        <span class="meta__organizer"><a href="8898606556">Shem Pereira</a></span>
+                        <span class="meta__organizer"><a href="tel:8898606556">Shem Pereira</a></span>
                         <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -385,12 +391,12 @@
                         <div class="slider__item">Game of monopoly with a twist. Play it the MU way where you get kt’s
                             and extra credits as you move along the years. Roll the dice & beware of the drop.
                         </div>
-                        <div class="slider__item"> Multiple teams from one class with 2 participants.
-                            <br/><a href="8108105671">Phone : 8108105671</a></div>
+                        <div class="slider__item"><br/> Multiple teams from one class with 2 participants.
+                            <br/><a href="tel:8108105671">Phone : 8108105671</a></div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">MUnopoly</h3>
-                        <span class="meta__organizer"><a href="8108105671">Ruchira Rachaprolu</a></span>
+                        <span class="meta__organizer"><a href="tel:8108105671">Ruchira Rachaprolu</a></span>
                         <span class="meta__day">Day 1</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -406,12 +412,12 @@
                             Your task: Prepare a good, tasty dish out of them.
                             The catch: No cooking allowed.
                         </div>
-                        <div class="slider__item"> Multiple teams per class with 5 to 8 participants
-                            <br/><a href="8767084452">Phone : 8767084452</a></div>
+                        <div class="slider__item"><br/> Multiple teams per class with 5 to 8 participants
+                            <br/><a href="tel:8767084452">Phone : 8767084452</a></div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">FIVE Ingredients</h3>
-                        <span class="meta__organizer"><a href="8767084452">Tracy Pereira</a></span>
+                        <span class="meta__organizer"><a href="tel:8767084452">Tracy Pereira</a></span>
                         <span class="meta__day">Day 1</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -425,17 +431,17 @@
                         <div class="slider__item">Who doesn’t like watching movies? Or enacting them in a game of
                             charades? Well here’s a game where you’ll do just that. Come test your movie knowledge.
                         </div>
-                        <div class="slider__item"> Multiple teams per class with a maximum of 3 participants.
-                             One of the participants will be given a movie to enact to the other teammates.
-                             Writing or saying out the name of the movie will get the team disqualified.
-                             The words can be broken into 2 parts in order to make it easier for your teammates to
+                        <div class="slider__item"><br/> Multiple teams per class with a maximum of 3 participants.
+                            <br/> One of the participants will be given a movie to enact to the other teammates.
+                            <br/> Writing or saying out the name of the movie will get the team disqualified.
+                            <br/> The words can be broken into 2 parts in order to make it easier for your teammates to
                             understand.
-                            <br/><a href="9833005988">Phone : 9833005988</a>
+                            <br/><a href="tel:9833005988">Phone : 9833005988</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Guess the movie</h3>
-                        <span class="meta__organizer"><a href="9833005988">Ruchita Rozario</a></span>
+                        <span class="meta__organizer"><a href="tel:9833005988">Ruchita Rozario</a></span>
                         <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -450,14 +456,14 @@
                             the levels and look for clues all around the college. Crack the riddles and you receive the
                             treasure.
                         </div>
-                        <div class="slider__item"> 1 team per class with maximum number of 5 participants.
-                             The clues will be within the college premises
-                            <br/><a href="9867584288">Phone : 9867584288</a>
+                        <div class="slider__item"><br/> 1 team per class with maximum number of 5 participants.
+                            <br/> The clues will be within the college premises
+                            <br/><a href="tel:9867584288">Phone : 9867584288</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Treasure Hunt</h3>
-                        <span class="meta__organizer"><a href="9867584288">Abhishek Kateliya</a></span>
+                        <span class="meta__organizer"><a href="tel:9867584288">Abhishek Kateliya</a></span>
                         <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -469,14 +475,14 @@
                     <div class="slider">
                         <div class="slider__item"><img src="images/connect.jpg" alt="product1_2"/></div>
                         <div class="slider__item">Find out what’s common between all the four images shown to you.</div>
-                        <div class="slider__item"> Multiple teams per class with a maximum of 2 participants
-                             Four pictures are given per team and expected to find the connection among them
-                            <br/><a href="99304509460">Phone : 99304509460</a>
+                        <div class="slider__item"><br/> Multiple teams per class with a maximum of 2 participants
+                            <br/> Four pictures are given per team and expected to find the connection among them
+                            <br/><a href="tel:99304509460">Phone : 99304509460</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Connect</h3>
-                        <span class="meta__organizer"><a href="99304509460">Jeet Thakur</a></span>
+                        <span class="meta__organizer"><a href="tel:99304509460">Jeet Thakur</a></span>
                         <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -490,15 +496,15 @@
                         <div class="slider__item">Indulge the foodie in you and showcase your hogging prowess by
                             gobbling up everything that’s in your way to win our foodestination.
                         </div>
-                        <div class="slider__item"> Single team entry from each class.
-                             Each team can have 3 participants
-                             All 3 participants need to finish the food served in the least time possible
-                            <br/><a href="8080069974">Phone : 8080069974</a>
+                        <div class="slider__item"><br/> Single team entry from each class.
+                            <br/> Each team can have 3 participants
+                            <br/> All 3 participants need to finish the food served in the least time possible
+                            <br/><a href="tel:8080069974">Phone : 8080069974</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Hogathon</h3>
-                        <span class="meta__organizer"><a href="8080069974">Brijesh Thapa</a></span>
+                        <span class="meta__organizer"><a href="tel:8080069974">Brijesh Thapa</a></span>
                         <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -512,15 +518,15 @@
                         <div class="slider__item">A perfect place to unwind and relax. The stakes are high and each move
                             is a nail biter. So suit up and gamble away!
                         </div>
-                        <div class="slider__item"> Single team entry from each class.
-                             Each team can have 3 participants
-                             All 3 participants need to finish the food served in the least time possible
-                            <br/><a href="9049362791">Phone : 9049362791</a>
+                        <div class="slider__item"><br/> Single team entry from each class.
+                            <br/> Each team can have 3 participants
+                            <br/> All 3 participants need to finish the food served in the least time possible
+                            <br/><a href="tel:9049362791">Phone : 9049362791</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Poker</h3>
-                        <span class="meta__organizer"><a href="9049362791">Shivani Vartak</a></span>
+                        <span class="meta__organizer"><a href="tel:9049362791">Shivani Vartak</a></span>
                         <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -533,14 +539,14 @@
                     <div class="slider">
                         <div class="slider__item"><img src="images/langaming.jpg" alt="product1_2"/></div>
                         <div class="slider__item">Grab your players and come play NFS, CS and FIFA</div>
-                        <div class="slider__item"> Multiple teams allowed for all class for CS
-                             Multiple entries per class FIFA
-                            <br/><a href="9619513016">Phone : 9619513016</a>
+                        <div class="slider__item"><br/> Multiple teams allowed for all class for CS
+                            <br/> Multiple entries per class FIFA
+                            <br/><a href="tel:9619513016">Phone : 9619513016</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">LAN Gaming</h3>
-                        <span class="meta__organizer"><a href="9619513016">Shaun Kollannur</a></span>
+                        <span class="meta__organizer"><a href="tel:9619513016">Shaun Kollannur</a></span>
                         <span class="meta__day">Day 1</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -555,16 +561,16 @@
                         <div class="slider__item">Indoor cricket for all cricket lovers. Standard rules of cricket apply
                             but with a twist!
                         </div>
-                        <div class="slider__item"> Number of participants per team = 5+2
-                             Multiple teams allowed
-                             One girl player compulsory
-                             Usual box rules
-                            <br/><a href="9920182609">Phone : 9920182609</a>
+                        <div class="slider__item"><br/> Number of participants per team = 5+2
+                            <br/> Multiple teams allowed
+                            <br/> One girl player compulsory
+                            <br/> Usual box rules
+                            <br/><a href="tel:9920182609">Phone : 9920182609</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Glow In The Dark Box Cricket</h3>
-                        <span class="meta__organizer"><a href="9920182609">Binny Joshua</a></span>
+                        <span class="meta__organizer"><a href="tel:9920182609">Binny Joshua</a></span>
                         <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -579,14 +585,14 @@
                         <div class="slider__item">Play human foose ball as you’re tied to your places and the ball keeps
                             rolling. Defend! Attack! GOAL!!
                         </div>
-                        <div class="slider__item"> Multiple teams allowed with 5 participants per team
-                             No shots above the waist
-                            <br/><a href="8879119105">Phone : 8879119105</a>
+                        <div class="slider__item"><br/> Multiple teams allowed with 5 participants per team
+                            <br/> No shots above the waist
+                            <br/><a href="tel:8879119105">Phone : 8879119105</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Foose Ball</h3>
-                        <span class="meta__organizer"><a href="8879119105">Immanuel Thomas</a></span>
+                        <span class="meta__organizer"><a href="tel:8879119105">Immanuel Thomas</a></span>
                         <span class="meta__day">Day 1</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -596,14 +602,16 @@
                 </div>
                 <div class="grid__item gaming">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/abadhubi.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">A game where the rules say that you gotta hit the players hard.  Grab your teammates, aim at the opponents, dodge the balls and fire away! </div>
-                        <div class="slider__item">	Multiple teams allowed with 5+2 participants per team
-                            <br/><a href="7030195165">Phone : 7030195165</a></div>
+                        <div class="slider__item"><img src="images/abadhubi.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">A game where the rules say that you gotta hit the players hard. Grab
+                            your teammates, aim at the opponents, dodge the balls and fire away!
+                        </div>
+                        <div class="slider__item"><br/> Multiple teams allowed with 5+2 participants per team
+                            <br/><a href="tel:7030195165">Phone : 7030195165</a></div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Aba Dhubi</h3>
-                        <span class="meta__organizer"><a href="7030195165">Charmaine Alexander</a></span>
+                        <span class="meta__organizer"><a href="tel:7030195165">Charmaine Alexander</a></span>
                         <span class="meta__day">Day 1</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -613,16 +621,16 @@
                 </div>
                 <div class="grid__item gaming">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/darts.jpg" alt="product1_2" /></div>
+                        <div class="slider__item"><img src="images/darts.jpg" alt="product1_2"/></div>
                         <div class="slider__item">If there is precision in your aim, the target is yours to claim!</div>
-                        <div class="slider__item">	Multiple teams allowed per class with 3 participants per team
-                            	Each player has 3 darts and will throw all of them from the oche
-                            <br/><a href="9561318377">Phone : 9561318377</a>
+                        <div class="slider__item"><br/> Multiple teams allowed per class with 3 participants per team
+                            <br/> Each player has 3 darts and will throw all of them from the oche
+                            <br/><a href="tel:9561318377">Phone : 9561318377</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Darts</h3>
-                        <span class="meta__organizer"><a href="9561318377">Akshaya Poojari</a></span>
+                        <span class="meta__organizer"><a href="tel:9561318377">Akshaya Poojari</a></span>
                         <span class="meta__day">Day 1</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -632,16 +640,18 @@
                 </div>
                 <div class="grid__item gaming">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/chess.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">Grab your pawns, ministers and Queen. Be the king and the Chess Master in this game of real chess.  </div>
-                        <div class="slider__item">	16 players per class
-                            	Other rules will be explained on the spot
-                            <br/><a href="8452022612">Phone : 8452022612</a>
+                        <div class="slider__item"><img src="images/chess.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">Grab your pawns, ministers and Queen. Be the king and the Chess Master
+                            in this game of real chess.
+                        </div>
+                        <div class="slider__item"><br/> 16 players per class
+                            <br/> Other rules will be explained on the spot
+                            <br/><a href="tel:8452022612">Phone : 8452022612</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Real Chess</h3>
-                        <span class="meta__organizer"><a href="8452022612">Peter Emil</a></span>
+                        <span class="meta__organizer"><a href="tel:8452022612">Peter Emil</a></span>
                         <span class="meta__day">Day 1</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -651,18 +661,20 @@
                 </div>
                 <div class="grid__item gaming">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/blur.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">Enter the world of advanced powered up racing. Destroy your rivals in the ultimate race with no holds barred!</div>
-                        <div class="slider__item">	Each race will have 3 or 4 players depending on the round.
-                            	Players can choose a car from any class from the default selection.
-                            	Top two places advance to the next round
-                            	Available power ups will be declared  by the event head
-                            <br/><a href="996737122">Phone : 996737122</a>
+                        <div class="slider__item"><img src="images/blur.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">Enter the world of advanced powered up racing. Destroy your rivals in
+                            the ultimate race with no holds barred!
+                        </div>
+                        <div class="slider__item"><br/> Each race will have 3 or 4 players depending on the round.
+                            <br/> Players can choose a car from any class from the default selection.
+                            <br/> Top two places advance to the next round
+                            <br/> Available power ups will be declared by the event head
+                            <br/><a href="tel:996737122">Phone : 996737122</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Blur</h3>
-                        <span class="meta__organizer"><a href="996737122">Siddhant Dimri</a></span>
+                        <span class="meta__organizer"><a href="tel:996737122">Siddhant Dimri</a></span>
                         <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -674,26 +686,28 @@
 
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/doremi.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">Channel your favorite English music artists and become CRCE’s very own Eminem, Beyonce or Bieber!</div>
+                        <div class="slider__item"><img src="images/doremi.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">Channel your favorite English music artists and become CRCE’s very own
+                            Eminem, Beyonce or Bieber!
+                        </div>
                         <div class="slider__item">Eliminations :
-                            	Multiple entries are permitted
-                            	3mins inclusive of set up time
-                            	One accompanist will be allowed
-                            	Karaoke tracks are allowed. (Participants have to arrange for a player/laptop)
-                            	5 finalists will be selected.
+                            <br/> Multiple entries are permitted
+                            <br/> 3mins inclusive of set up time
+                            <br/> One accompanist will be allowed
+                            <br/> Karaoke tracks are allowed. (Participants have to arrange for a player/laptop)
+                            <br/> 5 finalists will be selected.
 
 
                             Finals :
-                            	4mins inclusive of set up time
-                            	One accompanist will be allowed
-                            	Karaoke tracks are allowed
-                            <br/><a href="8600318119">Phone : 8600318119</a>
+                            <br/> 4mins inclusive of set up time
+                            <br/> One accompanist will be allowed
+                            <br/> Karaoke tracks are allowed
+                            <br/><a href="tel:8600318119">Phone : 8600318119</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Do Re Mi</h3>
-                        <span class="meta__organizer"><a href="8600318119">Pearl Almeida</a></span>
+                        <span class="meta__organizer"><a href="tel:8600318119">Pearl Almeida</a></span>
                         <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -703,25 +717,28 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/saregama.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">If your Sur and Taal are in sync, and your voice also has the magic of Arijit Singh and if you’re as sassy as Honey Singh, then you’re in line to becoming the next CRCE’S Idol! </div>
+                        <div class="slider__item"><img src="images/saregama.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">If your Sur and Taal are in sync, and your voice also has the magic of
+                            Arijit Singh and if you’re as sassy as Honey Singh, then you’re in line to becoming the next
+                            CRCE’S Idol!
+                        </div>
                         <div class="slider__item">Eliminations:
-                            	3mins inclusive of set up time
-                            	Multiple entries are permitted
-                            	One accompanist will be allowed
-                            	Karaoke tracks are allowed. (Participants have to arrange for a player/laptop)
-                            	5 finalists will be selected.
+                            <br/> 3mins inclusive of set up time
+                            <br/> Multiple entries are permitted
+                            <br/> One accompanist will be allowed
+                            <br/> Karaoke tracks are allowed. (Participants have to arrange for a player/laptop)
+                            <br/> 5 finalists will be selected.
 
                             Finals:
-                            	4mins inclusive of set up time
-                            	One accompanist will be allowed
-                            	Karaoke tracks are allowed
-                            <br/><a href="8600318119">Phone : 8600318119</a>
+                            <br/> 4mins inclusive of set up time
+                            <br/> One accompanist will be allowed
+                            <br/> Karaoke tracks are allowed
+                            <br/><a href="tel:8600318119">Phone : 8600318119</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Sa Re Ga Ma</h3>
-                        <span class="meta__organizer"><a href="8600318119">Pearl Almeida</a></span>
+                        <span class="meta__organizer"><a href="tel:8600318119">Pearl Almeida</a></span>
                         <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -731,24 +748,27 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/stepup.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">Solo Dance Competition for all the Hip-Hop, Classical and contemporary dancers</div>
+                        <div class="slider__item"><img src="images/stepup.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">Solo Dance Competition for all the Hip-Hop, Classical and contemporary
+                            dancers
+                        </div>
                         <div class="slider__item">Elimination:
-                            	Multiple entries are permitted
-                            	3mins inclusive of set up time
-                            	Use of props is allowed
-                            	5 finalists will be selected
+                            <br/> Multiple entries are permitted
+                            <br/> 3mins inclusive of set up time
+                            <br/> Use of props is allowed
+                            <br/> 5 finalists will be selected
 
                             Finals:
-                            	4mins inclusive of set up time
-                            	Use of props is allowed
-                            <br/><a href="9022082535">Phone : 9022082535</a>
-                            <br/><a href="9969861443">Phone : 9969861443</a>
+                            <br/> 4mins inclusive of set up time
+                            <br/> Use of props is allowed
+                            <br/><a href="tel:9022082535">Phone : 9022082535</a>
+                            <br/><a href="tel:9969861443">Phone : 9969861443</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Step Up</h3>
-                        <span class="meta__organizer"><a href="9022082535">Robin Mathew </a>& <a href="9969861443">Gail Pinto</a></span>
+                        <span class="meta__organizer"><a href="tel:9022082535">Robin Mathew </a>& <a
+                                href="tel:9969861443">Gail Pinto</a></span>
                         <span class="meta__day">Day 1</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -758,23 +778,25 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/60secs.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">What is your X- factor? Mimicry? Origami?  Playing an instrument or Magic? Show your talent & enthrall the audience. It’s your 60 sec road to fame.</div>
+                        <div class="slider__item"><img src="images/60secs.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">What is your X- factor? Mimicry? Origami? Playing an instrument or
+                            Magic? Show your talent & enthrall the audience. It’s your 60 sec road to fame.
+                        </div>
                         <div class="slider__item">Elimination:
-                            	Multiple entries are permitted
-                            	2mins inclusive of  1 min set up time
-                            	No solo singing or solo dance act allowed
-                            	5 finalists will be selected
+                            <br/> Multiple entries are permitted
+                            <br/> 2mins inclusive of 1 min set up time
+                            <br/> No solo singing or solo dance act allowed
+                            <br/> 5 finalists will be selected
 
                             Finals:
-                            	2mins inclusive of set up time
-                            	2 winners
-                            <br/><a href="9029097027">Phone : 9029097027</a>
+                            <br/> 2mins inclusive of set up time
+                            <br/> 2 winners
+                            <br/><a href="tel:9029097027">Phone : 9029097027</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">60 Seconds to Fame</h3>
-                        <span class="meta__organizer"><a href="9029097027">Rebecca</a></span>
+                        <span class="meta__organizer"><a href="tel:9029097027">Rebecca</a></span>
                         <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -784,20 +806,24 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/unscr.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">Given a topic, Decide, Direct and Perform an impromptu skit within the time limit. The true genius of an actor comes forth when he’s least prepared (or so they say).</div>
-                        <div class="slider__item">	Multiple entries are permitted
-                            	Team of 5 maximum
-                            	Pick up a chit with a situation/scene they have to enact
-                            	Teams get 20 mins to prepare a 10 mins act
-                            	Teams can use any of the props provided
-                            <br/><a href="9757252859">Phone : 9757252859</a>
-                            <br/><a href="9892569115">Phone : 9892569115</a>
+                        <div class="slider__item"><img src="images/unscr.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">Given a topic, Decide, Direct and Perform an impromptu skit within the
+                            time limit. The true genius of an actor comes forth when he’s least prepared (or so they
+                            say).
+                        </div>
+                        <div class="slider__item"><br/> Multiple entries are permitted
+                            <br/> Team of 5 maximum
+                            <br/> Pick up a chit with a situation/scene they have to enact
+                            <br/> Teams get 20 mins to prepare a 10 mins act
+                            <br/> Teams can use any of the props provided
+                            <br/><a href="tel:9757252859">Phone : 9757252859</a>
+                            <br/><a href="tel:9892569115">Phone : 9892569115</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Unscripted</h3>
-                        <span class="meta__organizer"><a href="9757252859">Saylee Lanjewar </a>& <a href="9892569115">Puja</a></span>
+                        <span class="meta__organizer"><a href="tel:9757252859">Saylee Lanjewar </a>& <a
+                                href="tel:9892569115">Puja</a></span>
                         <span class="meta__day">Day 1</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -807,27 +833,32 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/Dance%20face-off.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">One on One dance battle. If you’ve seen the Step Up series, you know what I am talking about. Same music, same beats, lets see who can keep up</div>
+                        <div class="slider__item"><img src="images/Dance%20face-off.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">One on One dance battle. If you’ve seen the Step Up series, you know
+                            what I am talking about. Same music, same beats, lets see who can keep up
+                        </div>
                         <div class="slider__item">Elimination:
-                            	Multiple entries are permitted
-                            	Participants are required to prepare a minute long routine on their choice of music
-                            	Two participants will compete at a time, participants are selected at random using a spinning bottle.
+                            <br/> Multiple entries are permitted
+                            <br/> Participants are required to prepare a minute long routine on their choice of music
+                            <br/> Two participants will compete at a time, participants are selected at random using a
+                            spinning bottle.
                         </div>
                         <div class="slider__item">
-                            	When the music starts, the first participant dances for the first 30secs followed by the next participant for the next 30secs. Both of them then dance together for 30 seconds.
-                            	Number of rounds will be decided according to number of entries
-                            	4 finalists will be selected
+                            <br/> When the music starts, the first participant dances for the first 30secs followed by
+                            the next participant for the next 30secs. Both of them then dance together for 30 seconds.
+                            <br/> Number of rounds will be decided according to number of entries
+                            <br/> 4 finalists will be selected
 
                             Finals:
-                            	1 winner will be selected
-                            <br/><a href="9757261884">Phone : 9757261884</a>
-                            <br/><a href="9819599973">Phone : 9819599973</a>
+                            <br/> 1 winner will be selected
+                            <br/><a href="tel:9757261884">Phone : 9757261884</a>
+                            <br/><a href="tel:9819599973">Phone : 9819599973</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Dance Face Off</h3>
-                        <span class="meta__organizer"><a href="9757261884">Gavin Tauro </a>&<a href="9819599973"> Varun Mullins</a></span>
+                        <span class="meta__organizer"><a href="tel:9757261884">Gavin Tauro </a>&<a
+                                href="tel:9819599973"> Varun Mullins</a></span>
                         <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -837,17 +868,17 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/antak.jpg" alt="product1_2" /></div>
+                        <div class="slider__item"><img src="images/antak.jpg" alt="product1_2"/></div>
                         <div class="slider__item">A much loved game for all the music buffs.</div>
-                        <div class="slider__item">	Multiple teams per class permitted
-                            	3 participants per team
-                            	No written material or use of internet allowed
-                            <br/><a href="9869677547">Phone : 9869677547</a>
+                        <div class="slider__item"><br/> Multiple teams per class permitted
+                            <br/> 3 participants per team
+                            <br/> No written material or use of internet allowed
+                            <br/><a href="tel:9869677547">Phone : 9869677547</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Antakshari</h3>
-                        <span class="meta__organizer"><a href="9869677547">Rubina Praveen</a></span>
+                        <span class="meta__organizer"><a href="tel:9869677547">Rubina Praveen</a></span>
                         <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -857,18 +888,20 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/stomptheyard.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">With your b-boying stunts and uber cool hip hop grooves, make the streets of New York come alive right here in CRCE!</div>
-                        <div class="slider__item">	Multiple teams per class permitted
-                            	Minimum 4 participants per team
-                            	No physical contact between the opponents during the battle
-                            	Music for the battle will be provided by the head
-                            <br/><a href="959454351">Phone : 959454351</a>
+                        <div class="slider__item"><img src="images/stomptheyard.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">With your b-boying stunts and uber cool hip hop grooves, make the
+                            streets of New York come alive right here in CRCE!
+                        </div>
+                        <div class="slider__item"><br/> Multiple teams per class permitted
+                            <br/> Minimum 4 participants per team
+                            <br/> No physical contact between the opponents during the battle
+                            <br/> Music for the battle will be provided by the head
+                            <br/><a href="tel:959454351">Phone : 959454351</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Stomp the Yard</h3>
-                        <span class="meta__organizer"><a href="959454351">Darren Sequeira</a></span>
+                        <span class="meta__organizer"><a href="tel:959454351">Darren Sequeira</a></span>
                         <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -878,24 +911,26 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/rhythmdevine.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">When words fail, music speaks! Think you can dazzle and captivate he audience with your instrument?</div>
-                        <div class="slider__item">	Multiple entries are permitted
-                            	3mins inclusive of set up time
-                            	No vocalist allowed
-                            	Only guitar, keyboard, violin, octopad, cello, flute, sitar, table is allowed
-                            	Beat- boxing is allowed
-                            	5 finalists will be selected.
+                        <div class="slider__item"><img src="images/rhythmdevine.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">When words fail, music speaks! Think you can dazzle and captivate he
+                            audience with your instrument?
+                        </div>
+                        <div class="slider__item"><br/> Multiple entries are permitted
+                            <br/> 3mins inclusive of set up time
+                            <br/> No vocalist allowed
+                            <br/> Only guitar, keyboard, violin, octopad, cello, flute, sitar, table is allowed
+                            <br/> Beat- boxing is allowed
+                            <br/> 5 finalists will be selected.
                             Finals:
-                            	4mins inclusive of set up time
-                            	One winner will be selected
-                            <br/><a href="9819608120">Phone : 9819608120</a>
+                            <br/> 4mins inclusive of set up time
+                            <br/> One winner will be selected
+                            <br/><a href="tel:9819608120">Phone : 9819608120</a>
                         </div>
 
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Rhythm Divine</h3>
-                        <span class="meta__organizer"><a href="9819608120">Dylan Dcruz</a></span>
+                        <span class="meta__organizer"><a href="tel:9819608120">Dylan Dcruz</a></span>
                         <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -905,17 +940,19 @@
                 </div>
                 <div class="grid__item random">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/karaoke.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">Does bollywood or Hollywood run in your blood? Let’s find out. Let your music finesse surface and enthuse the crowd.</div>
-                        <div class="slider__item">	Multiple team are permitted from each class
-                            	each team can
-                            	The songs will be played at random
-                            <br/><a href="9769984936">Phone : 9769984936</a>
+                        <div class="slider__item"><img src="images/karaoke.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">Does bollywood or Hollywood run in your blood? Let’s find out. Let
+                            your music finesse surface and enthuse the crowd.
+                        </div>
+                        <div class="slider__item"><br/> Multiple team are permitted from each class
+                            <br/> each team can
+                            <br/> The songs will be played at random
+                            <br/><a href="tel:9769984936">Phone : 9769984936</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Karaoke</h3>
-                        <span class="meta__organizer"><a href="9769984936">Kevin Rodrigues</a></span>
+                        <span class="meta__organizer"><a href="tel:9769984936">Kevin Rodrigues</a></span>
                         <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -927,16 +964,18 @@
 
                 <div class="grid__item other">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/facepainting.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">Paint your partners face and create a poster on it based on a socially relevant theme. Incentive to participate: You get to paint someone’s face  :D </div>
-                        <div class="slider__item">	Multiple teams consisting of 2-3participants
-                            	Only paints will be provided
-                            <br/><a href="9096349365">Phone : 9096349365</a>
+                        <div class="slider__item"><img src="images/facepainting.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">Paint your partners face and create a poster on it based on a socially
+                            relevant theme. Incentive to participate: You get to paint someone’s face :D
+                        </div>
+                        <div class="slider__item"><br/> Multiple teams consisting of 2-3participants
+                            <br/> Only paints will be provided
+                            <br/><a href="tel:9096349365">Phone : 9096349365</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Face Painting</h3>
-                        <span class="meta__organizer"><a href="9096349365">Rachel Joseph</a></span>
+                        <span class="meta__organizer"><a href="tel:9096349365">Rachel Joseph</a></span>
                         <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -946,18 +985,22 @@
                 </div>
                 <div class="grid__item other">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/revamped.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">A classic game to test your creativity. Create a gorgeous ensemble, complete with a painted mask . Prove old is gold! Your creation will be showcased on the ramp</div>
-                        <div class="slider__item">	Multiple teams per class
-                            	4-8 participants per team including one model.
-                            	Participants will have to carry their own material. Pariticipants will also have to make and paint a mask on the same model.
-                            	These models will be participating in a fashion show
-                            <br/><a href="9969483121">Phone : 9969483121</a>
+                        <div class="slider__item"><img src="images/revamped.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">A classic game to test your creativity. Create a gorgeous ensemble,
+                            complete with a painted mask . Prove old is gold! Your creation will be showcased on the
+                            ramp
+                        </div>
+                        <div class="slider__item"><br/> Multiple teams per class
+                            <br/> 4-8 participants per team including one model.
+                            <br/> Participants will have to carry their own material. Pariticipants will also have to
+                            make and paint a mask on the same model.
+                            <br/> These models will be participating in a fashion show
+                            <br/><a href="tel:9969483121">Phone : 9969483121</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Revamped</h3>
-                        <span class="meta__organizer"><a href="9969483121">Apurva Nehru</a></span>
+                        <span class="meta__organizer"><a href="tel:9969483121">Apurva Nehru</a></span>
                         <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -967,17 +1010,20 @@
                 </div>
                 <div class="grid__item other">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/pixel.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">This one’s for the photographers . Take out your camera , tighten your shoes, in this event you have no time lose. Come back on time, show your pictures in a line and let your photography skills shine.</div>
-                        <div class="slider__item">	Team of 2 participants.
-                            	The photographer has to click a picture of any scene in college or at bandstand.
-                            	Multiple enteries per class allowed
-                            <br/><a href="8097431739">Phone : 8097431739</a>
+                        <div class="slider__item"><img src="images/pixel.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">This one’s for the photographers . Take out your camera , tighten your
+                            shoes, in this event you have no time lose. Come back on time, show your pictures in a line
+                            and let your photography skills shine.
+                        </div>
+                        <div class="slider__item"><br/> Team of 2 participants.
+                            <br/> The photographer has to click a picture of any scene in college or at bandstand.
+                            <br/> Multiple enteries per class allowed
+                            <br/><a href="tel:8097431739">Phone : 8097431739</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Pixel Perfect</h3>
-                        <span class="meta__organizer"><a href="8097431739">Pratik Shetty</a></span>
+                        <span class="meta__organizer"><a href="tel:8097431739">Pratik Shetty</a></span>
                         <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -987,16 +1033,18 @@
                 </div>
                 <div class="grid__item other">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/rangoli.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">Making sure we pay homage to our culture, here is an event to see who can make the best celebratory and beautiful rangoli.</div>
-                        <div class="slider__item">	2 participants per team.
-                            	Time limit- 1 hour
-                            <br/><a href="9833084882">Phone : 9833084882</a>
+                        <div class="slider__item"><img src="images/rangoli.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">Making sure we pay homage to our culture, here is an event to see who
+                            can make the best celebratory and beautiful rangoli.
+                        </div>
+                        <div class="slider__item"><br/> 2 participants per team.
+                            <br/> Time limit- 1 hour
+                            <br/><a href="tel:9833084882">Phone : 9833084882</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Race To Rangoli</h3>
-                        <span class="meta__organizer"><a href="9833084882">Karishma Dalvi</a></span>
+                        <span class="meta__organizer"><a href="tel:9833084882">Karishma Dalvi</a></span>
                         <span class="meta__day">Day 1</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -1006,17 +1054,19 @@
                 </div>
                 <div class="grid__item other">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/nailart.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">For all the ladies. Get your nails painted in the most trending and cool pattern and colors. Be a trendsetter with those killer nails :p</div>
-                        <div class="slider__item">	Team of 2 participants; model and artist
-                            	Participants need to carry their own material
-                            	Time limit- 30 minutes
-                            <br/><a href="9930077207">Phone : 9930077207</a>
+                        <div class="slider__item"><img src="images/nailart.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">For all the ladies. Get your nails painted in the most trending and
+                            cool pattern and colors. Be a trendsetter with those killer nails :p
+                        </div>
+                        <div class="slider__item"><br/> Team of 2 participants; model and artist
+                            <br/> Participants need to carry their own material
+                            <br/> Time limit- 30 minutes
+                            <br/><a href="tel:9930077207">Phone : 9930077207</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Nail Art</h3>
-                        <span class="meta__organizer"><a href="9930077207">Rasika Acharya</a></span>
+                        <span class="meta__organizer"><a href="tel:9930077207">Rasika Acharya</a></span>
                         <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -1026,16 +1076,16 @@
                 </div>
                 <div class="grid__item other">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/tattoo.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">Not just  your average art, crazy thinking you’ll have to start.</div>
-                        <div class="slider__item">	Team of 2 participants; model and artist
-                            	Participants need to carry their own material
-                            <br/><a href="8698485223">Phone : 8698485223</a>
+                        <div class="slider__item"><img src="images/tattoo.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">Not just your average art, crazy thinking you’ll have to start.</div>
+                        <div class="slider__item"><br/> Team of 2 participants; model and artist
+                            <br/> Participants need to carry their own material
+                            <br/><a href="tel:8698485223">Phone : 8698485223</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Tattoo Making</h3>
-                        <span class="meta__organizer"><a href="8698485223">Abhishek Lakade</a></span>
+                        <span class="meta__organizer"><a href="tel:8698485223">Abhishek Lakade</a></span>
                         <span class="meta__day">Day 1</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -1046,28 +1096,31 @@
 
                 <div class="grid__item nofun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/extempore.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">Pick a topic and speak away. For all the smart talkers who have something to say about everything.</div>
-                        <div class="slider__item">	English should be the language of communication
-                            	Multiple entries allowed.
-                            	Only 5 minutes will be allotted to each contestant: 2
+                        <div class="slider__item"><img src="images/extempore.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">Pick a topic and speak away. For all the smart talkers who have
+                            something to say about everything.
+                        </div>
+                        <div class="slider__item"><br/> English should be the language of communication
+                            <br/> Multiple entries allowed.
+                            <br/> Only 5 minutes will be allotted to each contestant: 2
                             minutes for speaking and 3 minutes for preparing.
-                            	The speech should include a brief introduction of the
+                            <br/> The speech should include a brief introduction of the
                             participant.
-                            	A warning bell will be given at the end of 1.5 minutes.</div>
+                            <br/> A warning bell will be given at the end of 1.5 minutes.
+                        </div>
                         <div class="slider__item">
-                            	Speech notes are not to be used by the contestant while
+                            <br/> Speech notes are not to be used by the contestant while
                             presenting his/ her speech
-                            	Second round will be conducted in case of tie of winning or
+                            <br/> Second round will be conducted in case of tie of winning or
                             runner-up position.
-                            	Participants must carry their own pens.
-                            	Decision of judges will be considered final.
-                            <br/><a href="9757220331">Phone : 9757220331</a>
+                            <br/> Participants must carry their own pens.
+                            <br/> Decision of judges will be considered final.
+                            <br/><a href="tel:9757220331">Phone : 9757220331</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Extempore</h3>
-                        <span class="meta__organizer"><a href="9757220331">Sweta Singh</a></span>
+                        <span class="meta__organizer"><a href="tel:9757220331">Sweta Singh</a></span>
                         <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -1077,18 +1130,21 @@
                 </div>
                 <div class="grid__item nofun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/creativewritin.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">Can you come up with the most unbelievable story at the blink of an eye? If yes, this is for you.  Write a captivating story for the ending that we provide.</div>
-                        <div class="slider__item">	Multiple entries allowed
-                            	Participants will have 30 minutes to submit their writing
-                            	At the very beginning will be given a sentence with which the participants will have to start you’re the essay
-                            	Be ready for a twist mid way through your essay
-                            <br/><a href="8237725418">Phone : 8237725418</a>
+                        <div class="slider__item"><img src="images/creativewritin.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">Can you come up with the most unbelievable story at the blink of an
+                            eye? If yes, this is for you. Write a captivating story for the ending that we provide.
+                        </div>
+                        <div class="slider__item"><br/> Multiple entries allowed
+                            <br/> Participants will have 30 minutes to submit their writing
+                            <br/> At the very beginning will be given a sentence with which the participants will have
+                            to start you’re the essay
+                            <br/> Be ready for a twist mid way through your essay
+                            <br/><a href="tel:8237725418">Phone : 8237725418</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Creative Writing</h3>
-                        <span class="meta__organizer"><a href="8237725418">Flavion D'sa</a></span>
+                        <span class="meta__organizer"><a href="tel:8237725418">Flavion D'sa</a></span>
                         <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -1098,33 +1154,36 @@
                 </div>
                 <div class="grid__item nofun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/spellbee.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">Sounds so simple and yet few brave hearts participate in this quiz of spellings </div>
-                        <div class="slider__item">	The pronouncer announces the word to be spelled. He
+                        <div class="slider__item"><img src="images/spellbee.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">Sounds so simple and yet few brave hearts participate in this quiz of
+                            spellings
+                        </div>
+                        <div class="slider__item"><br/> The pronouncer announces the word to be spelled. He
                             speaks slowly and clearly, without distorting the normal
                             pronunciation of the word.
-                            	When the speller is sure she understands the word, she
+                            <br/> When the speller is sure she understands the word, she
                             pronounces it, spells it and then says the word again. She
                             must say it loudly enough for the judge to hear it.
-                            	The judge(s) determines whether or not the word was
+                            <br/> The judge(s) determines whether or not the word was
                             spelled correctly.
-                            	 If the correct spelling was given, the speller remains in
-                            the game.</div>
+                            <br/> If the correct spelling was given, the speller remains in
+                            the game.
+                        </div>
                         <div class="slider__item">
-                            	 If the spelling was incorrect, that speller is eliminated
+                            <br/> If the spelling was incorrect, that speller is eliminated
                             from the game. The judge gives the correct spelling of that
                             word. Then the pronouncer reads a new word to the next
                             student.
-                            	When there are only two spellers left, if one player
+                            <br/> When there are only two spellers left, if one player
                             misspells a word, the other player must spell that word
                             correctly, plus one more word to be declared the winner of
                             the spelling bee.
-                            <br/><a href="8390966132">Phone : 8390966132</a>
+                            <br/><a href="tel:8390966132">Phone : 8390966132</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Spell Bee</h3>
-                        <span class="meta__organizer"><a href="8390966132">Slavvy Coelho</a></span>
+                        <span class="meta__organizer"><a href="tel:8390966132">Slavvy Coelho</a></span>
                         <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -1134,20 +1193,23 @@
                 </div>
                 <div class="grid__item nofun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/comicstrip.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">This one’s a purely creative event; specially meant for those few students who love making caricatures of their profs & fellow students. Create a comic strip with the theme of “Behind of Mask” and get it published in Fragmag.</div>
+                        <div class="slider__item"><img src="images/comicstrip.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">This one’s a purely creative event; specially meant for those few
+                            students who love making caricatures of their profs & fellow students. Create a comic strip
+                            with the theme of “Behind of Mask” and get it published in Fragmag.
+                        </div>
                         <div class="slider__item">The Comic Strip gives you the chance to make your own comic episode.
                             You chose your own characters and make a comic episode of
                             your own comic series.
                             Rack your brains and create a world of your own.
                             We want someone who can be spontaneous and creative at
                             the same time.
-                            <br/><a href="8655686970">Phone : 8655686970</a>
+                            <br/><a href="tel:8655686970">Phone : 8655686970</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Comic Strip</h3>
-                        <span class="meta__organizer"><a href="8655686970">Rahul Pereira</a></span>
+                        <span class="meta__organizer"><a href="tel:8655686970">Rahul Pereira</a></span>
                         <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -1157,21 +1219,25 @@
                 </div>
                 <div class="grid__item nofun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/justamin.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">Are you a chatterbox who also has a good command over English? If yes, here’s a game that’ll reward you for just that. Don’t stammer, Don’t stop. Keep speaking for Just A Minute</div>
-                        <div class="slider__item">	You have one whole minute to talk without hesitation, repetition and deviation. So speak out on the topic that will be given to you.
-                            	The topics will be given on the spot. Show others you have a
+                        <div class="slider__item"><img src="images/justamin.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">Are you a chatterbox who also has a good command over English? If yes,
+                            here’s a game that’ll reward you for just that. Don’t stammer, Don’t stop. Keep speaking for
+                            Just A Minute
+                        </div>
+                        <div class="slider__item"><br/> You have one whole minute to talk without hesitation, repetition
+                            and deviation. So speak out on the topic that will be given to you.
+                            <br/> The topics will be given on the spot. Show others you have a
                             spontaneous and creative bone in you.
-                            	You will be judged on the basis of your speech, the way you
+                            <br/> You will be judged on the basis of your speech, the way you
                             deliver it and most importantly your language.
-                            	Walk in with your head held high and speak out what you
+                            <br/> Walk in with your head held high and speak out what you
                             feel.
-                            <br/><a href="9821329682">Phone : 9821329682</a>
+                            <br/><a href="tel:9821329682">Phone : 9821329682</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Just a minute</h3>
-                        <span class="meta__organizer"><a href="9821329682">Melchzidek Caleb</a></span>
+                        <span class="meta__organizer"><a href="tel:9821329682">Melchzidek Caleb</a></span>
                         <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -1181,16 +1247,19 @@
                 </div>
                 <div class="grid__item nofun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/scrabble.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">If you wait to solve those Crossword puzzles in the daily newspaper, then this game is for you. Find the maximum no. of words in time.</div>
-                        <div class="slider__item">	Multiple teams of 4 allowed per class
-                            	Words formed have to be ones that are present in the dictionary, following British English pattern, in order to be scored.
-                            <br/><a href="7208390908">Phone : 7208390908</a>
+                        <div class="slider__item"><img src="images/scrabble.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">If you wait to solve those Crossword puzzles in the daily newspaper,
+                            then this game is for you. Find the maximum no. of words in time.
+                        </div>
+                        <div class="slider__item"><br/> Multiple teams of 4 allowed per class
+                            <br/> Words formed have to be ones that are present in the dictionary, following British
+                            English pattern, in order to be scored.
+                            <br/><a href="tel:7208390908">Phone : 7208390908</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Scrabble with Friends</h3>
-                        <span class="meta__organizer"><a href="7208390908">Neeraj Nair</a></span>
+                        <span class="meta__organizer"><a href="tel:7208390908">Neeraj Nair</a></span>
                         <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -1200,19 +1269,21 @@
                 </div>
                 <div class="grid__item nofun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/debate.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">Presenting the first ever Intra Parliamentary Debate. This will be the battle of words and wit!</div>
-                        <div class="slider__item">	Topics will be given 15 minutes before the actual debate
-                            	Internet access is not allowed
-                            	Speeches will be of 4 minutes only
-                            	There won’t be any refutation round, opposition can ask POIs
-                            	30 seconds will be protected in the speech(from start as well as the end)
-                            <br/><a href="8655686970">Phone : 8655686970</a>
+                        <div class="slider__item"><img src="images/debate.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">Presenting the first ever Intra Parliamentary Debate. This will be the
+                            battle of words and wit!
+                        </div>
+                        <div class="slider__item"><br/> Topics will be given 15 minutes before the actual debate
+                            <br/> Internet access is not allowed
+                            <br/> Speeches will be of 4 minutes only
+                            <br/> There won’t be any refutation round, opposition can ask POIs
+                            <br/> 30 seconds will be protected in the speech(from start as well as the end)
+                            <br/><a href="tel:8655686970">Phone : 8655686970</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Intracollege Parliamentary Debate</h3>
-                        <span class="meta__organizer"><a href="8655686970">Rahul Pereira</a></span>
+                        <span class="meta__organizer"><a href="tel:8655686970">Rahul Pereira</a></span>
                         <span class="meta__day">Day 1</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -1223,18 +1294,22 @@
 
                 <div class="grid__item possiblyfun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/mrandmrs.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">This is an exclusive competition for all the BE’s. Y’all will be tested on the basis of your talent, personality and brains. Two of y’all will get the crowning glory and the title of Mr. & Ms. CRCE  </div>
-                        <div class="slider__item">	Multiple entries are permitted
-                            	This event is only for the final years.
-                            	Interested participants will have to fill a form in advance.
-                            Participants are advised to prepare a short performance of their choice portraying their skills
-                            <br/><a href="8600318119">Phone : 8600318119</a>
+                        <div class="slider__item"><img src="images/mrandmrs.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">This is an exclusive competition for all the BE’s. Y’all will be
+                            tested on the basis of your talent, personality and brains. Two of y’all will get the
+                            crowning glory and the title of Mr. & Ms. CRCE
+                        </div>
+                        <div class="slider__item"><br/> Multiple entries are permitted
+                            <br/> This event is only for the final years.
+                            <br/> Interested participants will have to fill a form in advance.
+                            Participants are advised to prepare a short performance of their choice portraying their
+                            skills
+                            <br/><a href="tel:8600318119">Phone : 8600318119</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Mr. & Ms. CRCE</h3>
-                        <span class="meta__organizer"><a href="8600318119">Pearl Almeida</a></span>
+                        <span class="meta__organizer"><a href="tel:8600318119">Pearl Almeida</a></span>
                         <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -1244,36 +1319,42 @@
                 </div>
                 <div class="grid__item possiblyfun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/crcefittest.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">A series of physical events to test your grit, strength and to determine who truly owns the title of the Fittest Guy & Girl in CRCE </div>
+                        <div class="slider__item"><img src="images/crcefittest.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">A series of physical events to test your grit, strength and to
+                            determine who truly owns the title of the Fittest Guy & Girl in CRCE
+                        </div>
                         <div class="slider__item">About the event:
-                            This is a time based event, the participant who takes least amount of time to complete the task's wins.
+                            This is a time based event, the participant who takes least amount of time to complete the
+                            task's wins.
                             There will be separate judging for guys and girls.
-                            This event starts from the gate of our college, the particpant has to run up the slope. Tasks in this event:-
+                            This event starts from the gate of our college, the particpant has to run up the slope.
+                            Tasks in this event:-
                             For GUYS:
-                            	20 push ups
-                            	 15 pull ups
-                            	20 crunches
-                            	Reach the 6th floor using the main staircase.
+                            <br/> 20 push ups
+                            <br/> 15 pull ups
+                            <br/> 20 crunches
+                            <br/> Reach the 6th floor using the main staircase.
                             For GIRLS:
-                            	10 push ups
-                            	20 squats
-                            	30 skips using a skipping rope
-                            	Reach the 6th floor using the main staircase.
+                            <br/> 10 push ups
+                            <br/> 20 squats
+                            <br/> 30 skips using a skipping rope
+                            <br/> Reach the 6th floor using the main staircase.
                         </div>
                         <div class="slider__item">
                             Rules :
-                            	Multiple entries per class are permitted
-                            	The decision of time keepers will be final.
-                            	If found cheating in any way the participant will be withdrawn from the event
-                            	The accuracy of any activity in the event will be judged by the event organizer and participants cannot complain about it.
-                            	Time penalty will be given to the participant who wants to skip an activity and move to the next.
-                            <br/><a href="8655686970">Phone : 8655686970</a>
+                            <br/> Multiple entries per class are permitted
+                            <br/> The decision of time keepers will be final.
+                            <br/> If found cheating in any way the participant will be withdrawn from the event
+                            <br/> The accuracy of any activity in the event will be judged by the event organizer and
+                            participants cannot complain about it.
+                            <br/> Time penalty will be given to the participant who wants to skip an activity and move
+                            to the next.
+                            <br/><a href="tel:8655686970">Phone : 8655686970</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">CRCE’s Fittest</h3>
-                        <span class="meta__organizer"><a href="8655686970">Rahul Pereira</a></span>
+                        <span class="meta__organizer"><a href="tel:8655686970">Rahul Pereira</a></span>
                         <span class="meta__day">Day 1</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -1283,27 +1364,34 @@
                 </div>
                 <div class="grid__item possiblyfun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/armwrest.jpg" alt="product1_2" /></div>
-                        <div class="slider__item">Prove your prowess and strength in a classic game of arm wrestling.</div>
-                        <div class="slider__item">	Both players must be square to the arm wrestling table prior to the starting of a given match.
-                            	Players must start after they hear ‘Ready and Go”
-                            	In order to constitute a pin, you can touch any part of the other player’s fingers, forearm or wrist
-                            	You cannot touch your body with any of your hands during a competition
-                            	If you commit a foul three times, you will be disqualified from the match
-                            	For whatever reason the grip falls apart, the grip is placed in its right alignment again</div>
+                        <div class="slider__item"><img src="images/armwrest.jpg" alt="product1_2"/></div>
+                        <div class="slider__item">Prove your prowess and strength in a classic game of arm wrestling.
+                        </div>
+                        <div class="slider__item"><br/> Both players must be square to the arm wrestling table prior to
+                            the starting of a given match.
+                            <br/> Players must start after they hear ‘Ready and Go”
+                            <br/> In order to constitute a pin, you can touch any part of the other player’s fingers,
+                            forearm or wrist
+                            <br/> You cannot touch your body with any of your hands during a competition
+                            <br/> If you commit a foul three times, you will be disqualified from the match
+                            <br/> For whatever reason the grip falls apart, the grip is placed in its right alignment
+                            again
+                        </div>
                         <div class="slider__item">
-                            	If any of the player’s position is such that his arm can hurt or break, the referee can stop the match right away and rule it as a foul
-                            	If any player lifts his or her elbow from the table, the referee can stop the match and rule it as a foul.
-                            	For any unsportsmanlike conduct, the referee can give a disciplinary foul
-                            	False starting the match will result in a foul
-                            	All decision made by the referee are final
-                            	Multiple entries per class are permitted
-                            <br/><a href="9769770109">Phone : 9769770109</a>
+                            <br/> If any of the player’s position is such that his arm can hurt or break, the referee
+                            can stop the match right away and rule it as a foul
+                            <br/> If any player lifts his or her elbow from the table, the referee can stop the match
+                            and rule it as a foul.
+                            <br/> For any unsportsmanlike conduct, the referee can give a disciplinary foul
+                            <br/> False starting the match will result in a foul
+                            <br/> All decision made by the referee are final
+                            <br/> Multiple entries per class are permitted
+                            <br/><a href="tel:9769770109">Phone : 9769770109</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">Arm wrestling</h3>
-                        <span class="meta__organizer"><a href="9769770109">Rishabh Sharma</a></span>
+                        <span class="meta__organizer"><a href="tel:9769770109">Rishabh Sharma</a></span>
                         <span class="meta__day">Day 2</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -1313,20 +1401,21 @@
                 </div>
                 <div class="grid__item possiblyfun">
                     <div class="slider">
-                        <div class="slider__item"><img src="images/roadies.jpg" alt="product1_2" /></div>
+                        <div class="slider__item"><img src="images/roadies.jpg" alt="product1_2"/></div>
                         <div class="slider__item">There is no description required here, is there?</div>
-                        <div class="slider__item">	Interested people have to fill a form
-                            	Maximum 3 candidates will be shortlisted from each class depending upon the form contents
-                            	Event will consists of an interview judging the contender’s personality
-                            	A few tasks might be included
-                            	The council is in no way responsible for the tasks or questions asked by the judges.
-                            	Apply at your own risk
-                            <br/><a href="9869786282">Phone : 9869786282</a>
+                        <div class="slider__item"><br/> Interested people have to fill a form
+                            <br/> Maximum 3 candidates will be shortlisted from each class depending upon the form
+                            contents
+                            <br/> Event will consists of an interview judging the contender’s personality
+                            <br/> A few tasks might be included
+                            <br/> The council is in no way responsible for the tasks or questions asked by the judges.
+                            <br/> Apply at your own risk
+                            <br/><a href="tel:9869786282">Phone : 9869786282</a>
                         </div>
                     </div>
                     <div class="meta">
                         <h3 class="meta__title">CRCE Roadies</h3>
-                        <span class="meta__organizer"><a href="9869786282">Pranav Gala</a></span>
+                        <span class="meta__organizer"><a href="tel:9869786282">Pranav Gala</a></span>
                         <span class="meta__day">Day 3</span>
                     </div>
                     <button class="action action--button action--buy">
@@ -1343,7 +1432,7 @@
     <div class="page" id="page-aboutus">
 
         <div class="active menu" id="div1">
-            <div class="btn trigger"> <span class="text">Students' Council</span> </div>
+            <div class="btn trigger"><span class="text">Students' Council</span></div>
 
             <div class="rotater">
                 <div><img class="btn btn-icon" src="images/Shantanu.png"></div>
@@ -1380,7 +1469,7 @@
         </div>
 
         <div class="menu" id="div2">
-            <div class="btn trigger"> <span class="text">Website Team</span> </div>
+            <div class="btn trigger"><span class="text">Website Team</span></div>
 
             <div class="rotater">
             </div>
@@ -1418,7 +1507,9 @@
     </div>
 
     <div class="page" id="page-contact">
-
+        <iframe src="https://docs.google.com/forms/d/1qAYgU3qInEOdkQUI2xc73CECAoimOekPSgVTSssswSk/viewform?embedded=true"
+                width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...
+        </iframe>
     </div>
 </div>
 
@@ -1430,14 +1521,14 @@
 <script src="js/main.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function() {
-        $(".menu").click(function() {
-            if($(this).hasClass("active")){
+    $(document).ready(function () {
+        $(".menu").click(function () {
+            if ($(this).hasClass("active")) {
                 $(this).removeClass("active");
                 /*$(this).addClass("active");*/
 
             }
-            else{
+            else {
                 $(".menu").removeClass("active");
                 $(this).addClass("active");
             }

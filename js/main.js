@@ -286,6 +286,10 @@
     }
 
     function initEvents2() {
+        cart.addEventListener('click',function(){
+           openPage('page-contact');
+        });
+
         filterCtrls.forEach(function(filterCtrl) {
             filterCtrl.addEventListener('click', function() {
                 classie.remove(filterCtrl.parentNode.querySelector('.filter__item--selected'), 'filter__item--selected');
