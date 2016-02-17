@@ -63,7 +63,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
         }
 
         @-webkit-keyframes home {
@@ -257,6 +257,45 @@
 
         button.action--buy {
             display: none;
+        }
+
+        #page-sc {
+            display: flex;
+            background: #5c5edc;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .contact.card {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            background: #222222;
+            box-shadow: #0e0f0f;
+            min-width: 40vw;
+        }
+
+        .contact .image {
+            width: 10vw;
+            height: 10vw;
+            border-radius: 50%;
+            box-shadow: #0e0f0f;
+            float: left;
+        }
+
+        .contact .meta {
+            padding-left: 10%;
+            align-self: flex-start;
+        }
+
+        .contact .meta__title {
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        .contact .meta__organizer {
+            font-size: 1em;
         }
     </style>
 
@@ -1518,7 +1557,29 @@
     </div>
 
     <div class="page" id="page-sc">
+        <div class="contact card">
+            <img class="image" src="images/Shantanu.png"/>
+            <div class="meta">
+                <h3 class="meta__title">Shantanu Sabadra</h3>
+                <span class="meta__organizer">General Secretary<br/><a href="tel:9860234273">9860234273</a></span>
+            </div>
+        </div>
 
+        <div class="contact card">
+            <img class="image" src="images/Anisha.png"/>
+            <div class="meta">
+                <h3 class="meta__title">Anisha Shanbhag</h3>
+                <span class="meta__organizer">Public Relations Head<br/><a href="tel:9860234273">9860234273</a></span>
+            </div>
+        </div>
+
+        <div class="contact card">
+            <img class="image" src="images/Tanya.png"/>
+            <div class="meta">
+                <h3 class="meta__title">Tanya Baptist</h3>
+                <span class="meta__organizer">Cultural Secretary<br/><a href="tel:9860234273">9860234273</a></span>
+            </div>
+        </div>
     </div>
 
     <div class="page" id="page-contact">
