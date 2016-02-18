@@ -697,7 +697,7 @@ html.js,
 /* Loader */
 .grid__loader {
     display: none;
-    margin: 3em auto 0;
+    margin: 0em auto 0;
 }
 
 .grid--loading .grid__loader {
